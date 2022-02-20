@@ -98,7 +98,12 @@ main {
 .text_cv_versao_responsivo_01 {
     font-size: 1.7vw;
     font-weight: 600;
+    color: #11607c;
+}
 
+.text_cv_versao_responsivo_02 {
+    font-size: 1.7vw;
+    font-weight: 600;
 }
 
 /* --- CV GRID RESPONSIVO -- */
@@ -113,7 +118,7 @@ main {
 }
 
 .text_cv_grid_responsivo {
-    padding: 35% 5% 5% 5%;
+    padding: 40% 5% 5% 5%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 12% 12% 12% 12% 12%;
@@ -121,6 +126,12 @@ main {
 }
 
 .text_cv_grid_responsivo_01 {
+    font-size: 1.7vw;
+    font-weight: 600;
+    color: #11607c;
+}
+
+.text_cv_grid_responsivo_02 {
     font-size: 1.7vw;
     font-weight: 600;
 }
@@ -137,7 +148,7 @@ main {
 }
 
 .text_cv_grid_nao_responsivo {
-    padding: 0% 5% 5% 5%;
+    padding: 20% 5% 5% 5%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 20% 20% 20% 20%;
@@ -145,6 +156,42 @@ main {
 }
 
 .text_cv_grid_nao_responsivo_01 {
+    font-size: 1.7vw;
+    font-weight: 600;
+    color: #11607c;
+}
+
+.text_cv_grid_nao_responsivo_02 {
+    font-size: 1.7vw;
+    font-weight: 600;
+}
+
+/* --- CV TRADICIONAL -- */
+.photo_text_cv_tradicional {
+    padding: 4% 5% 5% 5%;
+    display: grid;
+    grid-template-columns: 60% 1fr;
+}
+
+.photo_cv_tradicional {
+    width: 100%;
+}
+
+.text_cv_tradicional {
+    padding: 25% 5% 5% 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 30%;
+    text-align: left;
+}
+
+.text_cv_tradicional_01 {
+    font-size: 1.7vw;
+    font-weight: 600;
+    color: #11607c;
+}
+
+.text_cv_tradicional_02 {
     font-size: 1.7vw;
     font-weight: 600;
 }
@@ -162,30 +209,6 @@ main {
     margin: 1vh 0 1vh 0;
     height: 0.2vw;
     width: 100%;
-}
-
-/* --- CV TRADICIONAL -- */
-.photo_text_cv_tradicional {
-    padding: 4% 5% 5% 5%;
-    display: grid;
-    grid-template-columns: 60% 1fr;
-}
-
-.photo_cv_tradicional {
-    width: 100%;
-}
-
-.text_cv_tradicional {
-    padding: 5% 5% 5% 5%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 30% 30%;
-    text-align: left;
-}
-
-.text_cv_tradicional_01 {
-    font-size: 1.7vw;
-    font-weight: 600;
 }
 
 /* --- FOOTER SECTION -- */
@@ -209,20 +232,24 @@ footer {
     }
     
     .text_cv_versao_responsivo {
-        padding: 5% 5% 4% 5%;
+        padding: 5% 5% 10% 5%;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 30% 30% 30% 30%;
+        grid-template-rows: 50% 50% 50% 50%;
         text-align: center;
     }
     
     .text_cv_versao_responsivo_01 {
         font-size: 3vw;
     }
-    
+
+    .text_cv_versao_responsivo_02 {
+        font-size: 3vw;
+    }
+
     /* --- CV GRID RESPONSIVO -- */
     .photo_text_cv_grid_responsivo {
-        padding: 4% 5% 15% 5%;
+        padding: 4% 5% 7% 5%;
         display: block;
     }
     
@@ -232,7 +259,7 @@ footer {
     }
     
     .text_cv_grid_responsivo {
-        padding: 5% 5% 4% 5%;
+        padding: 5% 5% 14% 5%;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 30% 30% 30% 30% 30%;
@@ -242,10 +269,14 @@ footer {
     .text_cv_grid_responsivo_01 {
         font-size: 3vw;
     }
+
+    .text_cv_grid_responsivo_02 {
+        font-size: 3vw;
+    }
     
     /* --- CV GRID NAO RESPONSIVO -- */
     .photo_text_cv_grid_nao_responsivo {
-        padding: 4% 5% 10% 5%;
+        padding: 4% 5% 5% 5%;
         display: block;
     }
     
@@ -255,20 +286,24 @@ footer {
     }
     
     .text_cv_grid_nao_responsivo {
-        padding: 5% 5% 4% 5%;
+        padding: 5% 5% 15% 5%;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 30% 30% 30% 30%;
+        grid-template-rows: 40% 40% 40% 40% 40%;
         text-align: center;
     }
     
     .text_cv_grid_nao_responsivo_01 {
         font-size: 3vw;
     }
+
+    .text_cv_grid_nao_responsivo_02 {
+        font-size: 3vw;
+    }
     
     /* --- CV TRADICIONAL -- */
     .photo_text_cv_tradicional {
-        padding: 4% 5% 15% 5%;
+        padding: 4% 5% 5% 5%;
         display: block;
     }
     
@@ -278,14 +313,18 @@ footer {
     }
     
     .text_cv_tradicional {
-        padding: 5% 5% 4% 5%;
+        padding: 5% 5% 10% 5%;
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 70% 70%;
+        grid-template-rows: 70% 70% 70%;
         text-align: center;
     }
     
     .text_cv_tradicional_01 {
+        font-size: 3vw;
+    }
+
+    .text_cv_tradicional_02 {
         font-size: 3vw;
     }
     
