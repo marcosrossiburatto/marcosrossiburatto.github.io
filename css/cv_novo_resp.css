@@ -2,30 +2,6 @@ body{
     font-family: arial;
 }
 
-/*Link não visitado */
-a:link {
-    color: #11607c;
-    text-decoration: none;
-}
-
-/*Link já visitado*/
-a:visited {
-    color: #C70039;
-    text-decoration: none;
-}
-  
-/*Quando o mouse passa por cima*/
-a:hover {
-    color: #ff0000;
-    text-decoration: none;
-}
-  
-/*Link ativo/selecionado*/
-a:active {
-    color: yellow;
-    text-decoration: none;
-}
-
 .container {
     display: grid;
     grid-template-columns: 15% 1fr 15%;
@@ -74,6 +50,30 @@ header {
 }
 
 /* --- NAV SECTION -- */
+/*Link não visitado */
+nav a:link {
+    color: #11607c;
+    text-decoration: none;
+}
+
+/*Link já visitado*/
+nav a:visited {
+    color: #C70039;
+    text-decoration: none;
+}
+  
+/*Quando o mouse passa por cima*/
+nav a:hover {
+    color: #ff0000;
+    text-decoration: none;
+}
+  
+/*Link ativo/selecionado*/
+nav a:active {
+    color: yellow;
+    text-decoration: none;
+}
+
 nav {
     background-color: #f90;
     padding: 20px 8% 65% 8%;
@@ -702,17 +702,42 @@ form label {
 }
 
 /* --- ASIDE SECTION -- */
+
 aside {
     padding: 8% 8% 0% 8%;
-    background-color: #FFFF00;
+    background-color: #94095a;
+}
+
+/*Link não visitado */
+aside a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*Link já visitado*/
+aside a:visited {
+    color: #ff0;
+    text-decoration: none;
+}
+  
+/*Quando o mouse passa por cima*/
+aside a:hover {
+    color: #1db8e7;
+    text-decoration: none;
+}
+  
+/*Link ativo/selecionado*/
+aside a:active {
+    color: rgb(100, 100, 5);
+    text-decoration: none;
 }
 
 .aside_p {
     padding: 8% 0 15% 0;
     font-size: 1.2vw; 
-    font-weight: 600; 
+    font-weight: 500; 
     text-align: center; 
-    color: #11607c;
+    color: #fff;
     font-style: italic; 
     text-decoration: underline;
 }
@@ -720,9 +745,9 @@ aside {
 .aside_p01 {
     padding: 8% 0 10% 0;
     font-size: 1.2vw; 
-    font-weight: 600; 
+    font-weight: 500; 
     text-align: left; 
-    color: #11607c;
+    color: #fff;
     font-style: italic; 
     text-decoration: underline;
 }
@@ -730,9 +755,9 @@ aside {
 .aside_p02 {
     padding: 8% 0 10% 0;
     font-size: 1.1vw; 
-    font-weight: 600; 
+    font-weight: 500; 
     text-align: left; 
-    color: #11607c;
+    color: #fff;
     font-style: italic; 
     text-decoration: underline;
 }
@@ -778,14 +803,14 @@ aside {
 }
 
 .material-icons.icon_color_aside {
-    color: #11607c;
+    color: #fff;
     font-size: 1vw;
     font-weight: 500;
 }
 
 .text_aside {
     font-size: 1.1vw;
-    font-weight: 600;
+    font-weight: 500;
     padding-left: 5%;
 }
 
