@@ -116,6 +116,30 @@ main {
     height: auto;
 }
 
+/*Link não visitado */
+main a:link {
+    color: #11607c;
+    text-decoration: none;
+}
+
+/*Link já visitado*/
+main a:visited {
+    color: #C70039;
+    text-decoration: none;
+}
+  
+/*Quando o mouse passa por cima*/
+main a:hover {
+    color: #ff0000;
+    text-decoration: none;
+}
+  
+/*Link ativo/selecionado*/
+main a:active {
+    color: yellow;
+    text-decoration: none;
+}
+
 /* --- GOALS SECTION -- */
 .right_class_body_color_goals {
     background-color: #D6EAF8;
