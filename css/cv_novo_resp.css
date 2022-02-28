@@ -98,7 +98,6 @@ nav {
 }
 
 .material-icons.icon_color_nav {
-    color: #11607c;
     font-size: 1vw;
     font-weight: 500;
 }
@@ -725,7 +724,7 @@ form label {
     margin: 2% 0 0 5%;
 }
 
-/* --- ASIDE SECTION file.css -- */
+/* --- ASIDE SECTION -- */
 
 aside {
     padding: 8% 8% 0% 8%;
@@ -827,7 +826,6 @@ aside a:active {
 }
 
 .material-icons.icon_color_aside {
-    color: #fff;
     font-size: 1vw;
     font-weight: 500;
 }
