@@ -123,7 +123,7 @@ main a:link {
 
 /*Link já visitado*/
 main a:visited {
-    color: #C70039;
+    color: #771919;
     text-decoration: none;
 }
   
@@ -751,7 +751,7 @@ aside a:hover {
   
 /*Link ativo/selecionado*/
 aside a:active {
-    color: #646405;
+    color: yellow;
     text-decoration: none;
 }
 
@@ -845,6 +845,30 @@ footer {
     color: #000;
 }
 
+/*Link não visitado */
+footer a:link {
+    color: #fff;
+    text-decoration: none;
+}
+
+/*Link já visitado*/
+footer a:visited {
+    color: #240707;
+    text-decoration: none;
+}
+  
+/*Quando o mouse passa por cima*/
+footer a:hover {
+    color: #ff0000;
+    text-decoration: none;
+}
+  
+/*Link ativo/selecionado*/
+footer a:active {
+    color: yellow;
+    text-decoration: none;
+}
+
 .marcos_contact_footer {
     padding: 0 3vw 0vh 0vh;
     font-size: 1.3vw; 
@@ -889,7 +913,6 @@ footer {
     font-size: 1.3vw; 
     font-weight: 400; 
     text-align: left; 
-    color: #fff; 
 }
 
 .information_block_03_footer {
@@ -902,7 +925,6 @@ footer {
 }
 
 .footer_icons_03 {
-    color: #fff;
     width: 2vw;
 }
 
@@ -910,7 +932,6 @@ footer {
     font-size: 1.3vw; 
     font-weight: 400; 
     text-align: left; 
-    color: #fff; 
 }
 
 .information_block_04_footer {
@@ -932,7 +953,6 @@ footer {
     font-size: 1.25vw; 
     font-weight: 400; 
     text-align: left; 
-    color: #fff; 
 }
 
 
