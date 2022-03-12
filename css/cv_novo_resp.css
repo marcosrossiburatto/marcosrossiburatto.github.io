@@ -28,6 +28,8 @@ header {
 }
 
 .photo_marcos_header {
+    transform-origin: center center;
+    object-fit: cover;
     margin-left: 86%;
     border-radius: 50%;
     width: 11%;
