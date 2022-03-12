@@ -27,6 +27,14 @@ header {
     align-items: center;
 }
 
+.photoHeader720px {
+    display: none;
+ }
+
+ .photoHeader721px {
+    display: flex;
+ } 
+
 .photo_marcos_header {
     transform-origin: center center;
     object-fit: cover;
@@ -1004,6 +1012,15 @@ footer a:active {
         display: grid;
         grid-template-columns: 40% 36% 24%;
     }
+   
+    .photoHeader720px {
+       display: contents;
+    }
+   
+    .photoHeader721px {
+       display: none;
+    } 
+   
     .photo_marcos_header {
         margin-left: 70%;
         width: 25%;
