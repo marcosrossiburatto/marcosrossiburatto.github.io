@@ -877,10 +877,10 @@ footer a:visited {
   
 /*Quando o mouse passa por cima*/
 footer a:hover {
-    color: #ff0000;
+    color: yellow;
     text-decoration: none;
 }
-  
+
 /*Link ativo/selecionado*/
 footer a:active {
     color: yellow;
@@ -924,7 +924,7 @@ footer a:active {
 
 .information_block_02_footer {
     display: grid;
-    grid-template-columns: 15vw 19vw 2vw 3vw 15vw 3vw 1fr;
+    grid-template-columns: 15vw 19vw 2vw 3vw 20vw 3vw 1fr;
     grid-template-rows: 5vh;
     text-align: left;
     align-items: center;
@@ -943,10 +943,15 @@ footer a:active {
     text-align: left; 
 }
 
+.marcos_contact_footer_02:hover {
+    font-size: 1.5vw; 
+}
+
 .information_block_03_footer {
     display: grid;
-    grid-template-columns: 34vw 2vw 18vw;
+    grid-template-columns: 34vw 3vw 18vw;
     grid-template-rows: 10vh;
+    text-align: left;
     align-items: center;
     width: 100%;
     min-height: 5vh;
@@ -959,7 +964,10 @@ footer a:active {
 .marcos_contact_footer_03 {
     font-size: 1.3vw; 
     font-weight: 400; 
-    text-align: left; 
+}
+
+.marcos_contact_footer_03:hover {
+    font-size: 1.5vw; 
 }
 
 .information_block_04_footer {
@@ -983,6 +991,9 @@ footer a:active {
     text-align: left; 
 }
 
+.marcos_contact_footer_04:hover {
+    font-size: 1.5vw; 
+}
 
  /* --- MEDIA SECTION SIZE: 721PX & 1280PX -- */
 @media (min-width: 721px) and (max-width: 1280px) {
@@ -1457,10 +1468,15 @@ footer a:active {
     align-items: center;
 }
 
+.marcos_contact_footer_02:hover {
+    font-size: 3vw; 
+}
+
 .information_block_03_footer {
     display: grid;
-    grid-template-columns: 47vw 5vw 40vw;
+    grid-template-columns: 47vw 7vw 40vw;
     grid-template-rows: 10vh;
+    text-align: left;
     align-items: center;
     width: 100%;
 }
@@ -1472,6 +1488,10 @@ footer a:active {
 .marcos_contact_footer_03 {
     font-size: 3vw; 
     text-align: left; 
+}
+
+.marcos_contact_footer_03:hover {
+    font-size: 3vw; 
 }
 
 .information_block_04_footer {
@@ -1487,6 +1507,10 @@ footer a:active {
 
 .marcos_contact_footer_04 {
     padding: 0 3vw 0vh 0vh;
+    font-size: 2.6vw; 
+}
+
+.marcos_contact_footer_04:hover {
     font-size: 2.6vw; 
 }
 
