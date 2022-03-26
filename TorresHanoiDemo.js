@@ -118,9 +118,9 @@ function floatcaixaTextoDestaque() {
       this.box01.style.height = "100%";
       this.box01.style.marginTop = "2%";
       this.box01.style.marginBottom = "5%";     
-      this.box01.style.marginLeft = "3%";
-      this.box01.style.paddingLeft = "1%";
-      this.box01.style.paddingRight = "1%";
+      this.box01.style.marginLeft = "3.1%";
+      this.box01.style.paddingLeft = "1.3%";
+      this.box01.style.paddingRight = "1.3%";
       this.box01.style.border = "double #0000ff";
       this.box01.style.borderWidth = "6px";
       this.box01.style.borderRadius = "10%"
@@ -149,7 +149,7 @@ function textoExplicativo() {
       this.paragraphHanoi.style.textAlign = "justify";
       this.paragraphHanoi.style.textIndent = "5%";
       this.paragraphHanoi.style.lineHeight = "150%";
-      this.paragraphHanoi.style.fontSize = "175%";
+      this.paragraphHanoi.style.fontSize = "100%";
 }
 
 function titleTextHanoi() {
