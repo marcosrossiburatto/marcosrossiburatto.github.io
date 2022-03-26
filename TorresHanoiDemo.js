@@ -2,6 +2,7 @@ const towerHeight = "40px";                                  // Constante altura
 
 var screen;                                                  // (CriacaoTorres01.js) Criação da Varavel que contem a apresentacao
 
+
 //var movements = 0;
 
 var tower1 = new Tower(true);                               // Criação da torre 1 + Colocado true se é a posição original do inicio  
@@ -136,21 +137,51 @@ function floatcaixaTextoDestaque() {
       this.box01.style.color = "#FFF";
 }
 
+var x = window.matchMedia("(max-width: 720px)");
+
 function textoExplicativo() {
-      this.paragraphHanoi = document.createElement("div");
-      this.paragraphHanoi.style.color = "#000";
-      this.paragraphHanoi.style.clear = "both";
-      this.paragraphHanoi.style.paddingTop = "0em";
-      this.paragraphHanoi.style.paddingBottom = "0em";
-      this.paragraphHanoi.style.marginLeft = "10%";
-      this.paragraphHanoi.style.marginRight = "10%";
-      this.paragraphHanoi.style.marginTop = "1%";
-      this.paragraphHanoi.style.marginBottom = "1%";
-      this.paragraphHanoi.style.textAlign = "justify";
-      this.paragraphHanoi.style.textIndent = "5%";
-      this.paragraphHanoi.style.lineHeight = "150%";
-      this.paragraphHanoi.style.fontSize = "100%";
+
+
+      sizeScreen(x);
+     // xxx.addListener(sizeScreen);
+     
+
 }
+
+function sizeScreen(x) {
+            if (x.matches) {
+                  this.paragraphHanoi = document.createElement("div");
+                  this.paragraphHanoi.style.color = "#000";
+                  this.paragraphHanoi.style.clear = "both";
+                  this.paragraphHanoi.style.textAlign = "justify";
+                  this.paragraphHanoi.style.textIndent = "5%";
+                  this.paragraphHanoi.style.paddingTop = "0em";
+                  this.paragraphHanoi.style.paddingBottom = "0em";
+                  this.paragraphHanoi.style.marginLeft = "10%";
+                  this.paragraphHanoi.style.marginRight = "10%";
+                  this.paragraphHanoi.style.marginTop = "1%";
+                  this.paragraphHanoi.style.marginBottom = "1%";
+                  this.paragraphHanoi.style.lineHeight = "150%";
+                  this.paragraphHanoi.style.fontSize = "100px";
+                } else {
+                  this.paragraphHanoi = document.createElement("div");
+                  this.paragraphHanoi.style.color = "#ff0000";
+                  this.paragraphHanoi.style.clear = "both";
+                  this.paragraphHanoi.style.textAlign = "justify";
+                  this.paragraphHanoi.style.textIndent = "5%";
+                  this.paragraphHanoi.style.paddingTop = "0em";
+                  this.paragraphHanoi.style.paddingBottom = "0em";
+                  this.paragraphHanoi.style.marginLeft = "10%";
+                  this.paragraphHanoi.style.marginRight = "10%";
+                  this.paragraphHanoi.style.marginTop = "1%";
+                  this.paragraphHanoi.style.marginBottom = "1%";
+                  this.paragraphHanoi.style.lineHeight = "150%";
+                  this.paragraphHanoi.style.fontSize = "100px";
+                }
+
+                //xxx.addListener("load", sizeScreen(xxx), false);
+}
+
 
 function titleTextHanoi() {
 
@@ -158,7 +189,9 @@ function titleTextHanoi() {
       this.box01.textContent = "Bem Vindos a explicação das Torres de Hanói";
       screen.appendChild(box01);
 
-      textoExplicativo();
+
+      sizeScreen(x);
+      
       this.paragraphHanoi.style.paddingTop = "0.5em";
       this.paragraphHanoi.textContent = "As Torres de Hanói é um quebra-cabeça que consiste em uma base contendo três pinos, em um dos quais são dispostos alguns discos uns sobre os outros, em ordem crescente de diâmetro, de cima para baixo.";
       screen.appendChild(paragraphHanoi);
@@ -237,7 +270,7 @@ function titleTextHanoi() {
       screen.appendChild(box01);
 
       textoExplicativo();
-      this.paragraphHanoi.textContent = "aa"
+      this.paragraphHanoi.textContent = "ab"
       this.paragraphHanoi.style.marginTop = "4%";
       screen.appendChild(paragraphHanoi);
 }
