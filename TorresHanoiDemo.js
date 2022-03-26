@@ -101,7 +101,7 @@ function caixaTextoDestaque() {
       this.box01.style.borderWidth = "6px";
       this.box01.style.borderRadius = "10%"
 
-      this.box01.style.fontSize = "1.8vw";
+      this.box01.style.fontSize = "200%";
       this.box01.style.fontWeight = "800";
       this.box01.style.clear = "both";
       this.box01.style.textAlign = "center";
@@ -125,7 +125,7 @@ function floatcaixaTextoDestaque() {
       this.box01.style.borderWidth = "6px";
       this.box01.style.borderRadius = "10%"
 
-      this.box01.style.fontSize = "1.3vw";
+      this.box01.style.fontSize = "200%";
       this.box01.style.fontWeight = "800";
       this.box01.style.clear = "both";
       this.box01.style.textAlign = "center";
@@ -137,7 +137,7 @@ function floatcaixaTextoDestaque() {
 }
 
 function textoExplicativo() {
-      this.paragraphHanoi = document.createElement("p");
+      this.paragraphHanoi = document.createElement("div");
       this.paragraphHanoi.style.color = "#000";
       this.paragraphHanoi.style.clear = "both";
       this.paragraphHanoi.style.paddingTop = "0em";
@@ -148,8 +148,8 @@ function textoExplicativo() {
       this.paragraphHanoi.style.marginBottom = "1%";
       this.paragraphHanoi.style.textAlign = "justify";
       this.paragraphHanoi.style.textIndent = "5%";
-      this.paragraphHanoi.style.lineHeight = "1.3em";
-      this.paragraphHanoi.style.fontSize = "1.3vw";
+      this.paragraphHanoi.style.lineHeight = "150%";
+      this.paragraphHanoi.style.fontSize = "175%";
 }
 
 function titleTextHanoi() {
