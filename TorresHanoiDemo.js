@@ -168,7 +168,7 @@ function titleTextHanoi() {
        screen.appendChild(paragraphHanoi);
 
       textoExplicativo();
-      this.paragraphHanoi.textContent = "Somente pode-se mover um disco por vez. Dependendo do número de discos, existe um número mínimo de movimentos para realizar o quebra-cabeça. Este número é fornecido pela expressão matemática = '2**(número de Pinos) -1'. Por exemplo:";
+      this.paragraphHanoi.textContent = "Somente pode-se mover um disco por vez. Dependendo do número de discos, existe um número mínimo de movimentos para realizar o quebra-cabeça. Este número é fornecido pela expressão matemática = '2**(número de discos) -1'. Por exemplo:";
       screen.appendChild(paragraphHanoi);
 
       textoExplicativo();
