@@ -8,9 +8,9 @@ var tower1 = new Tower(true);                               // Criação da torr
 var tower2 = new Tower(false);                              // Criação da torre 2 + Colocado false se não é a posição original do inicio 
 var tower3 = new Tower(false);                              // Criação da torre 3 + Colocado false se não é a posição original do inicio 
 
-//var selectedDisk;
-//var startMov;
-//var endMov;
+var selectedDisk;
+var startMov;
+var endMov;
 
 function createDiv() {                                       // Criacao de uma divisão igual a tag <div> no HTML
       var box = document.createElement ("div");              // Criacao da var 'box' para criação das torres A, B e C
@@ -91,7 +91,7 @@ function extraLargeDisk() {                                  // Criação Disco 
 
 function caixaTextoDestaque() {
       this.box01 = document.createElement ("div");
-      this.box01.style.width = "50%";
+      this.box01.style.width = "60%";
       this.box01.style.height = "100%";
       this.box01.style.marginTop = "1%";
       this.box01.style.marginBottom = "0%";     
@@ -101,7 +101,7 @@ function caixaTextoDestaque() {
       this.box01.style.borderWidth = "6px";
       this.box01.style.borderRadius = "10%"
 
-      this.box01.style.fontSize = "2.5em";
+      this.box01.style.fontSize = "1.8vw";
       this.box01.style.fontWeight = "800";
       this.box01.style.clear = "both";
       this.box01.style.textAlign = "center";
@@ -125,7 +125,7 @@ function floatcaixaTextoDestaque() {
       this.box01.style.borderWidth = "6px";
       this.box01.style.borderRadius = "10%"
 
-      this.box01.style.fontSize = "3em";
+      this.box01.style.fontSize = "1.3vw";
       this.box01.style.fontWeight = "800";
       this.box01.style.clear = "both";
       this.box01.style.textAlign = "center";
@@ -149,7 +149,7 @@ function textoExplicativo() {
       this.paragraphHanoi.style.textAlign = "justify";
       this.paragraphHanoi.style.textIndent = "5%";
       this.paragraphHanoi.style.lineHeight = "1.3em";
-      this.paragraphHanoi.style.fontSize = "1.8em";
+      this.paragraphHanoi.style.fontSize = "1.3vw";
 }
 
 function titleTextHanoi() {
