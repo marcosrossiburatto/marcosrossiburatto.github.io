@@ -237,7 +237,7 @@ function titleTextHanoi() {
       screen.appendChild(box01);
 
       textoExplicativo();
-      this.paragraphHanoi.textContent = ""
+      this.paragraphHanoi.textContent = "aa"
       this.paragraphHanoi.style.marginTop = "4%";
       screen.appendChild(paragraphHanoi);
 }
