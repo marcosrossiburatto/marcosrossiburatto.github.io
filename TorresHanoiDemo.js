@@ -100,7 +100,7 @@ function highlightedTextBox(htb) {
             htbbox.style.clear = "both";
             htbbox.style.width = "60%";
             htbbox.style.height = "100%";
-            htbbox.style.marginTop = "1%";
+            htbbox.style.marginTop = "30px";
             htbbox.style.marginBottom = "0%";     
             htbbox.style.marginLeft = "auto";
             htbbox.style.marginRight = "auto";    
@@ -120,7 +120,7 @@ function highlightedTextBox(htb) {
             htbbox.style.width = "90%";
             htbbox.style.height = "100%";
             htbbox.style.marginTop = "5%";
-            htbbox.style.marginBottom = "10%";     
+            htbbox.style.marginBottom = "5%";     
             htbbox.style.marginLeft = "auto";
             htbbox.style.marginRight = "auto";    
             htbbox.style.border = "solid #ff0000";
@@ -177,14 +177,15 @@ function explanationTH(eth) {
             ethbox.style.textIndent = "5%";
             ethbox.style.marginLeft = "10%";
             ethbox.style.marginRight = "10%";
-            ethbox.style.marginTop = "1%";
+            ethbox.style.marginTop = "0%";
+            ethbox.style.marginBottom = "1%";
             ethbox.style.lineHeight = "4.8vh";
             ethbox.style.fontSize = "1.5vw";
       } else {
             ethbox.style.textIndent = "10%";
             ethbox.style.marginLeft = "5%";
             ethbox.style.marginRight = "5%";
-            ethbox.style.marginTop = "3vh";
+            ethbox.style.marginBottom = "3vh";
             ethbox.style.lineHeight = "6.5vh";
             ethbox.style.fontSize = "3.5vh";
       };
@@ -273,7 +274,7 @@ function titleTextHanoi() {
       screen.appendChild(box03);
 
       explanationTH(mmObjeth);
-      ethbox.textContent = "ae"
+      ethbox.textContent = "af"
       ethbox.style.marginTop = "4%";
       screen.appendChild(ethbox);
 }
