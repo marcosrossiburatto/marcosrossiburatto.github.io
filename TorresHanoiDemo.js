@@ -125,31 +125,6 @@ function highlightedTextBox(htb) {
       }
 }
 
-function floatcaixaTextoDestaque() {
-      this.box03 = document.createElement ("div");
-      this.box03 = document.createElement ("float");
-      this.box03.style.width = "0%";
-      this.box03.style.height = "100%";
-      this.box03.style.marginTop = "2%";
-      this.box03.style.marginBottom = "5%";     
-      this.box03.style.marginLeft = "3.1%";
-      this.box03.style.paddingLeft = "1.3%";
-      this.box03.style.paddingRight = "1.3%";
-      this.box03.style.border = "double #0000ff";
-      this.box03.style.borderWidth = "6px";
-      this.box03.style.borderRadius = "10%"
-
-      this.box03.style.fontSize = "200%";
-      this.box03.style.fontWeight = "800";
-      this.box03.style.clear = "both";
-      this.box03.style.textAlign = "center";
-      this.box03.style.verticalAlign = "Middle";   
-      this.box03.style.paddingTop = "10px";
-      this.box03.style.paddingBottom = "10px";
-      this.box03.style.backgroundColor = "#0000ff";
-      this.box03.style.color = "#FFF";
-}
-
 const mmObjeth = window.matchMedia("(min-width: 721px)");
 mmObjeth.addEventListener("change", explanationTH, false);
 
@@ -179,6 +154,68 @@ function explanationTH(eth) {
             ethbox.style.fontSize = "3.5vh";
       };
 }
+
+const mmObjfe = window.matchMedia("(min-width: 721px)");
+mmObjfe.addEventListener("change", floatEspace, false);
+
+function floatEspace(fe) {
+      febox = document.createElement ("div");
+      febox.style.clear = "both";
+
+      if (fe.matches) {
+            ethbox.style.marginBottom = "5vh";
+      } else {
+            ethbox.style.marginBottom = "10vh";
+      }
+}   
+
+const mmObjfhtb = window.matchMedia("(min-width: 721px)");
+mmObjfhtb.addEventListener("change", floatHighlightedTextBox, false);
+
+function floatHighlightedTextBox(fhtb) {
+      fhtbbox = document.createElement ("div");
+      fhtbbox = document.createElement ("float");
+      fhtbbox.style.clear = "both";
+
+      if (fhtb.matches) {
+      fhtbbox.style.marginLeft = "4%";
+      fhtbbox.style.borderWidth = "6px";
+      fhtbbox.style.borderRadius = "10%"
+      fhtbbox.style.fontSize = "1.75vw";
+      fhtbbox.style.fontWeight = "800";
+      fhtbbox.style.textAlign = "center";
+      fhtbbox.style.verticalAlign = "Middle";
+      fhtbbox.style.paddingTop = "10px";
+      fhtbbox.style.paddingBottom = "10px";
+      fhtbbox.style.paddingLeft = "1.3%";
+      fhtbbox.style.paddingRight = "1.3%";
+      fhtbbox.style.color = "#FFF";
+} else {
+
+      fhtbbox.style.height = "100%";
+
+      fhtbbox.style.marginTop = "2%";
+      fhtbbox.style.marginBottom = "5%";     
+      fhtbbox.style.marginLeft = "3.1%";
+
+      fhtbbox.style.borderWidth = "6px";
+      fhtbbox.style.borderRadius = "10%"
+
+      fhtbbox.style.fontSize = "20vw";
+      fhtbbox.style.fontWeight = "800";
+
+      fhtbbox.style.textAlign = "center";
+      fhtbbox.style.verticalAlign = "Middle"; 
+      
+      fhtbbox.style.paddingLeft = "1.3%";
+      fhtbbox.style.paddingRight = "1.3%";     
+      fhtbbox.style.paddingTop = "10px";
+      fhtbbox.style.paddingBottom = "10px";
+
+      fhtbbox.style.color = "#FFF";
+}
+}
+
 
 function titleTextHanoi() {
 
@@ -212,58 +249,63 @@ function titleTextHanoi() {
       screen.appendChild(ethbox);
 
       explanationTH(mmObjeth);
+      floatEspace(mmObjfe);
       ethbox.textContent = "Devido a limitação do tamanho das telas dos computadores, limitaremos o número de discos em 10 unidades. Escolha, a seguir, a demonstração da solução do quebra-cabeça com o número de discos desejados, dentro da limitação."
       screen.appendChild(ethbox);
 
-      floatcaixaTextoDestaque();
-      this.box03.style.marginLeft = "0%";
-      this.box03.textContent = "3";
-      screen.appendChild(box03);
+      floatHighlightedTextBox(mmObjfhtb);
+      fhtbbox.style.marginLeft = "0%";
+      fhtbbox.style.border = "solid #0000ff";
+      fhtbbox.style.backgroundColor = "#0000ff";
+      fhtbbox.textContent = "3";
+      screen.appendChild(fhtbbox);
 
-      floatcaixaTextoDestaque();
-      this.box03.style.border = "double #075025";
-      this.box03.style.backgroundColor = "#075025";
-      this.box03.textContent = "4";
-      screen.appendChild(box03);
+      floatHighlightedTextBox(mmObjfhtb);
+      fhtbbox.style.border = "solid #075025";
+      fhtbbox.style.backgroundColor = "#075025";
+      fhtbbox.textContent = "4";
+      screen.appendChild(fhtbbox);
 
-      floatcaixaTextoDestaque();
-      this.box03.style.border = "double #3D0750";
-      this.box03.style.backgroundColor = "#3D0750";
-      this.box03.textContent = "5";
-      screen.appendChild(box03);
+      floatHighlightedTextBox(mmObjfhtb);
+      fhtbbox.style.border = "solid #3D0750";
+      fhtbbox.style.backgroundColor = "#3D0750";
+      fhtbbox.textContent = "5";
+      screen.appendChild(fhtbbox);
 
-      floatcaixaTextoDestaque();
-      this.box03.style.border = "double #B80F33";
-      this.box03.style.backgroundColor = "#B80F33";
-      this.box03.textContent = "6";
-      screen.appendChild(box03);
+      floatHighlightedTextBox(mmObjfhtb);
+      fhtbbox.style.border = "solid #B80F33";
+      fhtbbox.style.backgroundColor = "#B80F33";
+      fhtbbox.textContent = "6";
+      screen.appendChild(fhtbbox);
 
-      floatcaixaTextoDestaque();
-      this.box03.style.border = "double #ff0ff0";
-      this.box03.style.backgroundColor = "#ff0ff0";
-      this.box03.textContent = "7";
-      screen.appendChild(box03);
+      floatHighlightedTextBox(mmObjfhtb);
+      fhtbbox.style.border = "solid #ff0ff0";
+      fhtbbox.style.backgroundColor = "#ff0ff0";
+      fhtbbox.textContent = "7";
+      screen.appendChild(fhtbbox);
 
-      floatcaixaTextoDestaque();
-      this.box03.style.border = "double #ffff00";
-      this.box03.style.backgroundColor = "#ffff00";
-      this.box03.textContent = "8";
-      screen.appendChild(box03);
+      floatHighlightedTextBox(mmObjfhtb);
+      fhtbbox.style.border = "solid #DDE02D";
+      fhtbbox.style.backgroundColor = "#DDE02D";
+      fhtbbox.textContent = "8";
+      screen.appendChild(fhtbbox);
 
-      floatcaixaTextoDestaque();
-      this.box03.style.border = "double #0F17B8";
-      this.box03.style.backgroundColor = "#0F17B8";
-      this.box03.textContent = "9";
-      screen.appendChild(box03);
+      floatHighlightedTextBox(mmObjfhtb);
+      fhtbbox.style.border = "solid #0F17B8";
+      fhtbbox.style.backgroundColor = "#0F17B8";
+      fhtbbox.textContent = "9";
+      screen.appendChild(fhtbbox);
 
-      floatcaixaTextoDestaque();
-      this.box03.style.border = "double #B8820F";
-      this.box03.style.backgroundColor = "#B8820F";
-      this.box03.textContent = "10";
-      screen.appendChild(box03);
+      floatHighlightedTextBox(mmObjfhtb);
+      fhtbbox.style.border = "solid #B8820F";
+      fhtbbox.style.backgroundColor = "#B8820F";
+      fhtbbox.style.paddingLeft = "0.8%";
+      fhtbbox.style.paddingRight = "0.8%";
+      fhtbbox.textContent = "10";
+      screen.appendChild(fhtbbox);
 
       explanationTH(mmObjeth);
-      ethbox.textContent = "ag"
+      ethbox.textContent = "ai"
       ethbox.style.marginTop = "4%";
       screen.appendChild(ethbox);
 }
