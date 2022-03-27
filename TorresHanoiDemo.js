@@ -90,26 +90,50 @@ function extraLargeDisk() {                                  // Criação Disco 
       this.value = 3;
 }
 
-function caixaTextoDestaque() {
-      this.box01 = document.createElement ("div");
-      this.box01.style.width = "60%";
-      this.box01.style.height = "100%";
-      this.box01.style.marginTop = "1%";
-      this.box01.style.marginBottom = "0%";     
-      this.box01.style.marginLeft = "auto";
-      this.box01.style.marginRight = "auto";    
-      this.box01.style.border = "solid #ff0000";
-      this.box01.style.borderWidth = "6px";
-      this.box01.style.borderRadius = "10%"
+const mmObjhtb = window.matchMedia("(min-width:721px)");
+mmObjhtb.addEventListener("change", highlightedTextBox, false);
 
-      this.box01.style.fontSize = "200%";
-      this.box01.style.fontWeight = "800";
-      this.box01.style.clear = "both";
-      this.box01.style.textAlign = "center";
-      this.box01.style.verticalAlign = "Middle";   
-      this.box01.style.paddingTop = "10px";
-      this.box01.style.paddingBottom = "10px";
-      this.box01.style.color = "#11607c";
+function highlightedTextBox(htb) {
+
+      if (htb.matches) {
+            htbbox = document.createElement ("div");
+            htbbox.style.clear = "both";
+            htbbox.style.width = "60%";
+            htbbox.style.height = "100%";
+            htbbox.style.marginTop = "1%";
+            htbbox.style.marginBottom = "0%";     
+            htbbox.style.marginLeft = "auto";
+            htbbox.style.marginRight = "auto";    
+            htbbox.style.border = "solid #ff0000";
+            htbbox.style.borderWidth = "6px";
+            htbbox.style.borderRadius = "10%"
+            htbbox.style.fontSize = "2.5vw";
+            htbbox.style.fontWeight = "800";
+            htbbox.style.textAlign = "center";
+            htbbox.style.verticalAlign = "Middle";   
+            htbbox.style.paddingTop = "10px";
+            htbbox.style.paddingBottom = "10px";
+            htbbox.style.color = "#11607c";
+      } else {
+            htbbox = document.createElement ("div");
+            htbbox.style.clear = "both";
+            htbbox.style.width = "90%";
+            htbbox.style.height = "100%";
+            htbbox.style.marginTop = "5%";
+            htbbox.style.marginBottom = "10%";     
+            htbbox.style.marginLeft = "auto";
+            htbbox.style.marginRight = "auto";    
+            htbbox.style.border = "solid #ff0000";
+            htbbox.style.borderWidth = "6px";
+            htbbox.style.borderRadius = "10%"
+            htbbox.style.fontSize = "4vh";
+            htbbox.style.fontWeight = "600";
+            htbbox.style.textAlign = "center";
+            htbbox.style.verticalAlign = "Middle";   
+            htbbox.style.paddingTop = "10px";
+            htbbox.style.paddingBottom = "10px";
+            htbbox.style.color = "#11607c";
+      }
 }
 
 function floatcaixaTextoDestaque() {
@@ -137,77 +161,69 @@ function floatcaixaTextoDestaque() {
       this.box03.style.color = "#FFF";
 }
 
-const mbObj = window.matchMedia("(min-width:921px)");
-mbObj.addEventListener("change", explicacaoTH, false);
+const mmObjeth = window.matchMedia("(min-width: 721px)");
+mmObjeth.addEventListener("change", explanationTH, false);
 
-function explicacaoTH(x) {
+function explanationTH(eth) {
+      ethbox = document.createElement("div");
+      ethbox.style.color = "#000";
+      ethbox.style.clear = "both";
+      ethbox.style.textAlign = "justify";
+      ethbox.style.paddingTop = "0em";
+      ethbox.style.paddingBottom = "0em";
+      ethbox.style.marginBottom = "1%";
 
-      box02 = document.createElement("div");
-
-      if (x.matches) {
-            box02.style.color = "#000";
-            box02.style.clear = "both";
-            box02.style.textAlign = "justify";
-            box02.style.textIndent = "5%";
-            box02.style.paddingTop = "0em";
-            box02.style.paddingBottom = "0em";
-            box02.style.marginLeft = "10%";
-            box02.style.marginRight = "10%";
-            box02.style.marginTop = "1%";
-            box02.style.marginBottom = "1%";
-            box02.style.lineHeight = "4.9vh";
-            box02.style.fontSize = "1.5vw";
+      if (eth.matches) {
+            ethbox.style.textIndent = "5%";
+            ethbox.style.marginLeft = "10%";
+            ethbox.style.marginRight = "10%";
+            ethbox.style.marginTop = "1%";
+            ethbox.style.lineHeight = "4.8vh";
+            ethbox.style.fontSize = "1.5vw";
       } else {
-            box02.style.color = "#000";
-            box02.style.clear = "both";
-            box02.style.textAlign = "justify";
-            box02.style.textIndent = "10%";
-            box02.style.paddingTop = "0em";
-            box02.style.paddingBottom = "0em";
-            box02.style.marginLeft = "5%";
-            box02.style.marginRight = "5%";
-            box02.style.marginTop = "3vh";
-            box02.style.marginBottom = "1%";
-            box02.style.lineHeight = "6.5vh";
-            box02.style.fontSize = "3.5vh";
+            ethbox.style.textIndent = "10%";
+            ethbox.style.marginLeft = "5%";
+            ethbox.style.marginRight = "5%";
+            ethbox.style.marginTop = "3vh";
+            ethbox.style.lineHeight = "6.5vh";
+            ethbox.style.fontSize = "3.5vh";
       };
 }
 
 function titleTextHanoi() {
 
-      caixaTextoDestaque();
-      this.box01.textContent = "Bem Vindos a explicação das Torres de Hanói";
-      screen.appendChild(box01);
+      highlightedTextBox(mmObjhtb);
+      this.htbbox.textContent = "Bem Vindos a explicação das Torres de Hanói";
+      screen.appendChild(htbbox);
 
-      explicacaoTH(mbObj);
-      box02.style.paddingTop = "2vh";
-      box02.textContent = "As Torres de Hanói é um quebra-cabeça que consiste em uma base contendo três pinos, em um dos quais são dispostos alguns discos uns sobre os outros, em ordem crescente de diâmetro, de cima para baixo.";
-      screen.appendChild(box02);
+      explanationTH(mmObjeth);
+      ethbox.style.paddingTop = "2vh";
+      ethbox.textContent = "As Torres de Hanói é um quebra-cabeça que consiste em uma base contendo três pinos, em um dos quais são dispostos alguns discos uns sobre os outros, em ordem crescente de diâmetro, de cima para baixo.";
+      screen.appendChild(ethbox);
 
-      explicacaoTH(mbObj);
-      box02.textContent = "O problema consiste em passar todos os discos de um pino para outro qualquer, usando um dos pinos como auxiliar, de maneira que um disco maior nunca fique em cima de outro menor em nenhuma situação. O número de discos pode variar sendo que o mais simples contém apenas três.";
-      screen.appendChild(box02);
+      explanationTH(mmObjeth);
+      ethbox.textContent = "O problema consiste em passar todos os discos de um pino para outro qualquer, usando um dos pinos como auxiliar, de maneira que um disco maior nunca fique em cima de outro menor em nenhuma situação. O número de discos pode variar sendo que o mais simples contém apenas três.";
+      screen.appendChild(ethbox);
 
-      explicacaoTH(mbObj);
-      box02.textContent = "Somente pode-se mover um disco por vez. Dependendo do número de discos, existe um número mínimo de movimentos para realizar o quebra-cabeça. Este número é fornecido pela expressão matemática = '2**(número de discos) -1'. Por exemplo:";
-      screen.appendChild(box02);
+      explanationTH(mmObjeth);
+      ethbox.textContent = "Somente pode-se mover um disco por vez. Dependendo do número de discos, existe um número mínimo de movimentos para realizar o quebra-cabeça. Este número é fornecido pela expressão matemática = '2**(número de discos) -1'. Por exemplo:";
+      screen.appendChild(ethbox);
 
-      explicacaoTH(mbObj);
-      box02.textContent = "Se o número de Discos for igual a 3, temos 2**3 - 1 = 2 x 2 x 2 - 1 = 7 movimentos;";
-      screen.appendChild(box02);
+      explanationTH(mmObjeth);
+      ethbox.textContent = "Se o número de Discos for igual a 3, temos 2**3 - 1 = 2 x 2 x 2 - 1 = 7 movimentos;";
+      screen.appendChild(ethbox);
 
-      explicacaoTH(mbObj);
-      box02.textContent = "Se o número de Discos for igual a 4, temos 2**4 - 1 = 2 x 2 x 2 x 2 - 1 = 15 movimentos;";
-      screen.appendChild(box02);
+      explanationTH(mmObjeth);
+      ethbox.textContent = "Se o número de Discos for igual a 4, temos 2**4 - 1 = 2 x 2 x 2 x 2 - 1 = 15 movimentos;";
+      screen.appendChild(ethbox);
 
-      explicacaoTH(mbObj);
-      box02.textContent = "Se o número de Discos for igual a 5, temos 2**5 - 1 = 2 x 2 x 2 x 2 x 2 - 1 = 31 movimentos.";
-      screen.appendChild(box02);
+      explanationTH(mmObjeth);
+      ethbox.textContent = "Se o número de Discos for igual a 5, temos 2**5 - 1 = 2 x 2 x 2 x 2 x 2 - 1 = 31 movimentos.";
+      screen.appendChild(ethbox);
 
-      explicacaoTH(mbObj);
-      box02.textContent = "Devido a limitação do tamanho das telas dos computadores, limitaremos o número de discos em 10 unidades. Escolha, a seguir, a demonstração da solução do quebra-cabeça com o número de discos desejados, dentro da limitação."
-      box02.style.marginBottom = "4vh";
-      screen.appendChild(box02);
+      explanationTH(mmObjeth);
+      ethbox.textContent = "Devido a limitação do tamanho das telas dos computadores, limitaremos o número de discos em 10 unidades. Escolha, a seguir, a demonstração da solução do quebra-cabeça com o número de discos desejados, dentro da limitação."
+      screen.appendChild(ethbox);
 
       floatcaixaTextoDestaque();
       this.box03.style.marginLeft = "0%";
@@ -256,10 +272,10 @@ function titleTextHanoi() {
       this.box03.textContent = "10";
       screen.appendChild(box03);
 
-      explicacaoTH(mbObj);
-      box02.textContent = "ad"
-      box02.style.marginTop = "4%";
-      screen.appendChild(box02);
+      explanationTH(mmObjeth);
+      ethbox.textContent = "ae"
+      ethbox.style.marginTop = "4%";
+      screen.appendChild(ethbox);
 }
 
            
