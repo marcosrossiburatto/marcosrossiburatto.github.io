@@ -164,12 +164,12 @@ function explicacaoTH(x) {
             box02.style.textIndent = "10%";
             box02.style.paddingTop = "0em";
             box02.style.paddingBottom = "0em";
-            box02.style.marginLeft = "10%";
-            box02.style.marginRight = "10%";
+            box02.style.marginLeft = "5%";
+            box02.style.marginRight = "5%";
             box02.style.marginTop = "3vh";
             box02.style.marginBottom = "1%";
             box02.style.lineHeight = "6.5vh";
-            box02.style.fontSize = "4vh";
+            box02.style.fontSize = "3.5vh";
       };
 }
 
@@ -180,7 +180,7 @@ function titleTextHanoi() {
       screen.appendChild(box01);
 
       explicacaoTH(mbObj);
-      box02.style.paddingTop = "1vh";
+      box02.style.paddingTop = "2vh";
       box02.textContent = "As Torres de Hanói é um quebra-cabeça que consiste em uma base contendo três pinos, em um dos quais são dispostos alguns discos uns sobre os outros, em ordem crescente de diâmetro, de cima para baixo.";
       screen.appendChild(box02);
 
@@ -206,7 +206,7 @@ function titleTextHanoi() {
 
       explicacaoTH(mbObj);
       box02.textContent = "Devido a limitação do tamanho das telas dos computadores, limitaremos o número de discos em 10 unidades. Escolha, a seguir, a demonstração da solução do quebra-cabeça com o número de discos desejados, dentro da limitação."
-      box02.style.marginBottom = "2%";
+      box02.style.marginBottom = "4vh";
       screen.appendChild(box02);
 
       floatcaixaTextoDestaque();
@@ -257,7 +257,7 @@ function titleTextHanoi() {
       screen.appendChild(box03);
 
       explicacaoTH(mbObj);
-      box02.textContent = "ac"
+      box02.textContent = "ad"
       box02.style.marginTop = "4%";
       screen.appendChild(box02);
 }
