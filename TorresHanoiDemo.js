@@ -150,7 +150,7 @@ function explanationTH(eth) {
             ethbox.style.marginLeft = "5%";
             ethbox.style.marginRight = "5%";
             ethbox.style.marginBottom = "3vh";
-            ethbox.style.lineHeight = "6.3vh";
+            ethbox.style.lineHeight = "6vh";
             ethbox.style.fontSize = "3.5vh";
       };
 }
@@ -305,7 +305,7 @@ function titleTextHanoi() {
       screen.appendChild(fhtbbox);
 
       explanationTH(mmObjeth);
-      ethbox.textContent = "ai"
+      ethbox.textContent = "aj"
       ethbox.style.marginTop = "4%";
       screen.appendChild(ethbox);
 }
