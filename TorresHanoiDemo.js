@@ -145,7 +145,7 @@ function explicacaoTH(x) {
       box02 = document.createElement("div");
 
       if (x.matches) {
-            box02.style.color = "#000000";
+            box02.style.color = "#000";
             box02.style.clear = "both";
             box02.style.textAlign = "justify";
             box02.style.textIndent = "5%";
@@ -158,7 +158,7 @@ function explicacaoTH(x) {
             box02.style.lineHeight = "4.9vh";
             box02.style.fontSize = "1.5vw";
       } else {
-            box02.style.color = "#ff0000";
+            box02.style.color = "#000";
             box02.style.clear = "both";
             box02.style.textAlign = "justify";
             box02.style.textIndent = "10%";
@@ -168,8 +168,8 @@ function explicacaoTH(x) {
             box02.style.marginRight = "10%";
             box02.style.marginTop = "3vh";
             box02.style.marginBottom = "1%";
-            box02.style.lineHeight = "6vh";
-            box02.style.fontSize = "4.5vh";
+            box02.style.lineHeight = "6.5vh";
+            box02.style.fontSize = "4vh";
       };
 }
 
@@ -180,7 +180,7 @@ function titleTextHanoi() {
       screen.appendChild(box01);
 
       explicacaoTH(mbObj);
-      box02.style.paddingTop = "0.5em";
+      box02.style.paddingTop = "1vh";
       box02.textContent = "As Torres de Hanói é um quebra-cabeça que consiste em uma base contendo três pinos, em um dos quais são dispostos alguns discos uns sobre os outros, em ordem crescente de diâmetro, de cima para baixo.";
       screen.appendChild(box02);
 
@@ -257,7 +257,7 @@ function titleTextHanoi() {
       screen.appendChild(box03);
 
       explicacaoTH(mbObj);
-      box02.textContent = "ab"
+      box02.textContent = "ac"
       box02.style.marginTop = "4%";
       screen.appendChild(box02);
 }
