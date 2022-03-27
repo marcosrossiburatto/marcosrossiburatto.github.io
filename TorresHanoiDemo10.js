@@ -113,65 +113,75 @@ function caixaTextoDestaque() {
 }
 
 function floatcaixaTextoDestaque() {
-      this.box03 = document.createElement ("div");
-      this.box03 = document.createElement ("float");
-      this.box03.style.width = "0%";
-      this.box03.style.height = "100%";
-      this.box03.style.marginTop = "2%";
-      this.box03.style.marginBottom = "5%";     
-      this.box03.style.marginLeft = "3.1%";
-      this.box03.style.paddingLeft = "1.3%";
-      this.box03.style.paddingRight = "1.3%";
-      this.box03.style.border = "double #0000ff";
-      this.box03.style.borderWidth = "6px";
-      this.box03.style.borderRadius = "10%"
+      this.box01 = document.createElement ("div");
+      this.box01 = document.createElement ("float");
+      this.box01.style.width = "0%";
+      this.box01.style.height = "100%";
+      this.box01.style.marginTop = "2%";
+      this.box01.style.marginBottom = "5%";     
+      this.box01.style.marginLeft = "3.1%";
+      this.box01.style.paddingLeft = "1.3%";
+      this.box01.style.paddingRight = "1.3%";
+      this.box01.style.border = "double #0000ff";
+      this.box01.style.borderWidth = "6px";
+      this.box01.style.borderRadius = "10%"
 
-      this.box03.style.fontSize = "200%";
-      this.box03.style.fontWeight = "800";
-      this.box03.style.clear = "both";
-      this.box03.style.textAlign = "center";
-      this.box03.style.verticalAlign = "Middle";   
-      this.box03.style.paddingTop = "10px";
-      this.box03.style.paddingBottom = "10px";
-      this.box03.style.backgroundColor = "#0000ff";
-      this.box03.style.color = "#FFF";
+      this.box01.style.fontSize = "200%";
+      this.box01.style.fontWeight = "800";
+      this.box01.style.clear = "both";
+      this.box01.style.textAlign = "center";
+      this.box01.style.verticalAlign = "Middle";   
+      this.box01.style.paddingTop = "10px";
+      this.box01.style.paddingBottom = "10px";
+      this.box01.style.backgroundColor = "#0000ff";
+      this.box01.style.color = "#FFF";
 }
 
-const mbObj = window.matchMedia("(min-width:921px)");
-mbObj.addEventListener("change", explicacaoTH, false);
+var x = window.matchMedia("(max-width: 720px)");
 
-function explicacaoTH(x) {
+function textoExplicativo() {
 
-      box02 = document.createElement("div");
 
-      if (x.matches) {
-            box02.style.color = "#000000";
-            box02.style.clear = "both";
-            box02.style.textAlign = "justify";
-            box02.style.textIndent = "5%";
-            box02.style.paddingTop = "0em";
-            box02.style.paddingBottom = "0em";
-            box02.style.marginLeft = "10%";
-            box02.style.marginRight = "10%";
-            box02.style.marginTop = "1%";
-            box02.style.marginBottom = "1%";
-            box02.style.lineHeight = "4.9vh";
-            box02.style.fontSize = "1.5vw";
-      } else {
-            box02.style.color = "#ff0000";
-            box02.style.clear = "both";
-            box02.style.textAlign = "justify";
-            box02.style.textIndent = "10%";
-            box02.style.paddingTop = "0em";
-            box02.style.paddingBottom = "0em";
-            box02.style.marginLeft = "10%";
-            box02.style.marginRight = "10%";
-            box02.style.marginTop = "3vh";
-            box02.style.marginBottom = "1%";
-            box02.style.lineHeight = "6vh";
-            box02.style.fontSize = "4.5vh";
-      };
+      sizeScreen(x);
+     // xxx.addListener(sizeScreen);
+     
+
 }
+
+function sizeScreen(x) {
+            if (x.matches) {
+                  this.paragraphHanoi = document.createElement("div");
+                  this.paragraphHanoi.style.color = "#000";
+                  this.paragraphHanoi.style.clear = "both";
+                  this.paragraphHanoi.style.textAlign = "justify";
+                  this.paragraphHanoi.style.textIndent = "5%";
+                  this.paragraphHanoi.style.paddingTop = "0em";
+                  this.paragraphHanoi.style.paddingBottom = "0em";
+                  this.paragraphHanoi.style.marginLeft = "10%";
+                  this.paragraphHanoi.style.marginRight = "10%";
+                  this.paragraphHanoi.style.marginTop = "1%";
+                  this.paragraphHanoi.style.marginBottom = "1%";
+                  this.paragraphHanoi.style.lineHeight = "150%";
+                  this.paragraphHanoi.style.fontSize = "100px";
+                } else {
+                  this.paragraphHanoi = document.createElement("div");
+                  this.paragraphHanoi.style.color = "#ff0000";
+                  this.paragraphHanoi.style.clear = "both";
+                  this.paragraphHanoi.style.textAlign = "justify";
+                  this.paragraphHanoi.style.textIndent = "5%";
+                  this.paragraphHanoi.style.paddingTop = "0em";
+                  this.paragraphHanoi.style.paddingBottom = "0em";
+                  this.paragraphHanoi.style.marginLeft = "10%";
+                  this.paragraphHanoi.style.marginRight = "10%";
+                  this.paragraphHanoi.style.marginTop = "1%";
+                  this.paragraphHanoi.style.marginBottom = "1%";
+                  this.paragraphHanoi.style.lineHeight = "150%";
+                  this.paragraphHanoi.style.fontSize = "100px";
+                }
+
+                //xxx.addListener("load", sizeScreen(xxx), false);
+}
+
 
 function titleTextHanoi() {
 
@@ -179,87 +189,90 @@ function titleTextHanoi() {
       this.box01.textContent = "Bem Vindos a explicação das Torres de Hanói";
       screen.appendChild(box01);
 
-      explicacaoTH(mbObj);
-      box02.style.paddingTop = "0.5em";
-      box02.textContent = "As Torres de Hanói é um quebra-cabeça que consiste em uma base contendo três pinos, em um dos quais são dispostos alguns discos uns sobre os outros, em ordem crescente de diâmetro, de cima para baixo.";
-      screen.appendChild(box02);
 
-      explicacaoTH(mbObj);
-      box02.textContent = "O problema consiste em passar todos os discos de um pino para outro qualquer, usando um dos pinos como auxiliar, de maneira que um disco maior nunca fique em cima de outro menor em nenhuma situação. O número de discos pode variar sendo que o mais simples contém apenas três.";
-      screen.appendChild(box02);
+      sizeScreen(x);
+      
+      this.paragraphHanoi.style.paddingTop = "0.5em";
+      this.paragraphHanoi.textContent = "As Torres de Hanói é um quebra-cabeça que consiste em uma base contendo três pinos, em um dos quais são dispostos alguns discos uns sobre os outros, em ordem crescente de diâmetro, de cima para baixo.";
+      screen.appendChild(paragraphHanoi);
 
-      explicacaoTH(mbObj);
-      box02.textContent = "Somente pode-se mover um disco por vez. Dependendo do número de discos, existe um número mínimo de movimentos para realizar o quebra-cabeça. Este número é fornecido pela expressão matemática = '2**(número de discos) -1'. Por exemplo:";
-      screen.appendChild(box02);
+      textoExplicativo();
+      this.paragraphHanoi.textContent = "O problema consiste em passar todos os discos de um pino para outro qualquer, usando um dos pinos como auxiliar, de maneira que um disco maior nunca fique em cima de outro menor em nenhuma situação. O número de discos pode variar sendo que o mais simples contém apenas três.";
+       screen.appendChild(paragraphHanoi);
 
-      explicacaoTH(mbObj);
-      box02.textContent = "Se o número de Discos for igual a 3, temos 2**3 - 1 = 2 x 2 x 2 - 1 = 7 movimentos;";
-      screen.appendChild(box02);
+      textoExplicativo();
+      this.paragraphHanoi.textContent = "Somente pode-se mover um disco por vez. Dependendo do número de discos, existe um número mínimo de movimentos para realizar o quebra-cabeça. Este número é fornecido pela expressão matemática = '2**(número de discos) -1'. Por exemplo:";
+      screen.appendChild(paragraphHanoi);
 
-      explicacaoTH(mbObj);
-      box02.textContent = "Se o número de Discos for igual a 4, temos 2**4 - 1 = 2 x 2 x 2 x 2 - 1 = 15 movimentos;";
-      screen.appendChild(box02);
+      textoExplicativo();
+      this.paragraphHanoi.textContent = "Se o número de Discos for igual a 3, temos 2**3 - 1 = 2 x 2 x 2 - 1 = 7 movimentos;";
+      screen.appendChild(paragraphHanoi);
 
-      explicacaoTH(mbObj);
-      box02.textContent = "Se o número de Discos for igual a 5, temos 2**5 - 1 = 2 x 2 x 2 x 2 x 2 - 1 = 31 movimentos.";
-      screen.appendChild(box02);
+      textoExplicativo();
+      this.paragraphHanoi.textContent = "Se o número de Discos for igual a 4, temos 2**4 - 1 = 2 x 2 x 2 x 2 - 1 = 15 movimentos;";
+      screen.appendChild(paragraphHanoi);
 
-      explicacaoTH(mbObj);
-      box02.textContent = "Devido a limitação do tamanho das telas dos computadores, limitaremos o número de discos em 10 unidades. Escolha, a seguir, a demonstração da solução do quebra-cabeça com o número de discos desejados, dentro da limitação."
-      box02.style.marginBottom = "2%";
-      screen.appendChild(box02);
+      textoExplicativo();
+      this.paragraphHanoi.textContent = "Se o número de Discos for igual a 5, temos 2**5 - 1 = 2 x 2 x 2 x 2 x 2 - 1 = 31 movimentos.";
+      screen.appendChild(paragraphHanoi);
 
-      floatcaixaTextoDestaque();
-      this.box03.style.marginLeft = "0%";
-      this.box03.textContent = "3";
-      screen.appendChild(box03);
+      textoExplicativo();
+      this.paragraphHanoi.textContent = "Devido a limitação do tamanho das telas dos computadores, limitaremos o número de discos em 10 unidades. Escolha, a seguir, a demonstração da solução do quebra-cabeça com o número de discos desejados, dentro da limitação."
+      this.paragraphHanoi.style.marginBottom = "4%";
+      screen.appendChild(paragraphHanoi);
 
       floatcaixaTextoDestaque();
-      this.box03.style.border = "double #075025";
-      this.box03.style.backgroundColor = "#075025";
-      this.box03.textContent = "4";
-      screen.appendChild(box03);
+      this.box01.style.marginLeft = "0%";
+      this.box01.textContent = "3";
+
+      screen.appendChild(box01);
 
       floatcaixaTextoDestaque();
-      this.box03.style.border = "double #3D0750";
-      this.box03.style.backgroundColor = "#3D0750";
-      this.box03.textContent = "5";
-      screen.appendChild(box03);
+      this.box01.style.border = "double #075025";
+      this.box01.style.backgroundColor = "#075025";
+      this.box01.textContent = "4";
+      screen.appendChild(box01);
 
       floatcaixaTextoDestaque();
-      this.box03.style.border = "double #B80F33";
-      this.box03.style.backgroundColor = "#B80F33";
-      this.box03.textContent = "6";
-      screen.appendChild(box03);
+      this.box01.style.border = "double #3D0750";
+      this.box01.style.backgroundColor = "#3D0750";
+      this.box01.textContent = "5";
+      screen.appendChild(box01);
 
       floatcaixaTextoDestaque();
-      this.box03.style.border = "double #ff0ff0";
-      this.box03.style.backgroundColor = "#ff0ff0";
-      this.box03.textContent = "7";
-      screen.appendChild(box03);
+      this.box01.style.border = "double #B80F33";
+      this.box01.style.backgroundColor = "#B80F33";
+       this.box01.textContent = "6";
+      screen.appendChild(box01);
 
       floatcaixaTextoDestaque();
-      this.box03.style.border = "double #ffff00";
-      this.box03.style.backgroundColor = "#ffff00";
-      this.box03.textContent = "8";
-      screen.appendChild(box03);
+      this.box01.style.border = "double #ff0ff0";
+      this.box01.style.backgroundColor = "#ff0ff0";
+      this.box01.textContent = "7";
+      screen.appendChild(box01);
 
       floatcaixaTextoDestaque();
-      this.box03.style.border = "double #0F17B8";
-      this.box03.style.backgroundColor = "#0F17B8";
-      this.box03.textContent = "9";
-      screen.appendChild(box03);
+      this.box01.style.border = "double #ffff00";
+      this.box01.style.backgroundColor = "#ffff00";
+      this.box01.textContent = "8";
+      screen.appendChild(box01);
 
       floatcaixaTextoDestaque();
-      this.box03.style.border = "double #B8820F";
-      this.box03.style.backgroundColor = "#B8820F";
-      this.box03.textContent = "10";
-      screen.appendChild(box03);
+      this.box01.style.border = "double #0F17B8";
+      this.box01.style.backgroundColor = "#0F17B8";
+      this.box01.textContent = "9";
+      screen.appendChild(box01);
 
-      explicacaoTH(mbObj);
-      box02.textContent = "ab"
-      box02.style.marginTop = "4%";
-      screen.appendChild(box02);
+      floatcaixaTextoDestaque();
+      this.box01.style.border = "double #B8820F";
+      this.box01.style.backgroundColor = "#B8820F";
+      this.box01.textContent = "10";
+      screen.appendChild(box01);
+
+      textoExplicativo();
+      this.paragraphHanoi.textContent = "ab"
+      this.paragraphHanoi.style.marginTop = "4%";
+      screen.appendChild(paragraphHanoi);
 }
 
            
