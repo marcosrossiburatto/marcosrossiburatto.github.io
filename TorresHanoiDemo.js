@@ -94,45 +94,34 @@ const mmObjhtb = window.matchMedia("(min-width:721px)");
 mmObjhtb.addEventListener("change", highlightedTextBox, false);
 
 function highlightedTextBox(htb) {
+      htbbox = document.createElement ("div");
+      htbbox.style.clear = "both";
+      htbbox.style.height = "100%";
+      htbbox.style.marginLeft = "auto";
+      htbbox.style.marginRight = "auto";    
+      htbbox.style.border = "solid #ff0000";
+      htbbox.style.borderWidth = "6px";
+      htbbox.style.borderRadius = "10%"
+      htbbox.style.textAlign = "center";
+      htbbox.style.verticalAlign = "Middle";   
+      htbbox.style.paddingTop = "10px";
+      htbbox.style.paddingBottom = "10px";
+      htbbox.style.color = "#11607c";
 
       if (htb.matches) {
-            htbbox = document.createElement ("div");
-            htbbox.style.clear = "both";
             htbbox.style.width = "60%";
-            htbbox.style.height = "100%";
             htbbox.style.marginTop = "30px";
-            htbbox.style.marginBottom = "0%";     
-            htbbox.style.marginLeft = "auto";
-            htbbox.style.marginRight = "auto";    
-            htbbox.style.border = "solid #ff0000";
-            htbbox.style.borderWidth = "6px";
-            htbbox.style.borderRadius = "10%"
+            htbbox.style.marginBottom = "0%";  
             htbbox.style.fontSize = "2.5vw";
             htbbox.style.fontWeight = "800";
-            htbbox.style.textAlign = "center";
-            htbbox.style.verticalAlign = "Middle";   
-            htbbox.style.paddingTop = "10px";
-            htbbox.style.paddingBottom = "10px";
-            htbbox.style.color = "#11607c";
+
       } else {
-            htbbox = document.createElement ("div");
             htbbox.style.clear = "both";
             htbbox.style.width = "90%";
-            htbbox.style.height = "100%";
             htbbox.style.marginTop = "5%";
-            htbbox.style.marginBottom = "5%";     
-            htbbox.style.marginLeft = "auto";
-            htbbox.style.marginRight = "auto";    
-            htbbox.style.border = "solid #ff0000";
-            htbbox.style.borderWidth = "6px";
-            htbbox.style.borderRadius = "10%"
+            htbbox.style.marginBottom = "4%";    
             htbbox.style.fontSize = "4vh";
             htbbox.style.fontWeight = "600";
-            htbbox.style.textAlign = "center";
-            htbbox.style.verticalAlign = "Middle";   
-            htbbox.style.paddingTop = "10px";
-            htbbox.style.paddingBottom = "10px";
-            htbbox.style.color = "#11607c";
       }
 }
 
@@ -186,7 +175,7 @@ function explanationTH(eth) {
             ethbox.style.marginLeft = "5%";
             ethbox.style.marginRight = "5%";
             ethbox.style.marginBottom = "3vh";
-            ethbox.style.lineHeight = "6.5vh";
+            ethbox.style.lineHeight = "6.3vh";
             ethbox.style.fontSize = "3.5vh";
       };
 }
@@ -274,7 +263,7 @@ function titleTextHanoi() {
       screen.appendChild(box03);
 
       explanationTH(mmObjeth);
-      ethbox.textContent = "af"
+      ethbox.textContent = "ag"
       ethbox.style.marginTop = "4%";
       screen.appendChild(ethbox);
 }
