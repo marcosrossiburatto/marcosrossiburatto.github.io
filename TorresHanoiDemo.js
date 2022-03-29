@@ -4,231 +4,214 @@ let sizeScreenEquip;
 
 function marcos(x) {
       if (x.matches) {
-           sizeScreenEquip = true;
-
+            sizeScreenEquip = true;
       } else {
             sizeScreenEquip = false;
       }
 }
 
-function highlightedTextBox() {
-      htbbox = document.createElement ("div");
-      htbbox.style.clear = "both";
-      htbbox.style.height = "100%";
-      htbbox.style.marginLeft = "auto";
-      htbbox.style.marginRight = "auto";    
-      htbbox.style.border = "solid #ff0000";
-      htbbox.style.borderWidth = "6px";
-      htbbox.style.borderRadius = "10%"
-      htbbox.style.textAlign = "center";
-      htbbox.style.verticalAlign = "Middle";   
-      htbbox.style.paddingTop = "10px";
-      htbbox.style.paddingBottom = "10px";
-      htbbox.style.color = "#11607c";
-
-      if (sizeScreenEquip) {
-            htbbox.style.width = "60%";
-            htbbox.style.marginTop = "30px";
-            htbbox.style.marginBottom = "0%";  
-            htbbox.style.fontSize = "2.5vw";
-            htbbox.style.fontWeight = "800";
-
-      } else {
-            htbbox.style.clear = "both";
-            htbbox.style.width = "90%";
-            htbbox.style.marginTop = "5%";
-            htbbox.style.marginBottom = "4%";    
-            htbbox.style.fontSize = "4vh";
-            htbbox.style.fontWeight = "600";
-      }
-}
-
-function explanationTH() {
-      ethbox = document.createElement("div");
-      ethbox.style.color = "#000";
-      ethbox.style.clear = "both";
-      ethbox.style.textAlign = "justify";
-      ethbox.style.paddingTop = "0em";
-      ethbox.style.paddingBottom = "0em";
-      ethbox.style.marginBottom = "1%";
-
-      if (sizeScreenEquip) {
-            ethbox.style.textIndent = "5%";
-            ethbox.style.marginLeft = "10%";
-            ethbox.style.marginRight = "10%";
-            ethbox.style.marginTop = "0%";
-            ethbox.style.marginBottom = "1%";
-            ethbox.style.lineHeight = "4.8vh";
-            ethbox.style.fontSize = "1.5vw";
-      } else {
-            ethbox.style.textIndent = "10%";
-            ethbox.style.marginLeft = "5%";
-            ethbox.style.marginRight = "5%";
-            ethbox.style.marginBottom = "3vh";
-            ethbox.style.lineHeight = "6.3vh";
-            ethbox.style.fontSize = "3.5vh";
-      };
-}
-
-function floatEspace() {
-      febox = document.createElement ("div");
-      febox.style.clear = "both";
-
-      if (sizeScreenEquip) {
-            ethbox.style.marginBottom = "5vh";
-      } else {
-            ethbox.style.marginBottom = "8vh";
-      }
-}
-
 function titleTextHanoi() {
 
-      highlightedTextBox();
-      this.htbbox.textContent = "Bem Vindos a explicação das Torres de Hanói";
-      screen.appendChild(htbbox);
+      box01 = document.createElement ("div");
+      box01.style.clear = "both";
+      box01.style.height = "100%";
+      box01.style.marginLeft = "auto";
+      box01.style.marginRight = "auto";    
+      box01.style.border = "solid #ff0000";
+      box01.style.borderWidth = "6px";
+      box01.style.borderRadius = "10%"
+      box01.style.textAlign = "center";
+      box01.style.verticalAlign = "Middle";   
+      box01.style.paddingTop = "10px";
+      box01.style.paddingBottom = "10px";
+      box01.style.color = "#11607c";
 
-      explanationTH();
-      ethbox.style.paddingTop = "2vh";
-      ethbox.textContent = "As Torres de Hanói é um quebra-cabeça que consiste em uma base contendo três pinos, em um dos quais são dispostos alguns discos uns sobre os outros, em ordem crescente de diâmetro, de cima para baixo.";
-      screen.appendChild(ethbox);
+      if (sizeScreenEquip) {
+            box01.style.width = "60%";
+            box01.style.marginTop = "30px";
+            box01.style.marginBottom = "0%";  
+            box01.style.fontSize = "2.5vw";
+            box01.style.fontWeight = "800";
 
-      explanationTH();
-      ethbox.textContent = "O problema consiste em passar todos os discos de um pino para outro qualquer, usando um dos pinos como auxiliar, de maneira que um disco maior nunca fique em cima de outro menor em nenhuma situação. O número de discos pode variar sendo que o mais simples contém apenas três.";
-      screen.appendChild(ethbox);
+      } else {
+            box01.style.clear = "both";
+            box01.style.width = "90%";
+            box01.style.marginTop = "5%";
+            box01.style.marginBottom = "4%";    
+            box01.style.fontSize = "4vh";
+            box01.style.fontWeight = "600";
+      }
+      this.box01.textContent = "Bem Vindos a explicação das Torres de Hanói";
+      screen.appendChild(box01);
 
-      explanationTH();
-      ethbox.textContent = "Somente pode-se mover um disco por vez. Dependendo do número de discos, existe um número mínimo de movimentos para realizar o quebra-cabeça. Este número é fornecido pela expressão matemática = '2**(número de discos) -1'. Por exemplo:";
-      screen.appendChild(ethbox);
+      for (var i = 0; i < 8; i++) {
+            box01 = document.createElement("div");
+            box01.style.color = "#000";
+            box01.style.clear = "both";
+            box01.style.textAlign = "justify";
+            box01.style.paddingTop = "0em";
+            box01.style.paddingBottom = "0em";
+            box01.style.marginBottom = "1%";
+      
+            if (sizeScreenEquip) {
+                  box01.style.textIndent = "5%";
+                  box01.style.marginLeft = "10%";
+                  box01.style.marginRight = "10%";
+                  box01.style.marginTop = "0%";
+                  box01.style.marginBottom = "1%";
+                  box01.style.lineHeight = "4.8vh";
+                  box01.style.fontSize = "1.5vw";
+            } else {
+                  box01.style.textIndent = "10%";
+                  box01.style.marginLeft = "5%";
+                  box01.style.marginRight = "5%";
+                  box01.style.marginBottom = "3vh";
+                  box01.style.lineHeight = "6.3vh";
+                  box01.style.fontSize = "3.5vh";
+            }
 
-      explanationTH();
-      ethbox.textContent = "Se o número de Discos for igual a 3, temos 2**3 - 1 = 2 x 2 x 2 - 1 = 7 movimentos;";
-      screen.appendChild(ethbox);
+            if (( i === 0 )) {
+                  if (sizeScreenEquip) {
+                        box01.style.paddingTop = "5vh";
+                  }
+                  box01.textContent = "As Torres de Hanói é um quebra-cabeça que consiste em uma base contendo três pinos, em um dos quais são dispostos alguns discos uns sobre os outros, em ordem crescente de diâmetro, de cima para baixo.";
 
-      explanationTH();
-      ethbox.textContent = "Se o número de Discos for igual a 4, temos 2**4 - 1 = 2 x 2 x 2 x 2 - 1 = 15 movimentos;";
-      screen.appendChild(ethbox);
+            } else if (( i === 1 )) {
+                  box01.textContent = "O problema consiste em passar todos os discos de um pino para outro qualquer, usando um dos pinos como auxiliar, de maneira que um disco maior nunca fique em cima de outro menor em nenhuma situação. O número de discos pode variar sendo que o mais simples contém apenas três.";
+            
+            } else if (( i === 2 )) {
+                  box01.textContent = "Somente pode-se mover um disco por vez. Dependendo do número de discos, existe um número mínimo de movimentos para realizar o quebra-cabeça. Este número é fornecido pela expressão matemática = '2**(número de discos) -1'. Por exemplo:";
 
-      explanationTH();
-      ethbox.textContent = "Se o número de Discos for igual a 5, temos 2**5 - 1 = 2 x 2 x 2 x 2 x 2 - 1 = 31 movimentos.";
-      screen.appendChild(ethbox);
+            } else if (( i === 3 )) {
+                  box01.textContent = "Se o número de Discos for igual a 3, temos 2**3 - 1 = 2 x 2 x 2 - 1 = 7 movimentos;";
 
-      explanationTH();
-      floatEspace();
-      ethbox.textContent = "Devido a limitação do tamanho das telas dos computadores, limitaremos o número de discos em 10 unidades. Escolha, a seguir, a demonstração da solução do quebra-cabeça com o número de discos desejados, dentro da limitação."
-      screen.appendChild(ethbox);
+            } else if (( i === 4 )) {
+                  box01.textContent = "Se o número de Discos for igual a 4, temos 2**4 - 1 = 2 x 2 x 2 x 2 - 1 = 15 movimentos;";
 
+            } else if (( i === 5 )) {
+                  box01.textContent = "Se o número de Discos for igual a 5, temos 2**5 - 1 = 2 x 2 x 2 x 2 x 2 - 1 = 31 movimentos.";
+
+            } else if (( i === 6 )) {
+                  if (sizeScreenEquip) {
+                        box01.style.marginBottom = "6vh";
+                  } else {
+                        box01.style.marginBottom = "8vh";
+                  }
+                  box01.textContent = "Devido a limitação do tamanho das telas dos computadores, limitaremos o número de discos em 10 unidades. Escolha, a seguir, a demonstração da solução do quebra-cabeça com o número de discos desejados, dentro da limitação."
+            }
+            screen.appendChild(box01);
+      }
 }
 
 function sizeScreenEquipFalse() {
       if (sizeScreenEquip === false) { 
-            fhtbbox = document.createElement ("div");
-            fhtbbox.style.clear = "both";
-            fhtbbox.style.marginTop = "50px";
-            fhtbbox.style.marginBottom = "50px";
-            screen.appendChild(fhtbbox);
+            box01 = document.createElement ("div");
+            box01.style.clear = "both";
+            box01.style.marginTop = "50px";
+            box01.style.marginBottom = "50px";
+            screen.appendChild(box01);
       }
 }
 
 function diskNumberBox() {
       
       for (var i = 0; i < 8; i++) {
-            fhtbbox = document.createElement ("div");
-            fhtbbox = document.createElement ("float");
-            fhtbbox.style.clear = "both";
-            fhtbbox.style.borderWidth = "6px";
-            fhtbbox.style.borderRadius = "20%"
-            fhtbbox.style.fontWeight = "800";
-            fhtbbox.style.textAlign = "center";
-            fhtbbox.style.verticalAlign = "Middle"; 
-            fhtbbox.style.color = "#FFF";
+            box01 = document.createElement ("div");
+            box01 = document.createElement ("float");
+            box01.style.clear = "both";
+            box01.style.borderWidth = "6px";
+            box01.style.borderRadius = "20%"
+            box01.style.fontWeight = "800";
+            box01.style.textAlign = "center";
+            box01.style.verticalAlign = "Middle"; 
+            box01.style.color = "#FFF";
 
                   if (sizeScreenEquip) { 
-                  fhtbbox.style.marginLeft = "4%";
-                  fhtbbox.style.fontSize = "1.75vw";
-                  fhtbbox.style.paddingTop = "10px";
-                  fhtbbox.style.paddingBottom = "10px";
-                  fhtbbox.style.paddingLeft = "1.3%";
-                  fhtbbox.style.paddingRight = "1.3%";
+                  box01.style.marginLeft = "4%";
+                  box01.style.fontSize = "1.75vw";
+                  box01.style.paddingTop = "10px";
+                  box01.style.paddingBottom = "10px";
+                  box01.style.paddingLeft = "1.3%";
+                  box01.style.paddingRight = "1.3%";
                   } else {
-                  fhtbbox.style.fontSize = "7vw";
-                  fhtbbox.style.paddingLeft = "4%";
-                  fhtbbox.style.paddingRight = "4%";
-                  fhtbbox.style.paddingTop = "6px";
-                  fhtbbox.style.paddingBottom = "6px";
+                  box01.style.marginLeft = "10%";
+                  box01.style.fontSize = "7vw";
+                  box01.style.paddingLeft = "4%";
+                  box01.style.paddingRight = "4%";
+                  box01.style.paddingTop = "6px";
+                  box01.style.paddingBottom = "6px";
                   }
 
             if (( i === 0 )) {
-                  fhtbbox.style.marginLeft = "10%";
-                  fhtbbox.style.border = "solid #0000ff";
-                  fhtbbox.style.backgroundColor = "#0000ff";
-                  fhtbbox.textContent = i + 3;
-                  screen.appendChild(fhtbbox);
+                  if (sizeScreenEquip) { 
+                        box01.style.marginLeft = "10%";
+                  } else {
+                        box01.style.marginLeft = "0%";  
+                  }
+
+                  box01.style.border = "solid #0000ff";
+                  box01.style.backgroundColor = "#0000ff";
+                  box01.textContent = i + 3;
+                  screen.appendChild(box01);
 
             } else if (( i === 1 )) {
-                  fhtbbox.style.marginLeft = "10%";
-                  fhtbbox.style.border = "solid #075025";
-                  fhtbbox.style.backgroundColor = "#075025";
-                  fhtbbox.textContent = i + 3;
-                  screen.appendChild(fhtbbox);
+                  box01.style.border = "solid #075025";
+                  box01.style.backgroundColor = "#075025";
+                  box01.textContent = i + 3;
+                  screen.appendChild(box01);
 
             } else if (( i === 2 )) {
-                  fhtbbox.style.marginLeft = "10%";
-                  fhtbbox.style.border = "solid #3D0750";
-                  fhtbbox.style.backgroundColor = "#3D0750";
-                  fhtbbox.textContent = i + 3;
-                  screen.appendChild(fhtbbox);
+                  box01.style.border = "solid #3D0750";
+                  box01.style.backgroundColor = "#3D0750";
+                  box01.textContent = i + 3;
+                  screen.appendChild(box01);
             
             } else if (( i === 3 )) {
-                  fhtbbox.style.marginLeft = "10%";
-                  fhtbbox.style.marginRight = "10%";
-                  fhtbbox.style.border = "solid #B80F33";
-                  fhtbbox.style.backgroundColor = "#B80F33";
-                  fhtbbox.textContent = i + 3;
-                  screen.appendChild(fhtbbox);
+                  box01.style.border = "solid #B80F33";
+                  box01.style.backgroundColor = "#B80F33";
+                  box01.textContent = i + 3;
+                  screen.appendChild(box01);
 
                   sizeScreenEquipFalse()
             
             } else if (( i === 4 )) {
-                  fhtbbox.style.marginLeft = "10%";
-                  fhtbbox.style.border = "solid #ff0ff0";
-                  fhtbbox.style.backgroundColor = "#ff0ff0";
-                  fhtbbox.textContent = i + 3;
-                  screen.appendChild(fhtbbox);
+                  box01.style.border = "solid #ff0ff0";
+                  box01.style.backgroundColor = "#ff0ff0";
+                  box01.textContent = i + 3;
+                  screen.appendChild(box01);
 
             } else if (( i === 5 )) {
-                  fhtbbox.style.marginLeft = "10%";
-                  fhtbbox.style.border = "solid #DDE02D";
-                  fhtbbox.style.backgroundColor = "#DDE02D";
-                  fhtbbox.textContent = i + 3;
-                  screen.appendChild(fhtbbox);
+                  box01.style.border = "solid #DDE02D";
+                  box01.style.backgroundColor = "#DDE02D";
+                  box01.textContent = i + 3;
+                  screen.appendChild(box01);
 
             } else if (( i === 6 )) {
-                  fhtbbox.style.marginLeft = "10%";
-                  fhtbbox.style.border = "solid #0F17B8";
-                  fhtbbox.style.backgroundColor = "#0F17B8";
-                  fhtbbox.textContent = i + 3;
-                  screen.appendChild(fhtbbox);
+                  box01.style.border = "solid #0F17B8";
+                  box01.style.backgroundColor = "#0F17B8";
+                  box01.textContent = i + 3;
+                  screen.appendChild(box01);
 
             } else if (( i === 7 )) {
-                  fhtbbox.style.marginLeft = "10%";
-                  fhtbbox.style.marginRight = "10%";
-                  fhtbbox.style.border = "solid #B8820F";
-                  fhtbbox.style.backgroundColor = "#B8820F";
-                  fhtbbox.style.paddingLeft = "0.8%";
-                  fhtbbox.style.paddingRight = "0.8%";
-                  fhtbbox.textContent = i + 3;
+                  box01.style.marginRight = "10%";
+                  box01.style.border = "solid #B8820F";
+                  box01.style.backgroundColor = "#B8820F";
+                  box01.style.paddingLeft = "0.8%";
+                  box01.style.paddingRight = "0.8%";
+                  box01.textContent = i + 3;
 
                         if (sizeScreenEquip == false) { 
-                              fhtbbox.style.paddingLeft = "2.2%";
-                              fhtbbox.style.paddingRight = "2.2%";
+                              box01.style.paddingLeft = "2.2%";
+                              box01.style.paddingRight = "2.2%";
                         }
 
-                  screen.appendChild(fhtbbox);
-
+                  screen.appendChild(box01);
+            
                   sizeScreenEquipFalse()
             }
       }
 }
+
 
 
 
@@ -241,13 +224,13 @@ function start() {                                           // Iniciar as aplic
       titleTextHanoi();
       diskNumberBox();
 
-      explanationTH();
-      ethbox.textContent = "ao";
-      ethbox.style.marginTop = "4%";
-      screen.appendChild(ethbox);
 
-
-
+      var text = document.createTextNode("aq");
+      var paragraph = document.createElement("p");
+      paragraph.style.clear = "both";
+      paragraph.style.paddingTop = "3em";
+      paragraph.appendChild(text);
+      screen.appendChild(paragraph);
 
 
 
