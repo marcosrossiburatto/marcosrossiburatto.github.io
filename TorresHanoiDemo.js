@@ -77,7 +77,7 @@ function floatEspace() {
       if (sizeScreenEquip) {
             ethbox.style.marginBottom = "5vh";
       } else {
-            ethbox.style.marginBottom = "10vh";
+            ethbox.style.marginBottom = "8vh";
       }
 }
 
@@ -119,6 +119,16 @@ function titleTextHanoi() {
 
 }
 
+function sizeScreenEquipFalse() {
+      if (sizeScreenEquip === false) { 
+            fhtbbox = document.createElement ("div");
+            fhtbbox.style.clear = "both";
+            fhtbbox.style.marginTop = "60px";
+            fhtbbox.style.marginBottom = "60px";
+            screen.appendChild(fhtbbox);
+      }
+}
+
 function diskNumberBox() {
       
       for (var i = 0; i < 8; i++) {
@@ -140,9 +150,9 @@ function diskNumberBox() {
                   fhtbbox.style.paddingLeft = "1.3%";
                   fhtbbox.style.paddingRight = "1.3%";
                   } else {
-                  fhtbbox.style.fontSize = "20vw";
-                  fhtbbox.style.paddingLeft = "8%";
-                  fhtbbox.style.paddingRight = "8%";
+                  fhtbbox.style.fontSize = "10vw";
+                  fhtbbox.style.paddingLeft = "6%";
+                  fhtbbox.style.paddingRight = "6%";
                   fhtbbox.style.paddingTop = "6px";
                   fhtbbox.style.paddingBottom = "6px";
                   
@@ -153,7 +163,7 @@ function diskNumberBox() {
                               fhtbbox.style.marginLeft = "0%";
                               fhtbbox.style.marginRight = "9%";
                         }
-                        }
+                  }
 
             if (( i === 0 )) {
                   fhtbbox.style.border = "solid #0000ff";
@@ -167,13 +177,7 @@ function diskNumberBox() {
                   fhtbbox.textContent = i + 3;
                   screen.appendChild(fhtbbox);
 
-                  if (sizeScreenEquip === false) { 
-                        fhtbbox = document.createElement ("div");
-                        fhtbbox.style.clear = "both";
-                        fhtbbox.style.marginTop = "80px";
-                        fhtbbox.style.marginBottom = "80px";
-                        screen.appendChild(fhtbbox);
-                  }
+                  sizeScreenEquipFalse()
 
             } else if (( i === 2 )) {
                   fhtbbox.style.border = "solid #3D0750";
@@ -187,13 +191,7 @@ function diskNumberBox() {
                   fhtbbox.textContent = i + 3;
                   screen.appendChild(fhtbbox);
 
-                  if (sizeScreenEquip === false) { 
-                        fhtbbox = document.createElement ("div");
-                        fhtbbox.style.clear = "both";
-                        fhtbbox.style.marginTop = "80px";
-                        fhtbbox.style.marginBottom = "80px";
-                        screen.appendChild(fhtbbox);
-                  }
+                  sizeScreenEquipFalse()
             
             } else if (( i === 4 )) {
                   fhtbbox.style.border = "solid #ff0ff0";
@@ -207,13 +205,7 @@ function diskNumberBox() {
                   fhtbbox.textContent = i + 3;
                   screen.appendChild(fhtbbox);
 
-                  if (sizeScreenEquip === false) { 
-                        fhtbbox = document.createElement ("div");
-                        fhtbbox.style.clear = "both";
-                        fhtbbox.style.marginTop = "80px";
-                        fhtbbox.style.marginBottom = "80px";
-                        screen.appendChild(fhtbbox);
-                  }
+                  sizeScreenEquipFalse()
 
             } else if (( i === 6 )) {
                   fhtbbox.style.border = "solid #0F17B8";
@@ -235,13 +227,7 @@ function diskNumberBox() {
 
                   screen.appendChild(fhtbbox);
 
-                        if (sizeScreenEquip == false) { 
-                              fhtbbox = document.createElement ("div");
-                              fhtbbox.style.clear = "both";
-                              fhtbbox.style.marginTop = "80px";
-                              fhtbbox.style.marginBottom = "80px";
-                              screen.appendChild(fhtbbox);
-                        }
+                  sizeScreenEquipFalse()
             }
       }
 }
@@ -258,7 +244,7 @@ function start() {                                           // Iniciar as aplic
       diskNumberBox();
 
       explanationTH();
-      ethbox.textContent = "al";
+      ethbox.textContent = "am";
       ethbox.style.marginTop = "4%";
       screen.appendChild(ethbox);
 
