@@ -1,7 +1,298 @@
-const towerHeight = "40px";                                  // Constante altura das fichas
+const mbObj = window.matchMedia("(min-width: 725px)");
+mbObj.addEventListener("change", marcos, false);
+let sizeScreenEquip;
+
+function marcos(x) {
+      if (x.matches) {
+           sizeScreenEquip = true;
+
+      } else {
+            sizeScreenEquip = false;
+      }
+}
+
+function highlightedTextBox() {
+      htbbox = document.createElement ("div");
+      htbbox.style.clear = "both";
+      htbbox.style.height = "100%";
+      htbbox.style.marginLeft = "auto";
+      htbbox.style.marginRight = "auto";    
+      htbbox.style.border = "solid #ff0000";
+      htbbox.style.borderWidth = "6px";
+      htbbox.style.borderRadius = "10%"
+      htbbox.style.textAlign = "center";
+      htbbox.style.verticalAlign = "Middle";   
+      htbbox.style.paddingTop = "10px";
+      htbbox.style.paddingBottom = "10px";
+      htbbox.style.color = "#11607c";
+
+      if (sizeScreenEquip) {
+            htbbox.style.width = "60%";
+            htbbox.style.marginTop = "30px";
+            htbbox.style.marginBottom = "0%";  
+            htbbox.style.fontSize = "2.5vw";
+            htbbox.style.fontWeight = "800";
+
+      } else {
+            htbbox.style.clear = "both";
+            htbbox.style.width = "90%";
+            htbbox.style.marginTop = "5%";
+            htbbox.style.marginBottom = "4%";    
+            htbbox.style.fontSize = "4vh";
+            htbbox.style.fontWeight = "600";
+      }
+}
+
+function explanationTH() {
+      ethbox = document.createElement("div");
+      ethbox.style.color = "#000";
+      ethbox.style.clear = "both";
+      ethbox.style.textAlign = "justify";
+      ethbox.style.paddingTop = "0em";
+      ethbox.style.paddingBottom = "0em";
+      ethbox.style.marginBottom = "1%";
+
+      if (sizeScreenEquip) {
+            ethbox.style.textIndent = "5%";
+            ethbox.style.marginLeft = "10%";
+            ethbox.style.marginRight = "10%";
+            ethbox.style.marginTop = "0%";
+            ethbox.style.marginBottom = "1%";
+            ethbox.style.lineHeight = "4.8vh";
+            ethbox.style.fontSize = "1.5vw";
+      } else {
+            ethbox.style.textIndent = "10%";
+            ethbox.style.marginLeft = "5%";
+            ethbox.style.marginRight = "5%";
+            ethbox.style.marginBottom = "3vh";
+            ethbox.style.lineHeight = "6.3vh";
+            ethbox.style.fontSize = "3.5vh";
+      };
+}
+
+function floatEspace() {
+      febox = document.createElement ("div");
+      febox.style.clear = "both";
+
+      if (sizeScreenEquip) {
+            ethbox.style.marginBottom = "5vh";
+      } else {
+            ethbox.style.marginBottom = "10vh";
+      }
+}
+
+function titleTextHanoi() {
+
+      highlightedTextBox();
+      this.htbbox.textContent = "Bem Vindos a explicação das Torres de Hanói";
+      screen.appendChild(htbbox);
+
+      explanationTH();
+      ethbox.style.paddingTop = "2vh";
+      ethbox.textContent = "As Torres de Hanói é um quebra-cabeça que consiste em uma base contendo três pinos, em um dos quais são dispostos alguns discos uns sobre os outros, em ordem crescente de diâmetro, de cima para baixo.";
+      screen.appendChild(ethbox);
+
+      explanationTH();
+      ethbox.textContent = "O problema consiste em passar todos os discos de um pino para outro qualquer, usando um dos pinos como auxiliar, de maneira que um disco maior nunca fique em cima de outro menor em nenhuma situação. O número de discos pode variar sendo que o mais simples contém apenas três.";
+      screen.appendChild(ethbox);
+
+      explanationTH();
+      ethbox.textContent = "Somente pode-se mover um disco por vez. Dependendo do número de discos, existe um número mínimo de movimentos para realizar o quebra-cabeça. Este número é fornecido pela expressão matemática = '2**(número de discos) -1'. Por exemplo:";
+      screen.appendChild(ethbox);
+
+      explanationTH();
+      ethbox.textContent = "Se o número de Discos for igual a 3, temos 2**3 - 1 = 2 x 2 x 2 - 1 = 7 movimentos;";
+      screen.appendChild(ethbox);
+
+      explanationTH();
+      ethbox.textContent = "Se o número de Discos for igual a 4, temos 2**4 - 1 = 2 x 2 x 2 x 2 - 1 = 15 movimentos;";
+      screen.appendChild(ethbox);
+
+      explanationTH();
+      ethbox.textContent = "Se o número de Discos for igual a 5, temos 2**5 - 1 = 2 x 2 x 2 x 2 x 2 - 1 = 31 movimentos.";
+      screen.appendChild(ethbox);
+
+      explanationTH();
+      floatEspace();
+      ethbox.textContent = "Devido a limitação do tamanho das telas dos computadores, limitaremos o número de discos em 10 unidades. Escolha, a seguir, a demonstração da solução do quebra-cabeça com o número de discos desejados, dentro da limitação."
+      screen.appendChild(ethbox);
+
+}
+
+function diskNumberBox() {
+      
+      for (var i = 0; i < 8; i++) {
+            fhtbbox = document.createElement ("div");
+            fhtbbox = document.createElement ("float");
+            fhtbbox.style.clear = "both";
+            fhtbbox.style.borderWidth = "6px";
+            fhtbbox.style.borderRadius = "20%"
+            fhtbbox.style.fontWeight = "800";
+            fhtbbox.style.textAlign = "center";
+            fhtbbox.style.verticalAlign = "Middle"; 
+            fhtbbox.style.color = "#FFF";
+
+                  if (sizeScreenEquip) { 
+                  fhtbbox.style.marginLeft = "4%";
+                  fhtbbox.style.fontSize = "1.75vw";
+                  fhtbbox.style.paddingTop = "10px";
+                  fhtbbox.style.paddingBottom = "10px";
+                  fhtbbox.style.paddingLeft = "1.3%";
+                  fhtbbox.style.paddingRight = "1.3%";
+                  } else {
+                  fhtbbox.style.fontSize = "20vw";
+                  fhtbbox.style.paddingLeft = "8%";
+                  fhtbbox.style.paddingRight = "8%";
+                  fhtbbox.style.paddingTop = "6px";
+                  fhtbbox.style.paddingBottom = "6px";
+                  
+                        if ( i % 2 === 0) {
+                              fhtbbox.style.marginLeft = "10%";
+                              fhtbbox.style.marginRight = "12%";
+                        } else {
+                              fhtbbox.style.marginLeft = "0%";
+                              fhtbbox.style.marginRight = "9%";
+                        }
+                        }
+
+            if (( i === 0 )) {
+                  fhtbbox.style.border = "solid #0000ff";
+                  fhtbbox.style.backgroundColor = "#0000ff";
+                  fhtbbox.textContent = i + 3;
+                  screen.appendChild(fhtbbox);
+
+            } else if (( i === 1 )) {
+                  fhtbbox.style.border = "solid #075025";
+                  fhtbbox.style.backgroundColor = "#075025";
+                  fhtbbox.textContent = i + 3;
+                  screen.appendChild(fhtbbox);
+
+                  if (sizeScreenEquip === false) { 
+                        fhtbbox = document.createElement ("div");
+                        fhtbbox.style.clear = "both";
+                        fhtbbox.style.marginTop = "80px";
+                        fhtbbox.style.marginBottom = "80px";
+                        screen.appendChild(fhtbbox);
+                  }
+
+            } else if (( i === 2 )) {
+                  fhtbbox.style.border = "solid #3D0750";
+                  fhtbbox.style.backgroundColor = "#3D0750";
+                  fhtbbox.textContent = i + 3;
+                  screen.appendChild(fhtbbox);
+            
+            } else if (( i === 3 )) {
+                  fhtbbox.style.border = "solid #B80F33";
+                  fhtbbox.style.backgroundColor = "#B80F33";
+                  fhtbbox.textContent = i + 3;
+                  screen.appendChild(fhtbbox);
+
+                  if (sizeScreenEquip === false) { 
+                        fhtbbox = document.createElement ("div");
+                        fhtbbox.style.clear = "both";
+                        fhtbbox.style.marginTop = "80px";
+                        fhtbbox.style.marginBottom = "80px";
+                        screen.appendChild(fhtbbox);
+                  }
+            
+            } else if (( i === 4 )) {
+                  fhtbbox.style.border = "solid #ff0ff0";
+                  fhtbbox.style.backgroundColor = "#ff0ff0";
+                  fhtbbox.textContent = i + 3;
+                  screen.appendChild(fhtbbox);
+
+            } else if (( i === 5 )) {
+                  fhtbbox.style.border = "solid #DDE02D";
+                  fhtbbox.style.backgroundColor = "#DDE02D";
+                  fhtbbox.textContent = i + 3;
+                  screen.appendChild(fhtbbox);
+
+                  if (sizeScreenEquip === false) { 
+                        fhtbbox = document.createElement ("div");
+                        fhtbbox.style.clear = "both";
+                        fhtbbox.style.marginTop = "80px";
+                        fhtbbox.style.marginBottom = "80px";
+                        screen.appendChild(fhtbbox);
+                  }
+
+            } else if (( i === 6 )) {
+                  fhtbbox.style.border = "solid #0F17B8";
+                  fhtbbox.style.backgroundColor = "#0F17B8";
+                  fhtbbox.textContent = i + 3;
+                  screen.appendChild(fhtbbox);
+
+            } else if (( i === 7 )) {
+                  fhtbbox.style.border = "solid #B8820F";
+                  fhtbbox.style.backgroundColor = "#B8820F";
+                  fhtbbox.style.paddingLeft = "0.8%";
+                  fhtbbox.style.paddingRight = "0.8%";
+                  fhtbbox.textContent = i + 3;
+
+                        if (sizeScreenEquip == false) { 
+                              fhtbbox.style.paddingLeft = "3%";
+                              fhtbbox.style.paddingRight = "3%";
+                        }
+
+                  screen.appendChild(fhtbbox);
+
+                        if (sizeScreenEquip == false) { 
+                              fhtbbox = document.createElement ("div");
+                              fhtbbox.style.clear = "both";
+                              fhtbbox.style.marginTop = "80px";
+                              fhtbbox.style.marginBottom = "80px";
+                              screen.appendChild(fhtbbox);
+                        }
+            }
+      }
+}
+
+
+
+
+
+function start() {                                           // Iniciar as aplicacoes
+      screen = document.getElementsByTagName("body") [0];
+      screen.style.textAlign = "center";
+      marcos(mbObj);
+      titleTextHanoi();
+      diskNumberBox();
+
+      explanationTH();
+      ethbox.textContent = "al";
+      ethbox.style.marginTop = "4%";
+      screen.appendChild(ethbox);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*const towerHeight = "40px";                                  // Constante altura das fichas
 
 var screen;                                                  // (CriacaoTorres01.js) Criação da Varavel que contem a apresentacao
-
 
 //var movements = 0;
 
@@ -90,225 +381,12 @@ function extraLargeDisk() {                                  // Criação Disco 
       this.value = 3;
 }
 
-const mmObjhtb = window.matchMedia("(min-width:721px)");
-mmObjhtb.addEventListener("change", highlightedTextBox, false);
-
-function highlightedTextBox(htb) {
-      htbbox = document.createElement ("div");
-      htbbox.style.clear = "both";
-      htbbox.style.height = "100%";
-      htbbox.style.marginLeft = "auto";
-      htbbox.style.marginRight = "auto";    
-      htbbox.style.border = "solid #ff0000";
-      htbbox.style.borderWidth = "6px";
-      htbbox.style.borderRadius = "10%"
-      htbbox.style.textAlign = "center";
-      htbbox.style.verticalAlign = "Middle";   
-      htbbox.style.paddingTop = "10px";
-      htbbox.style.paddingBottom = "10px";
-      htbbox.style.color = "#11607c";
-
-      if (htb.matches) {
-            htbbox.style.width = "60%";
-            htbbox.style.marginTop = "30px";
-            htbbox.style.marginBottom = "0%";  
-            htbbox.style.fontSize = "2.5vw";
-            htbbox.style.fontWeight = "800";
-
-      } else {
-            htbbox.style.clear = "both";
-            htbbox.style.width = "90%";
-            htbbox.style.marginTop = "5%";
-            htbbox.style.marginBottom = "4%";    
-            htbbox.style.fontSize = "4vh";
-            htbbox.style.fontWeight = "600";
-      }
-}
-
-const mmObjeth = window.matchMedia("(min-width: 721px)");
-mmObjeth.addEventListener("change", explanationTH, false);
-
-function explanationTH(eth) {
-      ethbox = document.createElement("div");
-      ethbox.style.color = "#000";
-      ethbox.style.clear = "both";
-      ethbox.style.textAlign = "justify";
-      ethbox.style.paddingTop = "0em";
-      ethbox.style.paddingBottom = "0em";
-      ethbox.style.marginBottom = "1%";
-
-      if (eth.matches) {
-            ethbox.style.textIndent = "5%";
-            ethbox.style.marginLeft = "10%";
-            ethbox.style.marginRight = "10%";
-            ethbox.style.marginTop = "0%";
-            ethbox.style.marginBottom = "1%";
-            ethbox.style.lineHeight = "4.8vh";
-            ethbox.style.fontSize = "1.5vw";
-      } else {
-            ethbox.style.textIndent = "10%";
-            ethbox.style.marginLeft = "5%";
-            ethbox.style.marginRight = "5%";
-            ethbox.style.marginBottom = "3vh";
-            ethbox.style.lineHeight = "6vh";
-            ethbox.style.fontSize = "3.5vh";
-      };
-}
-
-const mmObjfe = window.matchMedia("(min-width: 721px)");
-mmObjfe.addEventListener("change", floatEspace, false);
-
-function floatEspace(fe) {
-      febox = document.createElement ("div");
-      febox.style.clear = "both";
-
-      if (fe.matches) {
-            ethbox.style.marginBottom = "5vh";
-      } else {
-            ethbox.style.marginBottom = "10vh";
-      }
-}   
-
-const mmObjfhtb = window.matchMedia("(min-width: 721px)");
-mmObjfhtb.addEventListener("change", floatHighlightedTextBox, false);
-
-function floatHighlightedTextBox(fhtb) {
-      fhtbbox = document.createElement ("div");
-      fhtbbox = document.createElement ("float");
-      fhtbbox.style.clear = "both";
-
-      if (fhtb.matches) {
-      fhtbbox.style.marginLeft = "4%";
-      fhtbbox.style.borderWidth = "6px";
-      fhtbbox.style.borderRadius = "10%"
-      fhtbbox.style.fontSize = "1.75vw";
-      fhtbbox.style.fontWeight = "800";
-      fhtbbox.style.textAlign = "center";
-      fhtbbox.style.verticalAlign = "Middle";
-      fhtbbox.style.paddingTop = "10px";
-      fhtbbox.style.paddingBottom = "10px";
-      fhtbbox.style.paddingLeft = "1.3%";
-      fhtbbox.style.paddingRight = "1.3%";
-      fhtbbox.style.color = "#FFF";
-} else {
-
-      fhtbbox.style.height = "100%";
-
-      fhtbbox.style.marginTop = "2%";
-      fhtbbox.style.marginBottom = "5%";     
-      fhtbbox.style.marginLeft = "3.1%";
-
-      fhtbbox.style.borderWidth = "6px";
-      fhtbbox.style.borderRadius = "10%"
-
-      fhtbbox.style.fontSize = "20vw";
-      fhtbbox.style.fontWeight = "800";
-
-      fhtbbox.style.textAlign = "center";
-      fhtbbox.style.verticalAlign = "Middle"; 
-      
-      fhtbbox.style.paddingLeft = "1.3%";
-      fhtbbox.style.paddingRight = "1.3%";     
-      fhtbbox.style.paddingTop = "10px";
-      fhtbbox.style.paddingBottom = "10px";
-
-      fhtbbox.style.color = "#FFF";
-}
-}
 
 
-function titleTextHanoi() {
 
-      highlightedTextBox(mmObjhtb);
-      this.htbbox.textContent = "Bem Vindos a explicação das Torres de Hanói";
-      screen.appendChild(htbbox);
 
-      explanationTH(mmObjeth);
-      ethbox.style.paddingTop = "2vh";
-      ethbox.textContent = "As Torres de Hanói é um quebra-cabeça que consiste em uma base contendo três pinos, em um dos quais são dispostos alguns discos uns sobre os outros, em ordem crescente de diâmetro, de cima para baixo.";
-      screen.appendChild(ethbox);
 
-      explanationTH(mmObjeth);
-      ethbox.textContent = "O problema consiste em passar todos os discos de um pino para outro qualquer, usando um dos pinos como auxiliar, de maneira que um disco maior nunca fique em cima de outro menor em nenhuma situação. O número de discos pode variar sendo que o mais simples contém apenas três.";
-      screen.appendChild(ethbox);
 
-      explanationTH(mmObjeth);
-      ethbox.textContent = "Somente pode-se mover um disco por vez. Dependendo do número de discos, existe um número mínimo de movimentos para realizar o quebra-cabeça. Este número é fornecido pela expressão matemática = '2**(número de discos) -1'. Por exemplo:";
-      screen.appendChild(ethbox);
-
-      explanationTH(mmObjeth);
-      ethbox.textContent = "Se o número de Discos for igual a 3, temos 2**3 - 1 = 2 x 2 x 2 - 1 = 7 movimentos;";
-      screen.appendChild(ethbox);
-
-      explanationTH(mmObjeth);
-      ethbox.textContent = "Se o número de Discos for igual a 4, temos 2**4 - 1 = 2 x 2 x 2 x 2 - 1 = 15 movimentos;";
-      screen.appendChild(ethbox);
-
-      explanationTH(mmObjeth);
-      ethbox.textContent = "Se o número de Discos for igual a 5, temos 2**5 - 1 = 2 x 2 x 2 x 2 x 2 - 1 = 31 movimentos.";
-      screen.appendChild(ethbox);
-
-      explanationTH(mmObjeth);
-      floatEspace(mmObjfe);
-      ethbox.textContent = "Devido a limitação do tamanho das telas dos computadores, limitaremos o número de discos em 10 unidades. Escolha, a seguir, a demonstração da solução do quebra-cabeça com o número de discos desejados, dentro da limitação."
-      screen.appendChild(ethbox);
-
-      floatHighlightedTextBox(mmObjfhtb);
-      fhtbbox.style.marginLeft = "0%";
-      fhtbbox.style.border = "solid #0000ff";
-      fhtbbox.style.backgroundColor = "#0000ff";
-      fhtbbox.textContent = "3";
-      screen.appendChild(fhtbbox);
-
-      floatHighlightedTextBox(mmObjfhtb);
-      fhtbbox.style.border = "solid #075025";
-      fhtbbox.style.backgroundColor = "#075025";
-      fhtbbox.textContent = "4";
-      screen.appendChild(fhtbbox);
-
-      floatHighlightedTextBox(mmObjfhtb);
-      fhtbbox.style.border = "solid #3D0750";
-      fhtbbox.style.backgroundColor = "#3D0750";
-      fhtbbox.textContent = "5";
-      screen.appendChild(fhtbbox);
-
-      floatHighlightedTextBox(mmObjfhtb);
-      fhtbbox.style.border = "solid #B80F33";
-      fhtbbox.style.backgroundColor = "#B80F33";
-      fhtbbox.textContent = "6";
-      screen.appendChild(fhtbbox);
-
-      floatHighlightedTextBox(mmObjfhtb);
-      fhtbbox.style.border = "solid #ff0ff0";
-      fhtbbox.style.backgroundColor = "#ff0ff0";
-      fhtbbox.textContent = "7";
-      screen.appendChild(fhtbbox);
-
-      floatHighlightedTextBox(mmObjfhtb);
-      fhtbbox.style.border = "solid #DDE02D";
-      fhtbbox.style.backgroundColor = "#DDE02D";
-      fhtbbox.textContent = "8";
-      screen.appendChild(fhtbbox);
-
-      floatHighlightedTextBox(mmObjfhtb);
-      fhtbbox.style.border = "solid #0F17B8";
-      fhtbbox.style.backgroundColor = "#0F17B8";
-      fhtbbox.textContent = "9";
-      screen.appendChild(fhtbbox);
-
-      floatHighlightedTextBox(mmObjfhtb);
-      fhtbbox.style.border = "solid #B8820F";
-      fhtbbox.style.backgroundColor = "#B8820F";
-      fhtbbox.style.paddingLeft = "0.8%";
-      fhtbbox.style.paddingRight = "0.8%";
-      fhtbbox.textContent = "10";
-      screen.appendChild(fhtbbox);
-
-      explanationTH(mmObjeth);
-      ethbox.textContent = "aj"
-      ethbox.style.marginTop = "4%";
-      screen.appendChild(ethbox);
-}
 
            
 function Tower(startBox) {                               // (CriacaoTorres01.js)Criação geral dos quadros
@@ -387,7 +465,7 @@ function Tower(startBox) {                               // (CriacaoTorres01.js)
             }
       };
 
-}
+}*/
 
 
 /*function selectStartEndMov(tower) {
@@ -424,10 +502,8 @@ function Tower(startBox) {                               // (CriacaoTorres01.js)
 
 
 
-function start() {                                           // Iniciar as aplicacoes
-      screen = document.getElementsByTagName("body") [0];
-      screen.style.textAlign = "center";;
-      titleTextHanoi();
+
+
 
 
 
