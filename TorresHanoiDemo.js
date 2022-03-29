@@ -150,42 +150,47 @@ function diskNumberBox() {
                   fhtbbox.style.paddingLeft = "1.3%";
                   fhtbbox.style.paddingRight = "1.3%";
                   } else {
-                  fhtbbox.style.fontSize = "10vw";
-                  fhtbbox.style.paddingLeft = "6%";
-                  fhtbbox.style.paddingRight = "6%";
+                  fhtbbox.style.fontSize = "7vw";
+                  fhtbbox.style.paddingLeft = "4%";
+                  fhtbbox.style.paddingRight = "4%";
                   fhtbbox.style.paddingTop = "6px";
                   fhtbbox.style.paddingBottom = "6px";
                   
-                        if ( i % 2 === 0) {
+                      /*  if ( i % 2 === 0) {
                               fhtbbox.style.marginLeft = "10%";
                               fhtbbox.style.marginRight = "12%";
                         } else {
                               fhtbbox.style.marginLeft = "0%";
                               fhtbbox.style.marginRight = "9%";
-                        }
+                        }*/
                   }
 
             if (( i === 0 )) {
+                  fhtbbox.style.marginLeft = "10%";
                   fhtbbox.style.border = "solid #0000ff";
                   fhtbbox.style.backgroundColor = "#0000ff";
                   fhtbbox.textContent = i + 3;
                   screen.appendChild(fhtbbox);
 
             } else if (( i === 1 )) {
+                  fhtbbox.style.marginLeft = "10%";
                   fhtbbox.style.border = "solid #075025";
                   fhtbbox.style.backgroundColor = "#075025";
                   fhtbbox.textContent = i + 3;
                   screen.appendChild(fhtbbox);
 
-                  sizeScreenEquipFalse()
+                 // sizeScreenEquipFalse()
 
             } else if (( i === 2 )) {
+                  fhtbbox.style.marginLeft = "10%";
                   fhtbbox.style.border = "solid #3D0750";
                   fhtbbox.style.backgroundColor = "#3D0750";
                   fhtbbox.textContent = i + 3;
                   screen.appendChild(fhtbbox);
             
             } else if (( i === 3 )) {
+                  fhtbbox.style.marginLeft = "10%";
+                  fhtbbox.style.marginRight = "10%";
                   fhtbbox.style.border = "solid #B80F33";
                   fhtbbox.style.backgroundColor = "#B80F33";
                   fhtbbox.textContent = i + 3;
@@ -194,26 +199,31 @@ function diskNumberBox() {
                   sizeScreenEquipFalse()
             
             } else if (( i === 4 )) {
+                  fhtbbox.style.marginLeft = "10%";
                   fhtbbox.style.border = "solid #ff0ff0";
                   fhtbbox.style.backgroundColor = "#ff0ff0";
                   fhtbbox.textContent = i + 3;
                   screen.appendChild(fhtbbox);
 
             } else if (( i === 5 )) {
+                  fhtbbox.style.marginLeft = "10%";
                   fhtbbox.style.border = "solid #DDE02D";
                   fhtbbox.style.backgroundColor = "#DDE02D";
                   fhtbbox.textContent = i + 3;
                   screen.appendChild(fhtbbox);
 
-                  sizeScreenEquipFalse()
+                  //sizeScreenEquipFalse()
 
             } else if (( i === 6 )) {
+                  fhtbbox.style.marginLeft = "10%";
                   fhtbbox.style.border = "solid #0F17B8";
                   fhtbbox.style.backgroundColor = "#0F17B8";
                   fhtbbox.textContent = i + 3;
                   screen.appendChild(fhtbbox);
 
             } else if (( i === 7 )) {
+                  fhtbbox.style.marginLeft = "10%";
+                  fhtbbox.style.marginRight = "10%";
                   fhtbbox.style.border = "solid #B8820F";
                   fhtbbox.style.backgroundColor = "#B8820F";
                   fhtbbox.style.paddingLeft = "0.8%";
@@ -244,7 +254,7 @@ function start() {                                           // Iniciar as aplic
       diskNumberBox();
 
       explanationTH();
-      ethbox.textContent = "am";
+      ethbox.textContent = "an";
       ethbox.style.marginTop = "4%";
       screen.appendChild(ethbox);
 
