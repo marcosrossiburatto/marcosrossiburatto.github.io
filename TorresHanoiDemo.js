@@ -148,7 +148,6 @@ function diskNumberBox() {
                   } else {
                         box01.style.marginLeft = "0%";  
                   }
-
                   box01.style.border = "solid #0000ff";
                   box01.style.backgroundColor = "#0000ff";
                   box01.textContent = i + 3;
@@ -175,6 +174,7 @@ function diskNumberBox() {
                   sizeScreenEquipFalse()
             
             } else if (( i === 4 )) {
+
                   box01.style.border = "solid #ff0ff0";
                   box01.style.backgroundColor = "#ff0ff0";
                   box01.textContent = i + 3;
@@ -225,7 +225,7 @@ function start() {                                           // Iniciar as aplic
       diskNumberBox();
 
 
-      var text = document.createTextNode("aq");
+      var text = document.createTextNode("ar");
       var paragraph = document.createElement("p");
       paragraph.style.clear = "both";
       paragraph.style.paddingTop = "3em";
