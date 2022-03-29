@@ -123,8 +123,8 @@ function sizeScreenEquipFalse() {
       if (sizeScreenEquip === false) { 
             fhtbbox = document.createElement ("div");
             fhtbbox.style.clear = "both";
-            fhtbbox.style.marginTop = "60px";
-            fhtbbox.style.marginBottom = "60px";
+            fhtbbox.style.marginTop = "50px";
+            fhtbbox.style.marginBottom = "50px";
             screen.appendChild(fhtbbox);
       }
 }
@@ -155,14 +155,6 @@ function diskNumberBox() {
                   fhtbbox.style.paddingRight = "4%";
                   fhtbbox.style.paddingTop = "6px";
                   fhtbbox.style.paddingBottom = "6px";
-                  
-                      /*  if ( i % 2 === 0) {
-                              fhtbbox.style.marginLeft = "10%";
-                              fhtbbox.style.marginRight = "12%";
-                        } else {
-                              fhtbbox.style.marginLeft = "0%";
-                              fhtbbox.style.marginRight = "9%";
-                        }*/
                   }
 
             if (( i === 0 )) {
@@ -178,8 +170,6 @@ function diskNumberBox() {
                   fhtbbox.style.backgroundColor = "#075025";
                   fhtbbox.textContent = i + 3;
                   screen.appendChild(fhtbbox);
-
-                 // sizeScreenEquipFalse()
 
             } else if (( i === 2 )) {
                   fhtbbox.style.marginLeft = "10%";
@@ -212,8 +202,6 @@ function diskNumberBox() {
                   fhtbbox.textContent = i + 3;
                   screen.appendChild(fhtbbox);
 
-                  //sizeScreenEquipFalse()
-
             } else if (( i === 6 )) {
                   fhtbbox.style.marginLeft = "10%";
                   fhtbbox.style.border = "solid #0F17B8";
@@ -231,8 +219,8 @@ function diskNumberBox() {
                   fhtbbox.textContent = i + 3;
 
                         if (sizeScreenEquip == false) { 
-                              fhtbbox.style.paddingLeft = "3%";
-                              fhtbbox.style.paddingRight = "3%";
+                              fhtbbox.style.paddingLeft = "2.2%";
+                              fhtbbox.style.paddingRight = "2.2%";
                         }
 
                   screen.appendChild(fhtbbox);
@@ -254,7 +242,7 @@ function start() {                                           // Iniciar as aplic
       diskNumberBox();
 
       explanationTH();
-      ethbox.textContent = "an";
+      ethbox.textContent = "ao";
       ethbox.style.marginTop = "4%";
       screen.appendChild(ethbox);
 
