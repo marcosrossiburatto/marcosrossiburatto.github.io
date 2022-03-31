@@ -99,7 +99,7 @@ function titleTextHanoi() {
                   if (sizeScreenEquip) {
                         box01.style.marginBottom = "3vh";
                   } else {
-                        box01.style.marginBottom = "8vh";
+                        box01.style.marginBottom = "0vh";
                   }
 
                   box01.textContent = "Devido a limitação do tamanho das telas dos computadores, limitaremos o número de discos em 10 unidades. Escolha, a seguir, a demonstração da solução do quebra-cabeça com o número de discos desejados, dentro da limitação."
@@ -111,11 +111,11 @@ function titleTextHanoi() {
 
 function sizeScreenEquipFalse() {
       if (sizeScreenEquip === false) { 
-            box01 = document.createElement ("div");
-            box01.style.clear = "both";
-            box01.style.marginTop = "20px";
-            box01.style.marginBottom = "20px";
-            screen.appendChild(box01);
+            boxspace = document.createElement ("div");
+            boxspace.style.clear = "both";
+            boxspace.style.paddingTop = "10px";
+            boxspace.style.paddingBottom = "10px";
+            screen.appendChild(boxspace);
       }
 }
 
@@ -270,7 +270,7 @@ function numberOfDisk3() {
             screen.appendChild(box003);
       } else {
             this.box003 = document.createElement ("div");
-            this.box003.style.margin = "50px 0 3px 12%"; 
+            this.box003.style.margin = "10px 0 3px 12%"; 
             this.box003.style.padding = "6px 4% 6px 4%";
             this.box003.style.borderWidth = "6px";
             this.box003.style.border = "solid #0000ff";
@@ -306,7 +306,7 @@ function numberOfDisk4() {
             screen.appendChild(box004);
       } else {
             this.box004 = document.createElement ("div");
-            this.box004.style.margin = "50px 0 3px 10%";
+            this.box004.style.margin = "10px 0 3px 10%";
             this.box004.style.padding = "6px 4% 6px 4%";
             this.box004.style.borderWidth = "6px";
             this.box004.style.border = "solid #075025";
@@ -342,7 +342,7 @@ function numberOfDisk5() {
             screen.appendChild(box005);
       } else {
             this.box005 = document.createElement ("div");
-            this.box005.style.margin = "50px 0 3px 10%";
+            this.box005.style.margin = "10px 0 3px 10%";
             this.box005.style.padding = "6px 4% 6px 4%";
             this.box005.style.borderWidth = "6px";
             this.box005.style.border = "solid #3D0750";
@@ -378,7 +378,7 @@ function numberOfDisk6() {
             screen.appendChild(box006);
       } else {
             this.box006 = document.createElement ("div");
-            this.box006.style.margin = "50px 0 3px 10%";
+            this.box006.style.margin = "10px 0 3px 10%";
             this.box006.style.padding = "6px 4% 6px 4%";
             this.box006.style.borderWidth = "6px";
             this.box006.style.border = "solid #B80F33";
@@ -393,8 +393,8 @@ function numberOfDisk6() {
             this.box006.style.float = "left";
             screen.appendChild(box006);
       }
+      sizeScreenEquipFalse();
 }
-sizeScreenEquipFalse();
 
 function numberOfDisk7() {
       if (sizeScreenEquip) {
@@ -415,7 +415,7 @@ function numberOfDisk7() {
             screen.appendChild(box007);
       } else {
             this.box007 = document.createElement ("div");
-            this.box007.style.margin = "50px 0 3px 12%"; 
+            this.box007.style.margin = "10px 0 3px 12%"; 
             this.box007.style.padding = "6px 4% 6px 4%";
             this.box007.style.borderWidth = "6px";
             this.box007.style.border = "solid #ff0ff0";
@@ -451,7 +451,7 @@ function numberOfDisk8() {
             screen.appendChild(box008);
       } else {
             this.box008 = document.createElement ("div");
-            this.box008.style.margin = "50px 0 3px 10%"; 
+            this.box008.style.margin = "10px 0 3px 10%"; 
             this.box008.style.padding = "6px 4% 6px 4%";
             this.box008.style.borderWidth = "6px";
             this.box008.style.border = "solid #DDE02D";
@@ -487,7 +487,7 @@ function numberOfDisk9() {
             screen.appendChild(box009);
       } else {
             this.box009 = document.createElement ("div");
-            this.box009.style.margin = "50px 0 3px 10%";
+            this.box009.style.margin = "10px 0 3px 10%";
             this.box009.style.padding = "6px 4% 6px 4%";
             this.box009.style.borderWidth = "6px";
             this.box009.style.border = "solid #0F17B8";
@@ -523,8 +523,8 @@ function numberOfDisk10() {
             screen.appendChild(box010);
       } else {
             this.box010 = document.createElement ("div");
-            this.box010.style.margin = "50px 0 3px 10%";
-            this.box010.style.padding = "6px 2.3% 6px 2.3%";
+            this.box010.style.margin = "10px 0 3px 10%";
+            this.box010.style.padding = "6px 2.6% 6px 2.6%";
             this.box010.style.borderWidth = "6px";
             this.box010.style.border = "solid #B8820F";
             this.box010.style.borderRadius = "20%";
@@ -679,7 +679,7 @@ function start() {                                           // Iniciar as aplic
       box009.addEventListener("click", click9, false);
       box010.addEventListener("click", click10, false);
       
-      var text = document.createTextNode("as");
+      var text = document.createTextNode("at");
       var paragraph = document.createElement("p");
       paragraph.style.clear = "both";
       paragraph.style.paddingTop = "3em";
