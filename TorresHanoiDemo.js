@@ -1,8 +1,9 @@
 const mbObj = window.matchMedia("(min-width: 725px)");
-mbObj.addEventListener("change", marcos, false);
+mbObj.addEventListener("change", sizeScreenEquipment, false);
 let sizeScreenEquip;
 
-function marcos(x) {
+
+function sizeScreenEquipment(x) {
       if (x.matches) {
             sizeScreenEquip = true;
       } else {
@@ -11,9 +12,7 @@ function marcos(x) {
 }
 
 function titleTextHanoi() {
-
       box01 = document.createElement ("div");
-      box01.style.clear = "both";
       box01.style.height = "100%";
       box01.style.marginLeft = "auto";
       box01.style.marginRight = "auto";    
@@ -34,6 +33,7 @@ function titleTextHanoi() {
             box01.style.fontWeight = "800";
 
       } else {
+
             box01.style.clear = "both";
             box01.style.width = "90%";
             box01.style.marginTop = "5%";
@@ -41,7 +41,8 @@ function titleTextHanoi() {
             box01.style.fontSize = "4vh";
             box01.style.fontWeight = "600";
       }
-      this.box01.textContent = "Bem Vindos a explicação das Torres de Hanói";
+
+      box01.textContent = "Bem Vindos a explicação das Torres de Hanói";
       screen.appendChild(box01);
 
       for (var i = 0; i < 8; i++) {
@@ -61,7 +62,9 @@ function titleTextHanoi() {
                   box01.style.marginBottom = "1%";
                   box01.style.lineHeight = "4.8vh";
                   box01.style.fontSize = "1.5vw";
+
             } else {
+
                   box01.style.textIndent = "10%";
                   box01.style.marginLeft = "5%";
                   box01.style.marginRight = "5%";
@@ -92,13 +95,16 @@ function titleTextHanoi() {
                   box01.textContent = "Se o número de Discos for igual a 5, temos 2**5 - 1 = 2 x 2 x 2 x 2 x 2 - 1 = 31 movimentos.";
 
             } else if (( i === 6 )) {
+
                   if (sizeScreenEquip) {
                         box01.style.marginBottom = "6vh";
                   } else {
                         box01.style.marginBottom = "8vh";
                   }
+
                   box01.textContent = "Devido a limitação do tamanho das telas dos computadores, limitaremos o número de discos em 10 unidades. Escolha, a seguir, a demonstração da solução do quebra-cabeça com o número de discos desejados, dentro da limitação."
             }
+
             screen.appendChild(box01);
       }
 }
@@ -113,102 +119,13 @@ function sizeScreenEquipFalse() {
       }
 }
 
-function diskNumberBox() {
-      
-      for (var i = 0; i < 8; i++) {
+function sizeScreenEquipTrue() {
+      if (sizeScreenEquip) { 
             box01 = document.createElement ("div");
-            box01 = document.createElement ("float");
             box01.style.clear = "both";
-            box01.style.borderWidth = "6px";
-            box01.style.borderRadius = "20%"
-            box01.style.fontWeight = "800";
-            box01.style.textAlign = "center";
-            box01.style.verticalAlign = "Middle"; 
-            box01.style.color = "#FFF";
-
-                  if (sizeScreenEquip) { 
-                  box01.style.marginLeft = "4%";
-                  box01.style.fontSize = "1.75vw";
-                  box01.style.paddingTop = "10px";
-                  box01.style.paddingBottom = "10px";
-                  box01.style.paddingLeft = "1.3%";
-                  box01.style.paddingRight = "1.3%";
-                  } else {
-                  box01.style.marginLeft = "10%";
-                  box01.style.fontSize = "7vw";
-                  box01.style.paddingLeft = "4%";
-                  box01.style.paddingRight = "4%";
-                  box01.style.paddingTop = "6px";
-                  box01.style.paddingBottom = "6px";
-                  }
-
-            if (( i === 0 )) {
-                  if (sizeScreenEquip) { 
-                        box01.style.marginLeft = "10%";
-                  } else {
-                        box01.style.marginLeft = "0%";  
-                  }
-                  box01.style.border = "solid #0000ff";
-                  box01.style.backgroundColor = "#0000ff";
-                  box01.textContent = i + 3;
-                  screen.appendChild(box01);
-
-            } else if (( i === 1 )) {
-                  box01.style.border = "solid #075025";
-                  box01.style.backgroundColor = "#075025";
-                  box01.textContent = i + 3;
-                  screen.appendChild(box01);
-
-            } else if (( i === 2 )) {
-                  box01.style.border = "solid #3D0750";
-                  box01.style.backgroundColor = "#3D0750";
-                  box01.textContent = i + 3;
-                  screen.appendChild(box01);
-            
-            } else if (( i === 3 )) {
-                  box01.style.border = "solid #B80F33";
-                  box01.style.backgroundColor = "#B80F33";
-                  box01.textContent = i + 3;
-                  screen.appendChild(box01);
-
-                  sizeScreenEquipFalse()
-            
-            } else if (( i === 4 )) {
-
-                  box01.style.border = "solid #ff0ff0";
-                  box01.style.backgroundColor = "#ff0ff0";
-                  box01.textContent = i + 3;
-                  screen.appendChild(box01);
-
-            } else if (( i === 5 )) {
-                  box01.style.border = "solid #DDE02D";
-                  box01.style.backgroundColor = "#DDE02D";
-                  box01.textContent = i + 3;
-                  screen.appendChild(box01);
-
-            } else if (( i === 6 )) {
-                  box01.style.border = "solid #0F17B8";
-                  box01.style.backgroundColor = "#0F17B8";
-                  box01.textContent = i + 3;
-                  screen.appendChild(box01);
-
-            } else if (( i === 7 )) {
-                  box01.style.marginRight = "10%";
-                  box01.style.border = "solid #B8820F";
-                  box01.style.backgroundColor = "#B8820F";
-                  box01.style.paddingLeft = "0.8%";
-                  box01.style.paddingRight = "0.8%";
-                  box01.textContent = i + 3;
-
-                        if (sizeScreenEquip == false) { 
-                              box01.style.paddingLeft = "2.2%";
-                              box01.style.paddingRight = "2.2%";
-                        }
-
-                  screen.appendChild(box01);
-            
-                  sizeScreenEquipFalse()
-            }
+            box01.style.marginTop = "50px";
+            box01.style.marginBottom = "50px";
+            screen.appendChild(box01);
       }
 }
 
@@ -217,14 +134,551 @@ function diskNumberBox() {
 
 
 
+function diskNumberBox() {
+      
+      for (var i = 3; i < 11; i++) {
+            this.box01 = document.createElement ("div");
+            this.box01 = document.createElement ("float");
+            this.box01.style.clear = "both";
+            this.box01.style.borderWidth = "6px";
+            this.box01.style.borderRadius = "20%"
+            this.box01.style.fontWeight = "800";
+            this.box01.style.textAlign = "center";
+            this.box01.style.verticalAlign = "Middle"; 
+            this.box01.style.backgroundColor = "#FFF";
+            this.box01.textContent = i;
+
+
+                  if (sizeScreenEquip) { 
+                        this.box01.style.marginLeft = "4%";
+                        this.box01.style.fontSize = "1.75vw";
+                        this.box01.style.paddingTop = "10px";
+                        this.box01.style.paddingBottom = "10px";
+                        this.box01.style.paddingLeft = "1.3%";
+                        this.box01.style.paddingRight = "1.3%";
+                  } else {
+                        this.box01.style.marginLeft = "10%";
+                        this.box01.style.fontSize = "7vw";
+                        this.box01.style.paddingLeft = "4%";
+                        this.box01.style.paddingRight = "4%";
+                        this.box01.style.paddingTop = "6px";
+                        this.box01.style.paddingBottom = "6px";
+                  }
+
+            if (( i === 3 )) {
+                  if (sizeScreenEquip) { 
+                        this.box01.style.marginLeft = "10%";
+                  } else {
+                        this.box01.style.marginLeft = "0%";  
+                  }
+                  this.box01.style.border = "solid #0000ff";
+                  this.box01.style.Color = "#0000ff";
+                  var diskNumberBox3 = box01;
+                  screen.appendChild(box01);
+
+            } else if (( i === 4 )) {
+                  this.box01.style.border = "solid #075025";
+                  this.box01.style.backgroundColor = "#075025";
+                  var diskNumberBox4 = this.box01;
+                  screen.appendChild(box01);
+
+            } else if (( i === 5 )) {
+                  this.box01.style.border = "solid #3D0750";
+                  this.box01.style.backgroundColor = "#3D0750";
+                  var diskNumberBox5 = this.box01;
+                  screen.appendChild(box01);
+            
+            } else if (( i === 6 )) {
+                  this.box01.style.border = "solid #B80F33";
+                 // this.box01.style.backgroundColor = "#B80F33";
+                  var diskNumberBox6 = this.box01;
+                  screen.appendChild(box01);
+
+                  sizeScreenEquipFalse()
+            
+            } else if (( i === 7 )) {
+                  if (sizeScreenEquip === false) {
+                        this.box01.style.marginLeft = "9.5%";
+                  }
+                  this.box01.style.border = "solid #ff0ff0";
+                 // this.box01.style.backgroundColor = "#ff0ff0";
+                  var diskNumberBox7 = this.box01;
+                  screen.appendChild(box01);
+
+            } else if (( i === 8 )) {
+                  this.box01.style.border = "solid #DDE02D";
+                  //this.box01.style.backgroundColor = "#DDE02D";
+                  var diskNumberBox8 = this.box01;
+                  screen.appendChild(box01);
+
+            } else if (( i === 9 )) {
+                  this.box01.style.border = "solid #0F17B8";
+                 // this.box01.style.backgroundColor = "#0F17B8";
+                  var diskNumberBox9 = this.box01;
+                  screen.appendChild(box01);
+
+            } else if (( i === 10 )) {
+                  this.box01.style.marginRight = "10%";
+                  this.box01.style.border = "solid #B8820F";
+                  //this.box01.style.backgroundColor = "#B8820F";
+                  this.box01.style.paddingLeft = "0.8%";
+                  this.box01.style.paddingRight = "0.8%";
+                  
+                  if (sizeScreenEquip === false) { 
+                        this.box01.style.paddingLeft = "2.2%";
+                        this.box01.style.paddingRight = "2.2%";
+                        }
+
+                  var diskNumberBox10 = this.box01;
+                  screen.appendChild(box01);
+
+                  sizeScreenEquipTrue()
+            }
+            
+      }
+      
+}
+
+/*
+var tower3 = new Tower();
+var tower4 = new Tower();
+var tower5 = new Tower();
+var tower6 = new Tower();
+var tower7 = new Tower();
+var tower8 = new Tower();
+var tower9 = new Tower();
+var tower10 = new Tower();
+*/
+
+
+function numberOfDisk3() {
+      if (sizeScreenEquip) {
+            this.box003 = document.createElement ("div");
+            this.box003.style.margin = "3px 0 3px 20.1%";
+            this.box003.style.padding = "10px 1.3% 9px 1.3%";
+            this.box003.style.borderWidth = "6px";
+            this.box003.style.border = "solid #0000ff";
+            this.box003.style.borderRadius = "20%";
+            this.box003.style.fontSize = "1.75vw";
+            this.box003.style.fontWeight = "800";
+            this.box003.style.textAlign = "center";
+            this.box003.style.verticalAlign = "Middle"; 
+            this.box003.style.color = "#0000ff";
+            this.box003.style.backgroundColor = "#FFF";
+            this.box003.style.float = "left";
+            this.box003.textContent = 3;
+            screen.appendChild(box003);
+      } else {
+            this.box003 = document.createElement ("div");
+            this.box003.style.margin = "50px 0 3px 12%"; 
+            this.box003.style.padding = "6px 4% 6px 4%";
+            this.box003.style.borderWidth = "6px";
+            this.box003.style.border = "solid #0000ff";
+            this.box003.style.borderRadius = "20%";
+            this.box003.style.fontSize = "5vw";
+            this.box003.style.fontWeight = "800";
+            this.box003.style.textAlign = "center";
+            this.box003.style.verticalAlign = "Middle"; 
+            this.box003.style.color = "#0000ff";           
+            this.box003.style.backgroundColor = "#fff"; 
+            this.box003.textContent = 3;
+            this.box003.style.float = "left";
+            screen.appendChild(box003);
+      }
+}
+
+function numberOfDisk4() {
+      if (sizeScreenEquip) {
+            this.box004 = document.createElement ("div");
+            this.box004.style.margin = "3px 0 3px 4.05%";
+            this.box004.style.padding = "10px 1.3% 9px 1.3%";
+            this.box004.style.borderWidth = "6px";
+            this.box004.style.border = "solid #075025";
+            this.box004.style.borderRadius = "20%";
+            this.box004.style.fontSize = "1.75vw";
+            this.box004.style.fontWeight = "800";
+            this.box004.style.textAlign = "center";
+            this.box004.style.verticalAlign = "Middle"; 
+            this.box004.style.color = "#075025";
+            this.box004.style.backgroundColor = "#FFF";
+            this.box004.style.float = "left";
+            this.box004.textContent = 4;
+            screen.appendChild(box004);
+      } else {
+            this.box004 = document.createElement ("div");
+            this.box004.style.margin = "50px 0 3px 10%";
+            this.box004.style.padding = "6px 4% 6px 4%";
+            this.box004.style.borderWidth = "6px";
+            this.box004.style.border = "solid #075025";
+            this.box004.style.borderRadius = "20%";
+            this.box004.style.fontSize = "5vw";
+            this.box004.style.fontWeight = "800";
+            this.box004.style.textAlign = "center";
+            this.box004.style.verticalAlign = "Middle"; 
+            this.box004.style.color = "#075025";
+            this.box004.style.backgroundColor = "#fff";
+            this.box004.textContent = 4;
+            this.box004.style.float = "left";
+            screen.appendChild(box004);
+      }
+}
+
+function numberOfDisk5() {
+      if (sizeScreenEquip) {
+            this.box005 = document.createElement ("div");
+            this.box005.style.margin = "3px 0 3px 4.05%";
+            this.box005.style.padding = "10px 1.3% 9px 1.3%";
+            this.box005.style.borderWidth = "6px";
+            this.box005.style.border = "solid #3D0750";
+            this.box005.style.borderRadius = "20%";
+            this.box005.style.fontSize = "1.75vw";
+            this.box005.style.fontWeight = "800";
+            this.box005.style.textAlign = "center";
+            this.box005.style.verticalAlign = "Middle"; 
+            this.box005.style.color = "#3D0750";
+            this.box005.style.backgroundColor = "#FFF";
+            this.box005.style.float = "left";
+            this.box005.textContent = 5;
+            screen.appendChild(box005);
+      } else {
+            this.box005 = document.createElement ("div");
+            this.box005.style.margin = "50px 0 3px 10%";
+            this.box005.style.padding = "6px 4% 6px 4%";
+            this.box005.style.borderWidth = "6px";
+            this.box005.style.border = "solid #3D0750";
+            this.box005.style.borderRadius = "20%";
+            this.box005.style.fontSize = "5vw";
+            this.box005.style.fontWeight = "800";
+            this.box005.style.textAlign = "center";
+            this.box005.style.verticalAlign = "Middle"; 
+            this.box005.style.color = "#3D0750";
+            this.box005.style.backgroundColor = "#fff";
+            this.box005.textContent = 5;
+            this.box005.style.float = "left";
+            screen.appendChild(box005);
+      }
+}
+
+function numberOfDisk6() {
+      if (sizeScreenEquip) {
+            this.box006 = document.createElement ("div");
+            this.box006.style.margin = "3px 0 3px 4.05%";
+            this.box006.style.padding = "10px 1.3% 9px 1.3%";
+            this.box006.style.borderWidth = "6px";
+            this.box006.style.border = "solid #B80F33";
+            this.box006.style.borderRadius = "20%";
+            this.box006.style.fontSize = "1.75vw";
+            this.box006.style.fontWeight = "800";
+            this.box006.style.textAlign = "center";
+            this.box006.style.verticalAlign = "Middle";
+            this.box006.style.color = "#B80F33";
+            this.box006.style.backgroundColor = "#FFF";
+            this.box006.style.float = "left";
+            this.box006.textContent = 6;
+            screen.appendChild(box006);
+      } else {
+            this.box006 = document.createElement ("div");
+            this.box006.style.margin = "50px 0 3px 10%";
+            this.box006.style.padding = "6px 4% 6px 4%";
+            this.box006.style.borderWidth = "6px";
+            this.box006.style.border = "solid #B80F33";
+            this.box006.style.borderRadius = "20%";
+            this.box006.style.fontSize = "5vw";
+            this.box006.style.fontWeight = "800";
+            this.box006.style.textAlign = "center";
+            this.box006.style.verticalAlign = "Middle"; 
+            this.box006.style.color = "#B80F33";
+            this.box006.style.backgroundColor = "#fff";
+            this.box006.textContent = 6;
+            this.box006.style.float = "left";
+            screen.appendChild(box006);
+      }
+}
+sizeScreenEquipFalse();
+
+function numberOfDisk7() {
+      if (sizeScreenEquip) {
+            this.box007 = document.createElement ("div");
+            this.box007.style.margin = "3px 0 3px 4.05%";
+            this.box007.style.padding = "10px 1.3% 9px 1.3%";
+            this.box007.style.borderWidth = "6px";
+            this.box007.style.border = "solid #ff0ff0";
+            this.box007.style.borderRadius = "20%";
+            this.box007.style.fontSize = "1.75vw";
+            this.box007.style.fontWeight = "800";
+            this.box007.style.textAlign = "center";
+            this.box007.style.verticalAlign = "Middle"; 
+            this.box007.style.color = "#ff0ff0";
+            this.box007.style.backgroundColor = "#FFF";
+            this.box007.style.float = "left";
+            this.box007.textContent = 7;
+            screen.appendChild(box007);
+      } else {
+            this.box007 = document.createElement ("div");
+            this.box007.style.margin = "50px 0 3px 12%"; 
+            this.box007.style.padding = "6px 4% 6px 4%";
+            this.box007.style.borderWidth = "6px";
+            this.box007.style.border = "solid #ff0ff0";
+            this.box007.style.borderRadius = "20%";
+            this.box007.style.fontSize = "5vw";
+            this.box007.style.fontWeight = "800";
+            this.box007.style.textAlign = "center";
+            this.box007.style.verticalAlign = "Middle"; 
+            this.box007.style.color = "#ff0ff0";
+            this.box007.style.backgroundColor = "#fff";
+            this.box007.textContent = 7;
+            this.box007.style.float = "left";
+            screen.appendChild(box007);
+      }
+}
+
+function numberOfDisk8() {
+      if (sizeScreenEquip) {
+            this.box008 = document.createElement ("div");
+            this.box008.style.margin = "3px 0 3px 4.05%";
+            this.box008.style.padding = "10px 1.3% 9px 1.3%";
+            this.box008.style.borderWidth = "6px";
+            this.box008.style.border = "solid #DDE02D";
+            this.box008.style.borderRadius = "20%";
+            this.box008.style.fontSize = "1.75vw";
+            this.box008.style.fontWeight = "800";
+            this.box008.style.textAlign = "center";
+            this.box008.style.verticalAlign = "Middle"; 
+            this.box008.style.color = "#DDE02D";
+            this.box008.style.backgroundColor = "#FFF";
+            this.box008.style.float = "left";
+            this.box008.textContent = 8;
+            screen.appendChild(box008);
+      } else {
+            this.box008 = document.createElement ("div");
+            this.box008.style.margin = "50px 0 3px 10%"; 
+            this.box008.style.padding = "6px 4% 6px 4%";
+            this.box008.style.borderWidth = "6px";
+            this.box008.style.border = "solid #DDE02D";
+            this.box008.style.borderRadius = "20%";
+            this.box008.style.fontSize = "5vw";
+            this.box008.style.fontWeight = "800";
+            this.box008.style.textAlign = "center";
+            this.box008.style.verticalAlign = "Middle"; 
+            this.box008.style.color = "#DDE02D";
+            this.box008.style.backgroundColor = "#fff";
+            this.box008.textContent = 8;
+            this.box008.style.float = "left";
+            screen.appendChild(box008);
+      }
+}
+
+function numberOfDisk9() {
+      if (sizeScreenEquip) {
+            this.box009 = document.createElement ("div");
+            this.box009.style.margin = "3px 0 3px 4.05%";
+            this.box009.style.padding = "10px 1.3% 9px 1.3%";
+            this.box009.style.borderWidth = "6px";
+            this.box009.style.border = "solid #0F17B8";
+            this.box009.style.borderRadius = "20%";
+            this.box009.style.fontSize = "1.75vw";
+            this.box009.style.fontWeight = "800";
+            this.box009.style.textAlign = "center";
+            this.box009.style.verticalAlign = "Middle"; 
+            this.box009.style.color = "#0F17B8";
+            this.box009.style.backgroundColor = "#FFF";
+            this.box009.style.float = "left";
+            this.box009.textContent = 9;
+            screen.appendChild(box009);
+      } else {
+            this.box009 = document.createElement ("div");
+            this.box009.style.margin = "50px 0 3px 10%";
+            this.box009.style.padding = "6px 4% 6px 4%";
+            this.box009.style.borderWidth = "6px";
+            this.box009.style.border = "solid #0F17B8";
+            this.box009.style.borderRadius = "20%";
+            this.box009.style.fontSize = "5vw";
+            this.box009.style.fontWeight = "800";
+            this.box009.style.textAlign = "center";
+            this.box009.style.verticalAlign = "Middle";
+            this.box009.style.color = "#0F17B8"; 
+            this.box009.style.backgroundColor = "#fff";
+            this.box009.textContent = 9;
+            this.box009.style.float = "left";
+            screen.appendChild(box009);
+      }
+}
+
+function numberOfDisk10() {
+      if (sizeScreenEquip) {
+            this.box010 = document.createElement ("div");
+            this.box010.style.margin = "3px 0 3px 4.05%";
+            this.box010.style.padding = "10px 0.85% 9px 0.85%";
+            this.box010.style.borderWidth = "6px";
+            this.box010.style.border = "solid #B8820F";
+            this.box010.style.borderRadius = "20%";
+            this.box010.style.fontSize = "1.75vw";
+            this.box010.style.fontWeight = "800";
+            this.box010.style.textAlign = "center";
+            this.box010.style.verticalAlign = "Middle"; 
+            this.box010.style.color = "#B8820F"; 
+            this.box010.style.backgroundColor = "#FFF";
+            this.box010.style.float = "left";
+            this.box010.textContent = 10;
+            screen.appendChild(box010);
+      } else {
+            this.box010 = document.createElement ("div");
+            this.box010.style.margin = "50px 0 3px 10%";
+            this.box010.style.padding = "6px 2.3% 6px 2.3%";
+            this.box010.style.borderWidth = "6px";
+            this.box010.style.border = "solid #B8820F";
+            this.box010.style.borderRadius = "20%";
+            this.box010.style.fontSize = "5vw";
+            this.box010.style.fontWeight = "800";
+            this.box010.style.textAlign = "center";
+            this.box010.style.verticalAlign = "Middle"; 
+            this.box010.style.color = "#B8820F"; 
+            this.box010.style.backgroundColor = "#fff";
+            this.box010.textContent = 10;
+            this.box010.style.float = "left";
+            screen.appendChild(box010);
+      }
+}
+
+function over3() {
+      box003.style.color = "#fff";
+      box003.style.backgroundColor = "#0000ff";
+}
+function over4() {
+      box004.style.color = "#fff";
+      box004.style.backgroundColor = "#075025";
+}
+function over5() {
+      box005.style.color = "#fff";
+      box005.style.backgroundColor = "#3D0750";
+}
+function over6() {
+      box006.style.color = "#fff";
+      box006.style.backgroundColor = "#B80F33";
+}
+function over7() {
+      box007.style.color = "#fff";
+      box007.style.backgroundColor = "#ff0ff0";
+}
+function over8() {
+      box008.style.color = "#fff";
+      box008.style.backgroundColor = "#DDE02D";
+}
+function over9() {
+      box009.style.color = "#fff";
+      box009.style.backgroundColor = "#0F17B8";
+}
+function over10() {
+      box010.style.color = "#fff";
+      box010.style.backgroundColor = "#B8820F";
+}
+
+function out3() {
+      box003.style.color = "#0000ff";
+      box003.style.backgroundColor = "#fff";
+}
+function out4() {
+      box004.style.color = "#075025";
+      box004.style.backgroundColor = "#fff";
+}
+function out5() {
+      box005.style.color = "#3D0750";
+      box005.style.backgroundColor = "#fff";
+}
+function out6() {
+      box006.style.color = "#B80F33";
+      box006.style.backgroundColor = "#fff";
+}
+function out7() {
+      box007.style.color = "#ff0ff0";
+      box007.style.backgroundColor = "#fff";
+}
+function out8() {
+      box008.style.color = "#DDE02D";
+      box008.style.backgroundColor = "#fff";
+}
+function out9() {
+      box009.style.color = "#0F17B8";
+      box009.style.backgroundColor = "#fff";
+}
+function out10() {
+      box010.style.color = "#B8820F";
+      box010.style.backgroundColor = "#fff";
+}
+
+
+function click3() {
+      box003.elected = !box003.elected;
+}
+function click4() {
+      box004.elected = !box004.elected;
+}
+function click5() {
+      box005.elected = !box005.elected;
+}
+function click6() {
+      box006.elected = !box006.elected;
+}
+function click7() {
+      box007.elected = !box007.elected;
+}
+function click8() {
+      box008.elected = !box008.elected;
+}
+function click9() {
+      box009.elected = !box009.elected;
+}
+function click10() {
+      box010.elected = !box010.elected;
+}
+
+
+
+
+
 function start() {                                           // Iniciar as aplicacoes
       screen = document.getElementsByTagName("body") [0];
       screen.style.textAlign = "center";
-      marcos(mbObj);
+      sizeScreenEquipment(mbObj);
       titleTextHanoi();
       diskNumberBox();
 
+      numberOfDisk3();
+      numberOfDisk4();
+      numberOfDisk5();
+      numberOfDisk6();
+      numberOfDisk7();
+      numberOfDisk8();
+      numberOfDisk9();
+      numberOfDisk10();
+ 
+      box003.addEventListener("mouseover", over3, false);
+      box004.addEventListener("mouseover", over4, false);
+      box005.addEventListener("mouseover", over5, false); 
+      box006.addEventListener("mouseover", over6, false);
+      box007.addEventListener("mouseover", over7, false);
+      box008.addEventListener("mouseover", over8, false); 
+      box009.addEventListener("mouseover", over9, false);
+      box010.addEventListener("mouseover", over10, false);
 
+      box003.addEventListener("mouseout", out3, false);
+      box004.addEventListener("mouseout", out4, false);
+      box005.addEventListener("mouseout", out5, false); 
+      box006.addEventListener("mouseout", out6, false);
+      box007.addEventListener("mouseout", out7, false);
+      box008.addEventListener("mouseout", out8, false); 
+      box009.addEventListener("mouseout", out9, false);
+      box010.addEventListener("mouseout", out10, false);
+
+      box003.addEventListener("click", click3, false);
+      box004.addEventListener("click", click4, false);
+      box005.addEventListener("click", click5, false);
+      box006.addEventListener("click", click6, false);
+      box007.addEventListener("click", click7, false);
+      box008.addEventListener("click", click8, false);
+      box009.addEventListener("click", click9, false);
+      box010.addEventListener("click", click10, false);
+      
       var text = document.createTextNode("ar");
       var paragraph = document.createElement("p");
       paragraph.style.clear = "both";
@@ -232,24 +686,9 @@ function start() {                                           // Iniciar as aplic
       paragraph.appendChild(text);
       screen.appendChild(paragraph);
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+      window.addEventListener("load", start, false);
 
 
 
@@ -469,11 +908,6 @@ function Tower(startBox) {                               // (CriacaoTorres01.js)
 
 
 
-
-
-
-
-
     //  screen.appendChild(tower1.box);
    //   screen.appendChild(tower2.box);
    //   screen.appendChild(tower3.box);
@@ -499,9 +933,9 @@ function Tower(startBox) {                               // (CriacaoTorres01.js)
       paragraph.setAttribute("id", "counter");
       paragraph.appendChild(text);
       screen.appendChild(paragraph);*/
-}
 
-window.addEventListener("load", start, false);
+
+
 
 
 
