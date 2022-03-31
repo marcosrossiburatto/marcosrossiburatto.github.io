@@ -97,7 +97,7 @@ function titleTextHanoi() {
             } else if (( i === 6 )) {
 
                   if (sizeScreenEquip) {
-                        box01.style.marginBottom = "6vh";
+                        box01.style.marginBottom = "3vh";
                   } else {
                         box01.style.marginBottom = "8vh";
                   }
@@ -113,18 +113,18 @@ function sizeScreenEquipFalse() {
       if (sizeScreenEquip === false) { 
             box01 = document.createElement ("div");
             box01.style.clear = "both";
-            box01.style.marginTop = "50px";
-            box01.style.marginBottom = "50px";
+            box01.style.marginTop = "20px";
+            box01.style.marginBottom = "20px";
             screen.appendChild(box01);
       }
 }
 
-function sizeScreenEquipTrue() {
+/*function sizeScreenEquipTrue() {
       if (sizeScreenEquip) { 
             box01 = document.createElement ("div");
             box01.style.clear = "both";
-            box01.style.marginTop = "50px";
-            box01.style.marginBottom = "50px";
+         //   box01.style.marginTop = "40px";
+        //    box01.style.marginBottom = "40px";
             screen.appendChild(box01);
       }
 }
@@ -237,7 +237,7 @@ function diskNumberBox() {
             
       }
       
-}
+}*/
 
 /*
 var tower3 = new Tower();
@@ -265,8 +265,8 @@ function numberOfDisk3() {
             this.box003.style.verticalAlign = "Middle"; 
             this.box003.style.color = "#0000ff";
             this.box003.style.backgroundColor = "#FFF";
-            this.box003.style.float = "left";
             this.box003.textContent = 3;
+            this.box003.style.float = "left";
             screen.appendChild(box003);
       } else {
             this.box003 = document.createElement ("div");
@@ -301,8 +301,8 @@ function numberOfDisk4() {
             this.box004.style.verticalAlign = "Middle"; 
             this.box004.style.color = "#075025";
             this.box004.style.backgroundColor = "#FFF";
-            this.box004.style.float = "left";
             this.box004.textContent = 4;
+            this.box004.style.float = "left";
             screen.appendChild(box004);
       } else {
             this.box004 = document.createElement ("div");
@@ -337,8 +337,8 @@ function numberOfDisk5() {
             this.box005.style.verticalAlign = "Middle"; 
             this.box005.style.color = "#3D0750";
             this.box005.style.backgroundColor = "#FFF";
-            this.box005.style.float = "left";
             this.box005.textContent = 5;
+            this.box005.style.float = "left";
             screen.appendChild(box005);
       } else {
             this.box005 = document.createElement ("div");
@@ -373,8 +373,8 @@ function numberOfDisk6() {
             this.box006.style.verticalAlign = "Middle";
             this.box006.style.color = "#B80F33";
             this.box006.style.backgroundColor = "#FFF";
-            this.box006.style.float = "left";
             this.box006.textContent = 6;
+            this.box006.style.float = "left";
             screen.appendChild(box006);
       } else {
             this.box006 = document.createElement ("div");
@@ -410,8 +410,8 @@ function numberOfDisk7() {
             this.box007.style.verticalAlign = "Middle"; 
             this.box007.style.color = "#ff0ff0";
             this.box007.style.backgroundColor = "#FFF";
-            this.box007.style.float = "left";
             this.box007.textContent = 7;
+            this.box007.style.float = "left";
             screen.appendChild(box007);
       } else {
             this.box007 = document.createElement ("div");
@@ -446,8 +446,8 @@ function numberOfDisk8() {
             this.box008.style.verticalAlign = "Middle"; 
             this.box008.style.color = "#DDE02D";
             this.box008.style.backgroundColor = "#FFF";
-            this.box008.style.float = "left";
             this.box008.textContent = 8;
+            this.box008.style.float = "left";
             screen.appendChild(box008);
       } else {
             this.box008 = document.createElement ("div");
@@ -482,8 +482,8 @@ function numberOfDisk9() {
             this.box009.style.verticalAlign = "Middle"; 
             this.box009.style.color = "#0F17B8";
             this.box009.style.backgroundColor = "#FFF";
-            this.box009.style.float = "left";
             this.box009.textContent = 9;
+            this.box009.style.float = "left";
             screen.appendChild(box009);
       } else {
             this.box009 = document.createElement ("div");
@@ -518,8 +518,8 @@ function numberOfDisk10() {
             this.box010.style.verticalAlign = "Middle"; 
             this.box010.style.color = "#B8820F"; 
             this.box010.style.backgroundColor = "#FFF";
-            this.box010.style.float = "left";
             this.box010.textContent = 10;
+            this.box010.style.float = "left";
             screen.appendChild(box010);
       } else {
             this.box010 = document.createElement ("div");
@@ -641,7 +641,7 @@ function start() {                                           // Iniciar as aplic
       screen.style.textAlign = "center";
       sizeScreenEquipment(mbObj);
       titleTextHanoi();
-      diskNumberBox();
+     // diskNumberBox();
 
       numberOfDisk3();
       numberOfDisk4();
@@ -679,7 +679,7 @@ function start() {                                           // Iniciar as aplic
       box009.addEventListener("click", click9, false);
       box010.addEventListener("click", click10, false);
       
-      var text = document.createTextNode("ar");
+      var text = document.createTextNode("as");
       var paragraph = document.createElement("p");
       paragraph.style.clear = "both";
       paragraph.style.paddingTop = "3em";
@@ -689,7 +689,7 @@ function start() {                                           // Iniciar as aplic
 }
 
       window.addEventListener("load", start, false);
-
+      window.addEventListener("change", start, false);
 
 
 
