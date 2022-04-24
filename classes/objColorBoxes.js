@@ -55,7 +55,7 @@ function nodisks() {
             nod.style.maxWidth = "15%";
             nod.style.minHeight = "26px";
             nod.style.maxHeight = "26px";
-            nod.style.padding = "9px 0 10px 0";
+            nod.style.padding = "6px 0 13px 0";
             nod.style.fontSize = "160%";
             nod.style.margin = "3px -8% 3px 12%";
        }
@@ -200,7 +200,7 @@ function nodisksEX() {
             nod.style.maxWidth = "15%";
             nod.style.minHeight = "26px";
             nod.style.maxHeight = "26px";
-            nod.style.padding = "9px 0 10px 0";
+            nod.style.padding = "6px 0 13px 0";
             nod.style.fontSize = "160%"
             nod.style.margin = "3px -8% 3px 12%";  
        }
@@ -235,6 +235,13 @@ function colorDisksEXP() {
 function colorDisksDIV() {
       nodisksEX();
       colorBox = "DIV";
+      if (sizeScreenEquipm) {
+            nod.style.paddingTop = "6px";
+            nod.style.paddingBottom = "13px";
+      } else {
+            nod.style.paddingTop = "4px";
+            nod.style.paddingBottom = "16px";
+      }
       nodDIV = nod;
       nodDIV.textContent = "÷";
       screen.appendChild(nodDIV);
@@ -247,8 +254,8 @@ function colorDisksMULT() {
             nod.style.paddingTop = "2px";
             nod.style.paddingBottom = "17px";
       } else {
-            nod.style.paddingTop = "5px";
-            nod.style.paddingBottom = "14px";
+            nod.style.paddingTop = "3px";
+            nod.style.paddingBottom = "16px";
       }
       nodMULT = nod;
       nodMULT.textContent = "x";
@@ -262,8 +269,8 @@ function colorDisksSUB() {
             nod.style.paddingTop = "2px";
             nod.style.paddingBottom = "17px";
       } else {
-            nod.style.paddingTop = "5px";
-            nod.style.paddingBottom = "14px";
+            nod.style.paddingTop = "3px";
+            nod.style.paddingBottom = "16px";
       }
       nodSUB = nod;
       nodSUB.textContent = "-";
@@ -277,8 +284,8 @@ function colorDisksADI() {
             nod.style.paddingTop = "5px";
             nod.style.paddingBottom = "14px";
       } else {
-            nod.style.paddingTop = "7px";
-            nod.style.paddingBottom = "12px";
+            nod.style.paddingTop = "4px";
+            nod.style.paddingBottom = "15px";
       }
       nodADI = nod;
       nodADI.textContent = "+";
@@ -288,6 +295,13 @@ function colorDisksADI() {
 function colorDisksDOT() {
       nodisksEX();
       colorBox = "DOT";
+      if (sizeScreenEquipm) {
+            nod.style.paddingTop = "6px";
+            nod.style.paddingBottom = "13px";
+      } else {
+            nod.style.paddingTop = "4px";
+            nod.style.paddingBottom = "16px";
+      }
       nodDOT = nod;
       nodDOT.textContent = ".";
       screen.appendChild(nodDOT);
@@ -306,8 +320,8 @@ function colorDisksIGU() {
             nod.style.minWidth = "12.7%";
             nod.style.maxWidth = "12.7%";
       } else {
-            nod.style.paddingTop = "7px";
-            nod.style.paddingBottom = "12px";
+            nod.style.paddingTop = "6px";
+            nod.style.paddingBottom = "13px";
             nod.style.minWidth = "35%";
             nod.style.maxWidth = "35%";
       }
