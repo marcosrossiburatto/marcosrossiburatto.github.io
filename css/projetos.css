@@ -75,6 +75,36 @@ main {
     height: auto;
 }
 
+/* --- CALCULADORA -- */
+.photo_text_calculadora {
+    padding: 4% 5% 5% 5%;
+    display: grid;
+    grid-template-columns: 60% 1fr;
+}
+
+.photo_calculadora {
+    width: 100%;
+}
+
+.text_calculadora {
+    margin: 20% 0 0 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 20% 20% 20%;
+    text-align: left;
+}
+
+.text_calculadora_01 {
+    font-size: 1.7vw;
+    font-weight: 600;
+    color: #11607c;
+}
+
+.text_calculadora_02 {
+    font-size: 1.7vw;
+    font-weight: 600;
+}
+
 /* --- CV VERSAO RESPONSIVO -- */
 .photo_text_cv_versao_responsivo {
     padding: 4% 5% 5% 5%;
