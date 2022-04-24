@@ -1,23 +1,37 @@
+var sizeScreenEquip = window.innerWidth
+//|| document.documentElement.clientWidth
+//|| document.body.clientWidth;
+let sizeScreenEquipm = false;
+
+if (sizeScreenEquip >= 724) {
+      sizeScreenEquipm = true;
+} 
+
 function titleText() {
-  
-    var ethText = "Calculadora Experimental";  
-    
+
+    var ethText = "Calculadora Experimental";
     eth = document.createElement ("div");
-    eth.style.height = "20px";
-    eth.style.marginLeft = "28%";
     eth.style.border = "solid #ff0000";
-    eth.style.borderWidth = "6px";
+    eth.style.borderWidth = "2px";
     eth.style.borderRadius = "10%"
     eth.style.textAlign = "center";
-    eth.style.paddingTop = "5px";
-    eth.style.paddingBottom = "15px";
     eth.style.color = "#11607c";
-    eth.style.width = "40%";
+    eth.style.paddingTop = "0.5%";
+    eth.style.paddingBottom = "0.5%";
     eth.style.marginTop = "30px";
     eth.style.marginBottom = "0%";  
-    eth.style.fontSize = "2vw";
     eth.style.fontWeight = "800";
     eth.textContent = ethText
+
+       if (sizeScreenEquipm) {
+            eth.style.marginLeft = "28%";
+            eth.style.width = "40%";
+            eth.style.fontSize = "2vw";
+       } else {
+            eth.style.marginLeft = "12%";
+            eth.style.width = "75%";
+            eth.style.fontSize = "5vw";
+       }
     screen.appendChild(eth);
 }
 
@@ -26,15 +40,25 @@ function nodisks() {
       nod.style.borderWidth = "6px";
       nod.style.borderRadius = "25%";
       nod.style.fontWeight = "800";
-      nod.style.backgroundColor = "#EBEBE8"; 
+      nod.style.backgroundColor = "#EBEBE8";
       nod.style.float = "left";
-      nod.style.minWidth = "5%";
-      nod.style.maxWidth = "5%";
-      nod.style.minHeight = "20px";
-      nod.style.maxHeight = "20px";
-      nod.style.padding = "0px 0 18px 0";
-      nod.style.fontSize = "210%";
-      nod.style.margin = "3px -31.5% 3px 34%";
+      if (sizeScreenEquipm) {
+            nod.style.minWidth = "5%";
+            nod.style.maxWidth = "5%";
+            nod.style.minHeight = "20px";
+            nod.style.maxHeight = "20px";
+            nod.style.padding = "0px 0 18px 0";
+            nod.style.fontSize = "210%";
+            nod.style.margin = "3px -31.5% 3px 34%";     
+       } else {
+            nod.style.minWidth = "15%";
+            nod.style.maxWidth = "15%";
+            nod.style.minHeight = "26px";
+            nod.style.maxHeight = "26px";
+            nod.style.padding = "9px 0 10px 0";
+            nod.style.fontSize = "160%";
+            nod.style.margin = "3px -8% 3px 12%";
+       }
 };
 
 function colorDisks01() {
@@ -162,13 +186,24 @@ function nodisksEX() {
       nod.style.color = "#000";
       nod.style.backgroundColor = "#FFC300"; 
       nod.style.float = "left";
-      nod.style.minWidth = "5%";
-      nod.style.maxWidth = "5%";
-      nod.style.minHeight = "20px";
-      nod.style.maxHeight = "20px";
-      nod.style.padding = "6px 0 13px 0";
-      nod.style.fontSize = "160%"
-      nod.style.margin = "3px -31.5% 3px 34%";
+
+      if (sizeScreenEquipm) {
+            nod.style.minWidth = "5%";
+            nod.style.maxWidth = "5%";
+            nod.style.minHeight = "20px";
+            nod.style.maxHeight = "20px";
+            nod.style.padding = "6px 0 13px 0";
+            nod.style.fontSize = "160%"
+            nod.style.margin = "3px -31.5% 3px 34%";     
+       } else {
+            nod.style.minWidth = "15%";
+            nod.style.maxWidth = "15%";
+            nod.style.minHeight = "26px";
+            nod.style.maxHeight = "26px";
+            nod.style.padding = "9px 0 10px 0";
+            nod.style.fontSize = "160%"
+            nod.style.margin = "3px -8% 3px 12%";  
+       }
 };
 
 function colorDisksAC() {
@@ -208,8 +243,13 @@ function colorDisksDIV() {
 function colorDisksMULT() {
       nodisksEX();
       colorBox = "MULT";
-      nod.style.paddingTop = "2px";
-      nod.style.paddingBottom = "17px";
+      if (sizeScreenEquipm) {
+            nod.style.paddingTop = "2px";
+            nod.style.paddingBottom = "17px";
+      } else {
+            nod.style.paddingTop = "5px";
+            nod.style.paddingBottom = "14px";
+      }
       nodMULT = nod;
       nodMULT.textContent = "x";
       screen.appendChild(nodMULT);
@@ -218,8 +258,13 @@ function colorDisksMULT() {
 function colorDisksSUB() {
       nodisksEX();
       colorBox = "SUB";
-      nod.style.paddingTop = "2px";
-      nod.style.paddingBottom = "17px";
+      if (sizeScreenEquipm) {
+            nod.style.paddingTop = "2px";
+            nod.style.paddingBottom = "17px";
+      } else {
+            nod.style.paddingTop = "5px";
+            nod.style.paddingBottom = "14px";
+      }
       nodSUB = nod;
       nodSUB.textContent = "-";
       screen.appendChild(nodSUB);
@@ -228,8 +273,13 @@ function colorDisksSUB() {
 function colorDisksADI() {
       nodisksEX();
       colorBox = "ADI";
-      nod.style.paddingTop = "5px";
-      nod.style.paddingBottom = "14px";
+      if (sizeScreenEquipm) {
+            nod.style.paddingTop = "5px";
+            nod.style.paddingBottom = "14px";
+      } else {
+            nod.style.paddingTop = "7px";
+            nod.style.paddingBottom = "12px";
+      }
       nodADI = nod;
       nodADI.textContent = "+";
       screen.appendChild(nodADI);
@@ -250,6 +300,17 @@ function colorDisksIGU() {
       nod.style.paddingBottom = "14px";
       nod.style.minWidth = "12.7%";
       nod.style.maxWidth = "12.7%";
+      if (sizeScreenEquipm) {
+            nod.style.paddingTop = "5px";
+            nod.style.paddingBottom = "14px";
+            nod.style.minWidth = "12.7%";
+            nod.style.maxWidth = "12.7%";
+      } else {
+            nod.style.paddingTop = "7px";
+            nod.style.paddingBottom = "12px";
+            nod.style.minWidth = "35%";
+            nod.style.maxWidth = "35%";
+      }
       nodIGU = nod;
       nodIGU.textContent = "=";
       screen.appendChild(nodIGU);
@@ -260,10 +321,17 @@ function colorDisksVIS() {
       colorBox = "VIS";
       nod.style.backgroundColor = "#EBEBE8";
       nod.style.borderRadius = "5%";
-      nod.style.minWidth = "24.8%";
-      nod.style.maxWidth = "24.8%";
-      nod.style.minHeight = "25px";
-      nod.style.maxHeight = "25px";
+      if (sizeScreenEquipm) {
+            nod.style.minWidth = "24.8%";
+            nod.style.maxWidth = "24.8%";
+            nod.style.minHeight = "25px";
+            nod.style.maxHeight = "25px";
+      } else {
+            nod.style.paddingTop = "8px";
+            nod.style.paddingBottom = "11px";
+            nod.style.minWidth = "71%";
+            nod.style.maxWidth = "71%";
+      }
       nodVIS = nod;
       nodVIS.textContent = join;
       nodVIS.style.textAlign = "right";
