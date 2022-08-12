@@ -517,6 +517,18 @@ a {
     margin-bottom: 4vw;
   }
 
+  .qualifications__title {
+    padding-top: 6vw;
+  }
+
+  .internationalExperience__title,
+  .therapeutic__title,
+  .academic__title {
+    padding-top: 0vw;
+  }
+
+
+
   .goals__title {
     font-weight: 600;
   }
