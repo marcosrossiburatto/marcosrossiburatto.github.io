@@ -447,10 +447,9 @@ a {
 }
 
 .end__division {
-  border-width: 0;
+  border: 0.2vw solid #11607c;
   background-color: #11607c;
   margin: 0 0 1.3vw 2.5vw;
-  height: 0.3vw;
   width: 90%;
 }
 
@@ -503,7 +502,9 @@ a {
   .therapeutic__div,
   .internationalExperience__div,
   .professionalHistory__div,
-  .languages__div {
+  .languages__div,
+  .skills__div,
+  .awards__div {
     background-color: #fff;
     padding-bottom: 4vw;
     height: auto;
@@ -567,7 +568,9 @@ a {
     margin-right: 4vw;
   }
 
-  .languages__title {
+  .languages__title,
+  .skills__title,
+  .awards__title {
     font-size: 4vh;
     font-weight: 600;
     font-style: italic;
@@ -581,11 +584,13 @@ a {
   .information__block__qualifications,
   .information__block__academic,
   .information__block__therapeutic,
-  .information__block__internationalExperience {
+  .information__block__internationalExperience,
+  .information__block__awards {
     width: 90vw;
   }
 
-  .information__block__languages {
+  .information__block__languages,
+  .information__block__skills {
     margin-left: 5vw;
     margin-bottom: 3vh;
     width: 100vw;
@@ -595,18 +600,22 @@ a {
   .material-icons.icon__color__qualifications,
   .material-icons.icon__color__academic,
   .material-icons.icon__color__therapeutic,
-  .material-icons.icon__color__internationalExperience {
+  .material-icons.icon__color__internationalExperience,
+  .material-icons.icon__color__awards {
     font-size: 3vh;
     line-height: 3vh;
     margin-left: 3vw;
+    color: #11607c;
   }
 
-  .material-icons.icon__color__positive__languages {
+  .material-icons.icon__color__positive__languages,
+  .material-icons.icon__color__positive__skills {
     color: #11607c;
     font-size: 2.4vh;
   }
 
-  .material-icons.icon__color__negative__languages {
+  .material-icons.icon__color__negative__languages,
+  .material-icons.icon__color__negative__skills {
     color: rgba(150, 150, 150, 1);
     font-size: 2.5vh;
   }
@@ -615,17 +624,20 @@ a {
   .text__qualifications,
   .text__academic,
   .text__therapeutic,
-  .text__internationalExperience {
+  .text__internationalExperience,
+  .text__awards {
     font-size: 3vh;
     line-height: 3vh;
     margin-left: 1.5vw;
+    color: #000;
   }
 
   .text__goals {
     font-size: 3.2vh;
   }
 
-  .text__languages {
+  .text__languages,
+  .text__skills {
     font-size: 2.5vh;
     color: #000;
     font-weight: 400;
@@ -789,6 +801,11 @@ a {
     margin-left: 2vw;
   }
 
+
+  .end__division {
+    border: 0.3vw solid #11607c;
+    margin: 0 0 3vw 5vw;
+  }
 
   .footer__720 {
     display: none;
