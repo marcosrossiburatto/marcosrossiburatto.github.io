@@ -625,17 +625,35 @@ a {
   }
 
   .information__block__mentorship__title__img,
-  .information__block__sementeviva__title__img,
   .information__block__kiddeBrasil__title__img,
-  .information__block__geBrasil__title__img,
   .information__block__resolucaoEngenharia__title__img,
   .information__block__montagEngenharia__title__img,
-  .information__block__stiInformatica__title__img,
   .information__block__tecman__title__img,
   .information__block__jurubatuba__title__img {
+    margin: 3vw 39vw 3vw 39vw;
+    width: 22vw;
+  }
+
+
+  .information__block__sementeviva__title__img,
+  .information__block__geBrasil__title__img,
+  .information__block__stiInformatica__title__img {
     margin: 3vw 40vw 3vw 40vw;
     width: 20vw;
   }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   .information__block__mentorship__title__datas,
   .information__block__sementeviva__title__datas,
