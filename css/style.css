@@ -442,6 +442,7 @@ a {
   body {
     background-color: #fff;
     font-family: Arial, Helvetica, sans-serif;
+    /* overflow-y: hidden; */
   }
 
   .display__720px {
@@ -547,16 +548,20 @@ a {
   .information__block__qualifications,
   .information__block__academic,
   .information__block__therapeutic,
-  .information__block__internationalExperience,
-  .information__block__awards {
+  .information__block__internationalExperience {
     width: 90vw;
   }
+
+  .information__block__awards {
+    width: 91vw;
+  }
+
 
   .information__block__languages,
   .information__block__skills {
     margin-bottom: 3vw;
     margin-left: 6vw;
-    width: 95vw;
+    width: 94vw;
   }
 
   .material-icons.icon__color__goals,
