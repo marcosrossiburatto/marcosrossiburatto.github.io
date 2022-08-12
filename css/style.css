@@ -790,7 +790,9 @@ a {
   }
 
 
-
+  .footer__720 {
+    display: none;
+  }
 
 
 }
