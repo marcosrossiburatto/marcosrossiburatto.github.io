@@ -27,7 +27,7 @@ a {
   text-decoration: none;
 }
 
-/* ----  RIGHT STYLES ---- */
+/* ----  RIGHT SIDE STYLES ---- */
 .header__div,
 .goals__div,
 .qualifications__div,
@@ -42,23 +42,16 @@ a {
   width: 75vw;
 }
 
-
-
-
 .header__div {
   background-color: #11607c;
   padding-top: 2vw;
-  font-size: 1.5vw;
 }
 
-
-
-
-
-
-.header__name {
+.header__name,
+.header__role {
   color: #fff;
   text-align: center;
+  font-size: 1.5vw;
 }
 
 .header__line {
@@ -67,17 +60,6 @@ a {
   width: 24vw;
   background-color: #fff;
 }
-
-.header__role {
-  color: #fff;
-  text-align: center;
-  font-size: 1.5vw;
-}
-
-
-
-
-
 
 .goals__div {
   background-color: #d6eaf8;
@@ -121,10 +103,6 @@ a {
   width: 67.5vw;
 }
 
-.information__block__goals {
-  align-items: center;
-}
-
 .material-icons.icon__color__goals,
 .material-icons.icon__color__qualifications,
 .material-icons.icon__color__academic,
@@ -155,13 +133,7 @@ a {
   margin-left: 1vw;
 }
 
-
-
-
-
-
-
-/* ----  LEFT STYLES ---- */
+/* ----  LEFT SIDE STYLES ---- */
 .personalPicture__div,
 .contacts__div,
 .skills__div,
@@ -253,12 +225,6 @@ a {
   margin-left: 0.6vw;
   text-align: justify;
 }
-
-
-
-
-
-
 
 /* COMPANIES */
 .mentorship__div,
@@ -476,7 +442,6 @@ a {
   body {
     background-color: #fff;
     font-family: Arial, Helvetica, sans-serif;
-    /* overflow-x: hidden; */
   }
 
   .display__720px {
@@ -486,14 +451,6 @@ a {
   .display__min__721px {
     display: none;
   }
-
-
-
-
-
-
-
-
 
   .personalPicture__div,
   .header__div,
@@ -514,10 +471,6 @@ a {
     width: 100vw;
   }
 
-
-
-
-
   .personalPicture__div,
   .header__div {
     background-color: #11607c;
@@ -537,22 +490,14 @@ a {
     color: #fff;
     text-align: center;
     font-size: 4vw;
+    line-height: 5vw;
   }
 
   .header__line {
     border: 0.1vw solid #fff;
     background-color: #fff;
-    width: 64vw;
+    width: 62vw;
   }
-
-
-
-
-
-
-
-
-
 
   .goals__div {
     background-color: #d6eaf8;
@@ -569,18 +514,21 @@ a {
     line-height: 6vw;
     padding-top: 4vw;
     margin-right: 4vw;
+    margin-bottom: 4vw;
+  }
+
+  .goals__title {
+    font-weight: 600;
   }
 
   .languages__title,
   .skills__title,
   .awards__title {
-    font-size: 4vh;
-    font-weight: 600;
+    font-size: 5vw;
     font-style: italic;
-    margin: 1vw 0vw 3.4vw -2vw;
+    margin: 1vw 0vw 5vw -2vw;
     color: #11607c;
     text-transform: none;
-    text-decoration: underline;
   }
 
   .information__block__goals,
@@ -594,8 +542,8 @@ a {
 
   .information__block__languages,
   .information__block__skills {
-    margin-left: 5vw;
     margin-bottom: 3vw;
+    margin-left: 6vw;
     width: 95vw;
   }
 
@@ -605,22 +553,25 @@ a {
   .material-icons.icon__color__therapeutic,
   .material-icons.icon__color__internationalExperience,
   .material-icons.icon__color__awards {
-    font-size: 3vw;
-    line-height: 3vw;
+    font-size: 4vw;
+    line-height: 5vw;
     margin-left: 3vw;
+    margin-bottom: 3vw;
     color: #11607c;
   }
 
   .material-icons.icon__color__positive__languages,
   .material-icons.icon__color__positive__skills {
     color: #11607c;
-    font-size: 2.4vw;
+    font-size: 4vw;
+    line-height: 5vw;
   }
 
   .material-icons.icon__color__negative__languages,
   .material-icons.icon__color__negative__skills {
     color: rgba(150, 150, 150, 1);
-    font-size: 2.5vw;
+    font-size: 4vw;
+    line-height: 5vw;
   }
 
   .text__goals,
@@ -629,19 +580,17 @@ a {
   .text__therapeutic,
   .text__internationalExperience,
   .text__awards {
-    font-size: 3vw;
-    line-height: 3vw;
+    font-size: 4vw;
+    line-height: 5vw;
     margin-left: 1.5vw;
+    margin-bottom: 3vw;
     color: #000;
-  }
-
-  .text__goals {
-    font-size: 3.2vw;
   }
 
   .text__languages,
   .text__skills {
-    font-size: 2.5vw;
+    font-size: 4vw;
+    line-height: 4vw;
     color: #000;
     font-weight: 400;
     font-family: Arial, Helvetica, sans-serif;
