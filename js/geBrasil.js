@@ -5,8 +5,6 @@ function geBrasilFunction() {
   let informationBlock = document.createElement('div');
   geBrasilDiv.appendChild(informationBlock).className = 'information__block__geBrasil__title';
 
-
-
   let informationBlockAhref = document.createElement('a');
   informationBlock.appendChild(informationBlockAhref).className = 'information__block__ahref';
   informationBlockAhref.href = 'https://www.ge.com/research/technology-domains/controls-optimization';
@@ -14,14 +12,10 @@ function geBrasilFunction() {
   informationBlockAhref.rel = 'noreferrer noopener';
   informationBlockAhref.title = 'GE Brasil Website';
 
-
   let informationBlockImg = document.createElement('img');
   informationBlockAhref.appendChild(informationBlockImg).className = 'information__block__geBrasil__title__img';
-  informationBlockImg.src = "./imgs/logos/Logo_GE_Brasil.png";
+  informationBlockImg.src = "./imgs/logos/logo_ti_ge_brasil.png";
   informationBlockImg.alt = "Logo GE Brasil";
-
-
-
 
   let informationBlockDatas = document.createElement('div');
   informationBlock.appendChild(informationBlockDatas).className = 'information__block__geBrasil__title__datas';
@@ -29,9 +23,6 @@ function geBrasilFunction() {
   let informationBlockDate = document.createElement('p');
   informationBlockDate.className = 'information__block__geBrasil__title__date';
   informationBlockDatas.appendChild(informationBlockDate).textContent = '09/2005 – 06/2009 Campinas, SP';
-
-
-
 
   let informationBlockgeBrasilAhref = document.createElement('a');
   informationBlockDatas.appendChild(informationBlockgeBrasilAhref).className = 'information__block__geBrasil__ahref';
@@ -47,11 +38,6 @@ function geBrasilFunction() {
   let geBrasilTitleParagraph02 = document.createElement('p');
   geBrasilTitleParagraph02.className = 'geBrasil__title__02';
   informationBlockgeBrasilAhref.appendChild(geBrasilTitleParagraph02).textContent = 'Controls & Optimization';
-
-
-
-
-
 
   let textActivities = document.createElement('p');
   textActivities.className = 'geBrasil__text__activities';
@@ -104,11 +90,6 @@ function geBrasilFunction() {
   textInformation = document.createElement('span');
   textInformation.className = 'geBrasil__text__information';
   informationBlockText.appendChild(textInformation).textContent = 'Recebimento de premiação devido à entrega de projetos em produção em tempo inferior ao planejado.';
-
-
-
-
-
 
   screen.appendChild(geBrasilDiv);
 }

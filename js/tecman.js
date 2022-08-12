@@ -14,7 +14,7 @@ function tecmanFunction() {
 
   let informationBlockImg = document.createElement('img');
   informationBlockAhref.appendChild(informationBlockImg).className = 'information__block__tecman__title__img';
-  informationBlockImg.src = "./imgs/logos/Logo_Tecman.png";
+  informationBlockImg.src = "./imgs/logos/logo_ti_tecman.png";
   informationBlockImg.alt = "Logo Tecman Manutenção";
 
   let informationBlockDatas = document.createElement('div');

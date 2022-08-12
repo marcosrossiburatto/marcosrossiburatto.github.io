@@ -14,7 +14,7 @@ function sementevivaFunction() {
 
   let informationBlockImg = document.createElement('img');
   informationBlockAhref.appendChild(informationBlockImg).className = 'information__block__sementeviva__title__img';
-  informationBlockImg.src = "./imgs/logos/Logo_Semente_Viva.jpg";
+  informationBlockImg.src = "./imgs/logos/logo_ti_semente_viva.png";
   informationBlockImg.alt = "Logo_sementeviva.jpg";
 
   let informationBlockDatas = document.createElement('div');

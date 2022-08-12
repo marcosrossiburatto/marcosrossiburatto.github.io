@@ -14,7 +14,7 @@ function jurubatubaFunction() {
 
   let informationBlockImg = document.createElement('img');
   informationBlockAhref.appendChild(informationBlockImg).className = 'information__block__jurubatuba__title__img';
-  informationBlockImg.src = "./imgs/logos/Logo_Jurubatuba.png";
+  informationBlockImg.src = "./imgs/logos/logo_ti_jurubatuba.png";
   informationBlockImg.alt = "Logo Jurubatuba";
 
   let informationBlockDatas = document.createElement('div');

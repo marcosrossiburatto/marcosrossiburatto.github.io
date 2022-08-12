@@ -5,8 +5,6 @@ function kiddeBrasilFunction() {
   let informationBlock = document.createElement('div');
   kiddeBrasilDiv.appendChild(informationBlock).className = 'information__block__kiddeBrasil__title';
 
-
-
   let informationBlockAhref = document.createElement('a');
   informationBlock.appendChild(informationBlockAhref).className = 'information__block__ahref';
   informationBlockAhref.href = 'https://www.kidde.com.br/';
@@ -14,14 +12,10 @@ function kiddeBrasilFunction() {
   informationBlockAhref.rel = 'noreferrer noopener';
   informationBlockAhref.title = 'Kidde Brasil Website';
 
-
   let informationBlockImg = document.createElement('img');
   informationBlockAhref.appendChild(informationBlockImg).className = 'information__block__kiddeBrasil__title__img';
-  informationBlockImg.src = "./imgs/logos/Logo_Kidde_Brasil.png";
+  informationBlockImg.src = "./imgs/logos/logo_ti_kidde_brasil.png";
   informationBlockImg.alt = "Logo_KiddeBrasil.png";
-
-
-
 
   let informationBlockDatas = document.createElement('div');
   informationBlock.appendChild(informationBlockDatas).className = 'information__block__kiddeBrasil__title__datas';
@@ -29,9 +23,6 @@ function kiddeBrasilFunction() {
   let informationBlockDate = document.createElement('p');
   informationBlockDate.className = 'information__block__kiddeBrasil__title__date';
   informationBlockDatas.appendChild(informationBlockDate).textContent = '08/2010 – 08/2013 Vinhedo, SP';
-
-
-
 
   let informationBlockKiddeBrasilAhref = document.createElement('a');
   informationBlockDatas.appendChild(informationBlockKiddeBrasilAhref).className = 'information__block__kiddeBrasil__ahref';
@@ -47,11 +38,6 @@ function kiddeBrasilFunction() {
   let kiddeBrasilTitleParagraph02 = document.createElement('p');
   kiddeBrasilTitleParagraph02.className = 'kiddeBrasil__title__02';
   informationBlockKiddeBrasilAhref.appendChild(kiddeBrasilTitleParagraph02).textContent = 'UTC Climate, Controls & Security';
-
-
-
-
-
 
   let textActivities = document.createElement('p');
   textActivities.className = 'kiddeBrasil__text__activities';

@@ -14,7 +14,7 @@ function montagEngenhariaFunction() {
 
   let informationBlockImg = document.createElement('img');
   informationBlockAhref.appendChild(informationBlockImg).className = 'information__block__montagEngenharia__title__img';
-  informationBlockImg.src = "./imgs/logos/Logo_Montag_Engenharia.png";
+  informationBlockImg.src = "./imgs/logos/logo_ti_montag_engenharia.png";
   informationBlockImg.alt = "Logo Montag Engenharia";
 
   let informationBlockDatas = document.createElement('div');

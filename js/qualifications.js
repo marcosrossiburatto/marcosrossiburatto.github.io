@@ -18,7 +18,7 @@ function qualificationsFunction() {
   let textqualifications = document.createElement('span');
   textqualifications.className = 'text__qualifications';
   informationBlockQualifications.appendChild(textqualifications).textContent =
-    'Carreira desenvolvida na Gestão de Projetos, com ênfase nas Áreas Técnica em empresas como General Electric e UTC Climate, Controls & Security (Kidde Brasil)';
+    'Carreira desenvolvida na Gestão de Projetos, com ênfase nas Áreas Técnica em empresas como General Electric e UTC Climate, Controls & Security (Kidde Brasil).';
 
   informationBlockQualifications = document.createElement('div');
   qualificationsDiv.appendChild(informationBlockQualifications).className =

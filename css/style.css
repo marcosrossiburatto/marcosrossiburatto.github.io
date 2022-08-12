@@ -263,37 +263,17 @@ a {
   align-items: center;
 }
 
-.information__block__sementeviva__title__img,
-.information__block__stiInformatica__title__img {
-  margin: 0 3.5vw 0 3.5vw;
-  width: 7vw;
-  align-items: center;
-}
-
 .information__block__mentorship__title__img,
-.information__block__geBrasil__title__img {
-  margin: 0 3vw 0 3vw;
-  width: 8vw;
-  align-items: center;
-}
-
+.information__block__sementeviva__title__img,
+.information__block__kiddeBrasil__title__img,
+.information__block__geBrasil__title__img,
 .information__block__resolucaoEngenharia__title__img,
 .information__block__montagEngenharia__title__img,
-.information__block__tecman__title__img {
-  margin: 0 2.5vw 0 2.5vw;
-  width: 9vw;
-  align-items: center;
-}
-
-.information__block__kiddeBrasil__title__img {
-  margin: 0 2.1vw 0 2.1vw;
-  width: 9.8vw;
-  align-items: center;
-}
-
+.information__block__stiInformatica__title__img,
+.information__block__tecman__title__img,
 .information__block__jurubatuba__title__img {
-  margin: 0 2vw 0 2vw;
-  width: 10vw;
+  margin: 0 3vw 0 3vw;
+  width: 8vw;
   align-items: center;
 }
 
@@ -644,39 +624,18 @@ a {
     margin: 0;
   }
 
+  .information__block__mentorship__title__img,
   .information__block__sementeviva__title__img,
-  .information__block__geBrasil__title__img {
-    margin: 3vw 42.5vw 3vw 42.5vw;
-    width: 15vw;
-  }
-
-  .information__block__stiInformatica__title__img {
-    margin: 3vw 41.5vw 3vw 41.5vw;
-    width: 17vw;
-  }
-
-  .information__block__mentorship__title__img {
-    margin: 0 40vw 3vw 40vw;
-    width: 20vw;
-  }
-
-  .information__block__tecman__title__img {
-    margin: 3vw 39.5vw 3vw 39.5vw;
-    width: 21vw;
-  }
-
-  .information__block__kiddeBrasil__title__img {
-    margin: 3vw 36.5vw 3vw 36.5vw;
-    width: 23vw;
-  }
-
+  .information__block__kiddeBrasil__title__img,
+  .information__block__geBrasil__title__img,
   .information__block__resolucaoEngenharia__title__img,
   .information__block__montagEngenharia__title__img,
+  .information__block__stiInformatica__title__img,
+  .information__block__tecman__title__img,
   .information__block__jurubatuba__title__img {
-    margin: 3vw 37.5vw 3vw 37.5vw;
-    width: 25vw;
+    margin: 3vw 40vw 3vw 40vw;
+    width: 20vw;
   }
-
 
   .information__block__mentorship__title__datas,
   .information__block__sementeviva__title__datas,

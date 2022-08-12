@@ -14,7 +14,7 @@ function resolucaoEngenhariaFunction() {
 
   let informationBlockImg = document.createElement('img');
   informationBlockAhref.appendChild(informationBlockImg).className = 'information__block__resolucaoEngenharia__title__img';
-  informationBlockImg.src = "./imgs/logos/Logo_Resolucao_engenharia.png";
+  informationBlockImg.src = "./imgs/logos/logo_ti_resolucao_engenharia.png";
   informationBlockImg.alt = "Logo Resolucao Engenharia";
 
   let informationBlockDatas = document.createElement('div');

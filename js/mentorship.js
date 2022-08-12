@@ -14,7 +14,7 @@ function mentorshipFunction() {
 
   let informationBlockImg = document.createElement('img');
   informationBlockAhref.appendChild(informationBlockImg).className = 'information__block__mentorship__title__img';
-  informationBlockImg.src = "./imgs/logos/Logo_Mentorship.png";
+  informationBlockImg.src = "./imgs/logos/logo_ti_mentorship.png";
   informationBlockImg.alt = "Logo_Mentorship.png";
 
   let informationBlockDatas = document.createElement('div');

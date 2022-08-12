@@ -14,7 +14,7 @@ function stiInformaticaFunction() {
 
   let informationBlockImg = document.createElement('img');
   informationBlockAhref.appendChild(informationBlockImg).className = 'information__block__stiInformatica__title__img';
-  informationBlockImg.src = "./imgs/logos/Logo_STI_Informatica.png";
+  informationBlockImg.src = "./imgs/logos/logo_ti_sti_informatica.png";
   informationBlockImg.alt = "Logo STI Informatica";
 
   let informationBlockDatas = document.createElement('div');
