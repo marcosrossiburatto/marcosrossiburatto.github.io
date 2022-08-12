@@ -39,7 +39,7 @@ function mentorshipFunction() {
   mentorshipTitleParagraph02.className = 'mentorship__title__02';
   informationBlockMentorshipAhref.appendChild(mentorshipTitleParagraph02).textContent = '';
 
-  let textActivities = document.createElement('span');
+  let textActivities = document.createElement('p');
   textActivities.className = 'mentorship__text__activities';
   informationBlockDatas.appendChild(textActivities).textContent = 'Atividade on-line para esclarecer dúvidas sobre atuações em Gerenciamento de Projetos.';
 

@@ -508,8 +508,6 @@ a {
     padding-top: 0vw;
   }
 
-
-
   .goals__title {
     font-weight: 600;
   }
@@ -675,16 +673,24 @@ a {
   .information__block__stiInformatica__title__date,
   .information__block__tecman__title__date,
   .information__block__jurubatuba__title__date {
-    font-size: 2.4vw;
+    font-size: 4vw;
+    line-height: 5vw;
   }
 
-  .mentorship__title {
-    margin: 2vw 0;
-    font-size: 3vw;
+  .mentorship__title__01,
+  .mentorship__title__02 {
+
+    font-size: 4vw;
+    margin: 2vw 10vw 2vw 10vw;
+    text-align: center;
+    width: 80vw;
+
+
   }
 
-  .information__block__mentorship__title__activities,
-  .information__block__sementeviva__title__activities,
+
+  .mentorship__text__activities,
+  .sementeviva__text__activities,
   .kiddeBrasil__text__activities,
   .geBrasil__text__activities,
   .resolucaoEngenharia__text__activities,
@@ -692,16 +698,21 @@ a {
   .stiInformatica__text__activities,
   .tecman__text__activities,
   .jurubatuba__text__activities {
-    font-size: 2.6vw;
-    line-height: 3.1vw;
-    margin: 0 8vw 3vw 8vw;
+    font-size: 4vw;
+    line-height: 5vw;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 6vw;
+    text-align: center;
+    width: 80vw;
   }
 
+  .mentorship__text__role,
   .kiddeBrasil__text__role,
   .geBrasil__text__role,
   .montagEngenharia__text__role,
   .jurubatuba__text__role {
-    font-size: 2.6vw;
+    font-size: 4vw;
     line-height: 3.1vw;
     margin: -2vw 8vw 3vw 8vw;
   }
@@ -716,9 +727,9 @@ a {
   .tecman__information__block__text,
   .jurubatuba__information__block__text {
     margin: 0vh 0 2vw 5vw;
-    font-size: 2.5vw;
+    font-size: 4vw;
     width: 90%;
-    line-height: 3.1vw;
+    line-height: 5vw;
   }
 
   .mentorship__text__information,
@@ -730,7 +741,7 @@ a {
   .stiInformatica__text__information,
   .tecman__text__information,
   .jurubatuba__text__information {
-    margin-left: 2vw;
+    margin-left: 4vw;
   }
 
 
