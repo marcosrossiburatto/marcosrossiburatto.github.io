@@ -1,4 +1,4 @@
-body{
+body {
     font-family: arial;
 }
 
@@ -13,13 +13,13 @@ a:visited {
     color: #771919;
     text-decoration: none;
 }
-  
+
 /*Quando o mouse passa por cima*/
 a:hover {
     color: #ff0000;
     text-decoration: none;
 }
-  
+
 /*Link ativo/selecionado*/
 a:active {
     color: yellow;
@@ -70,10 +70,54 @@ header {
 
 /* --- main SECTION -- */
 main {
-    background-color:white;
+    background-color: white;
     margin: 0 0 0 0;
     height: auto;
 }
+
+
+/* --- CVTI -- */
+.photo_text_cvti {
+    padding: 4% 5% 5% 5%;
+    display: grid;
+    grid-template-columns: 60% 1fr;
+}
+
+.photo_cvti {
+    width: 100%;
+}
+
+.text_cvti {
+    margin: 20% 0 0 5%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 20% 20% 20% 20%;
+    text-align: left;
+}
+
+.text_cvti_01 {
+    font-size: 1.7vw;
+    font-weight: 600;
+    color: #11607c;
+}
+
+.text_cvti_02 {
+    font-size: 1.7vw;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* --- CALCULADORA -- */
 .photo_text_calculadora {
@@ -262,6 +306,7 @@ main {
     grid-template-columns: 1% 1fr 1%;
     grid-template-rows: 30% 30% 30%;
 }
+
 .division_main_cv_01 {
     border-width: 0;
     background-color: #11607c;
@@ -286,12 +331,12 @@ footer {
         grid-template-columns: 1fr;
         grid-template-rows: 30% 50%;
     }
-    
+
     .photo_cv_versao_responsivo {
         margin: 0 0 0 10%;
         width: 80%;
     }
-    
+
     .text_cv_versao_responsivo {
         padding: 4% 5% 0% 0;
         display: grid;
@@ -299,7 +344,7 @@ footer {
         grid-template-rows: 50% 50% 50% 50%;
         text-align: center;
     }
-    
+
     .text_cv_versao_responsivo_01 {
         font-size: 3vw;
     }
@@ -344,12 +389,12 @@ footer {
         grid-template-columns: 1fr;
         grid-template-rows: 30% 50%;
     }
-    
+
     .photo_cv_grid_responsivo {
         margin: 0 0 0 10%;
         width: 80%;
     }
-    
+
     .text_cv_grid_responsivo {
         padding: 12% 5% 0% 0;
         display: grid;
@@ -357,7 +402,7 @@ footer {
         grid-template-rows: 30% 30% 30% 30% 30% 30%;
         text-align: center;
     }
-    
+
     .text_cv_grid_responsivo_01 {
         font-size: 3vw;
     }
@@ -365,7 +410,7 @@ footer {
     .text_cv_grid_responsivo_02 {
         font-size: 3vw;
     }
-    
+
     /* --- CV GRID NAO RESPONSIVO -- */
     .photo_text_cv_grid_nao_responsivo {
         padding: 4% 5% 3% 5%;
@@ -373,12 +418,12 @@ footer {
         grid-template-columns: 1fr;
         grid-template-rows: 30% 50%;
     }
-    
+
     .photo_cv_grid_nao_responsivo {
         margin: 0 0 0 10%;
         width: 80%;
     }
-    
+
     .text_cv_grid_nao_responsivo {
         padding: 6% 5% 0% 0;
         display: grid;
@@ -386,7 +431,7 @@ footer {
         grid-template-rows: 40% 40% 40% 40% 40%;
         text-align: center;
     }
-    
+
     .text_cv_grid_nao_responsivo_01 {
         font-size: 3vw;
     }
@@ -394,7 +439,7 @@ footer {
     .text_cv_grid_nao_responsivo_02 {
         font-size: 3vw;
     }
-    
+
     /* --- CV TRADICIONAL -- */
     .photo_text_cv_tradicional {
         padding: 4% 5% 0% 5%;
@@ -402,12 +447,12 @@ footer {
         grid-template-columns: 1fr;
         grid-template-rows: 30% 50%;
     }
-    
+
     .photo_cv_tradicional {
         margin: 0 0 0 10%;
         width: 80%;
     }
-    
+
     .text_cv_tradicional {
         padding: 24% 5% 0% 0;
         display: grid;
@@ -415,7 +460,7 @@ footer {
         grid-template-rows: 55% 55% 55%;
         text-align: center;
     }
-    
+
     .text_cv_tradicional_01 {
         font-size: 3vw;
     }
@@ -423,5 +468,5 @@ footer {
     .text_cv_tradicional_02 {
         font-size: 3vw;
     }
-    
+
 }

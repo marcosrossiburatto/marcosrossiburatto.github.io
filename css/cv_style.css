@@ -1,0 +1,686 @@
+h3 --- {
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/*Link não visitado */
+a:link {
+  color: #11607c;
+  text-decoration: none;
+}
+
+/*Link já visitado*/
+a:visited {
+  color: #c70039;
+  text-decoration: none;
+}
+
+/*Quando o mouse passa por cima*/
+a:hover {
+  color: #ff0000;
+  text-decoration: none;
+}
+
+/*Link ativo/selecionado*/
+a:active {
+  color: yellow;
+  text-decoration: none;
+}
+
+
+
+
+.marcos_contact {
+  font-size: 1.4vw;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10%;
+}
+
+.information_block_01 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10%;
+  margin-bottom: 5%;
+  width: 80%;
+}
+
+.material-icons.icon_white_size_01 {
+  color: white;
+  font-size: 1.5vw;
+}
+
+.address_01 {
+  font-size: 1.2vw;
+  color: #fff;
+  font-weight: 500;
+  font-family: Andale Mono, monospace;
+  margin-left: 4%;
+  text-align: left;
+}
+
+.marcos_skills {
+  font-size: 1.4vw;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10%;
+  margin-top: 20%;
+}
+
+.information_block_02 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 10%;
+  margin-bottom: 5%;
+  width: 80%;
+}
+
+.material-icons.icon_white_size_02 {
+  color: #fff;
+  font-size: 0.8vw;
+  font-weight: 500;
+}
+
+.material-icons.icon_size_02 {
+  font-size: 0.95vw;
+}
+
+.skills_02 {
+  font-size: 1.2vw;
+  color: #fff;
+  font-weight: 500;
+  font-family: Andale Mono, monospace;
+  margin-left: 4%;
+  text-align: justify;
+}
+
+.marcos_award {
+  font-size: 1.4vw;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10%;
+  margin-top: 20%;
+}
+
+.information_block_03 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10%;
+  margin-bottom: 5%;
+  width: 80%;
+}
+
+.material-icons.icon_white_size_03 {
+  color: #fff;
+  font-size: 0.8vw;
+  font-weight: 700;
+}
+
+.award_03 {
+  font-size: 1.2vw;
+  color: #fff;
+  font-weight: 500;
+  font-family: Andale Mono, monospace;
+  margin-left: 4%;
+  text-align: justify;
+}
+
+.marcos_languages {
+  font-size: 1.4vw;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10%;
+  margin-top: 20%;
+}
+
+.information_block_04 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 10%;
+  margin-bottom: 5%;
+  width: 80%;
+}
+
+.material-icons.icon_white_size_04 {
+  color: #fff;
+  font-size: 0.8vw;
+  font-weight: 500;
+}
+
+.material-icons.icon_size_04 {
+  font-size: 0.95vw;
+}
+
+.languages_04 {
+  font-size: 1.2vw;
+  color: #fff;
+  font-weight: 500;
+  font-family: Andale Mono, monospace;
+  margin-left: 4%;
+  text-align: justify;
+}
+
+.right_side {
+  background-color: #fff;
+}
+
+.right_class_header_color {
+  background-color: #11607c;
+  padding-bottom: 4%;
+  height: auto;
+  display: grid;
+}
+
+.name_01 {
+  font-size: 2.2vw;
+  text-align: center;
+  color: #fff;
+  font-style: italic;
+  font-weight: 700;
+  margin-top: 6%;
+}
+
+.division_01 {
+  border-width: 0;
+  background-color: #fff;
+  margin-top: 0;
+  margin-bottom: 1%;
+  height: 0.25vw;
+  width: 90%;
+}
+
+.role_01 {
+  font-size: 2vw;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.2vw;
+  color: #fff;
+  font-weight: 600;
+  margin-top: 0vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.companies_p {
+  padding: 8% 5% 0 5%;
+  font-size: 1.9vw;
+  font-weight: 600;
+  text-align: justify;
+  color: #11607c;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.information_block_companies_sv {
+  margin: 8% 1% 3% 5%;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 20% 78%;
+  align-items: center;
+}
+
+.color_companies {
+  color: #11607c;
+}
+
+.companies_sv_01 {
+  display: grid;
+}
+
+.text_companies_sv {
+  font-size: 1.4vw;
+  color: #000;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 4%;
+  text-align: justify;
+  width: 91%;
+}
+
+.text_companies_sv.text_companies_sv_01 {
+  font-size: 1.2vw;
+}
+
+.text_companies_sv.text_companies_sv_02 {
+  margin-top: 2%;
+  font-weight: 600;
+}
+
+.text_companies_sv.text_companies_sv_03 {
+  margin-top: 2%;
+  font-size: 1.2vw;
+}
+
+.text_companies_sv.text_companies_sv_04 {
+  margin-top: 1%;
+  margin-bottom: 2%;
+  font-size: 1.2vw;
+}
+
+.information_block_companies_sv_01 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 0 0 3% 5%;
+  width: 90%;
+  line-height: 1.5em;
+}
+
+.text_companies_sv_05 {
+  font-size: 1.2vw;
+  color: #11607c;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 0;
+  text-align: left;
+}
+
+.text_companies_sv_06 {
+  font-size: 1.2vw;
+  color: #000;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 2%;
+  text-align: justify;
+}
+
+
+
+
+
+@media (max-width: 720px) {
+  body {
+    background-color: #fff;
+  }
+
+  .main {
+    margin: 0 0 0 0;
+    display: block;
+  }
+
+
+
+  .left_side {
+    background-color: #fff;
+  }
+
+  .main_720px {
+    background-color: #11607c;
+  }
+
+  .photo_marcos {
+    margin: 6% 35% 0% 35%;
+    border-radius: 50%;
+    width: 30%;
+  }
+
+  .right_class_header_color_720px {
+    padding-bottom: 7%;
+    height: auto;
+    display: grid;
+  }
+
+  .name_01_720px {
+    font-size: 3.2vw;
+    text-align: center;
+    color: #fff;
+    font-style: italic;
+    font-weight: 700;
+    margin-top: 6%;
+  }
+
+  .division_01_720px {
+    margin: 0 24% 1% 24%;
+    border-width: 0;
+    background-color: #fff;
+    height: 0.5vw;
+    width: 52%;
+  }
+
+  .role_01_720px {
+    font-size: 3.2vw;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.2vw;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 0%;
+  }
+
+
+
+
+
+  /* SKILLS 720PX*/
+  .marcos_skills_720px {
+    font-size: 4vw;
+    font-weight: 600;
+    color: #11607c;
+    text-align: justify;
+    font-style: italic;
+    text-decoration: underline;
+    margin: 3% 0 5% 6%;
+  }
+
+  .information_block_02_720px {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 6%;
+    margin-bottom: 5%;
+    width: 80%;
+  }
+
+  .material-icons.icon_white_size_02_720px {
+    color: #11607c;
+    font-size: 2.45vw;
+    font-weight: 500;
+  }
+
+  .material-icons.icon_size_02_720px {
+    color: #adacab;
+    font-size: 2.4vw;
+  }
+
+  .skills_02_720px {
+    font-size: 3vw;
+    color: #000;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 4%;
+    text-align: justify;
+  }
+
+  /* AWARDS 720PX*/
+  .marcos_award_720px {
+    font-size: 4vw;
+    font-weight: 600;
+    color: #11607c;
+    text-align: left;
+    font-style: italic;
+    text-decoration: underline;
+    margin: 10% 0 5% 5%;
+  }
+
+  .information_block_03_720px {
+    display: flex;
+    flex-direction: row;
+    margin-left: 5%;
+    margin-bottom: 5%;
+    width: 90%;
+  }
+
+  .material-icons.icon_white_size_03_720px {
+    color: #11607c;
+    font-size: 3vw;
+    font-weight: 700;
+    line-height: 1.5em;
+  }
+
+  .award_03_720px {
+    font-size: 3vw;
+    color: #000;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 3%;
+    text-align: justify;
+    line-height: 1.5em;
+  }
+
+
+
+
+
+
+
+  /* LANGUAGES 720PX*/
+  .marcos_languages_720px {
+    font-size: 4vw;
+    font-weight: 600;
+    color: #11607c;
+    text-align: justify;
+    font-style: italic;
+    text-decoration: underline;
+    margin: 8% 0 5% 6%;
+  }
+
+  .information_block_04_720px {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 6%;
+    margin-bottom: 5%;
+    width: 80%;
+  }
+
+  .material-icons.icon_white_size_04_720px {
+    color: #11607c;
+    font-size: 2.45vw;
+    font-weight: 500;
+  }
+
+  .material-icons.icon_size_04_720px {
+    color: #adacab;
+    font-size: 2.4vw;
+  }
+
+  .languages_04_720px {
+    font-size: 3vw;
+    color: #000;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 4%;
+    text-align: justify;
+  }
+
+  /* COMPANIES 720PX*/
+  .companies_p_720px {
+    padding: 5% 5% 0% 5%;
+    font-size: 4vw;
+    font-weight: 600;
+    text-align: justify;
+    color: #11607c;
+    font-style: italic;
+    text-decoration: underline;
+  }
+
+  /* SEMENTE VIVA 720PX*/
+  .information_block_companies_sv_720px {
+    margin: 5% 40% 3% 40%;
+    width: 20%;
+  }
+
+  .text_companies_sv_720px {
+    margin: 0 5% 2% 5%;
+    font-size: 3vw;
+    color: #000;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5%;
+    text-align: center;
+    width: 90%;
+    line-height: 1.3em;
+  }
+
+  .text_companies_sv_720px.text_companies_sv_01_720px {
+    margin-top: 0%;
+  }
+
+  .text_companies_sv_720px.text_companies_sv_02_720px {
+    margin-top: 0%;
+    font-weight: 600;
+    font-size: 3.2vw;
+  }
+
+  .text_companies_sv_720px.text_companies_sv_03_720px {
+    margin-top: 0%;
+    font-size: 3.2vw;
+  }
+
+  .text_companies_sv_720px.text_companies_sv_04_720px {
+    margin: 0 0 5% 5%;
+    font-size: 3.2vw;
+  }
+
+  .information_block_companies_sv_01_720px {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 3% 5% 0% 5%;
+    width: 90%;
+    line-height: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+  }
+
+  .text_companies_sv_05_720px {
+    font-size: 3vw;
+    color: #11607c;
+    font-weight: 700;
+  }
+
+  .text_companies_sv_06_720px {
+    font-size: 3vw;
+    color: #000;
+    font-weight: 400;
+    margin: 0 0 0 2%;
+  }
+
+
+
+  .division_02_720px {
+    border-width: 0;
+    background-color: #11607c;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    height: 0.25vw;
+    width: 100%;
+  }
+
+  .right_class_end_page_color_720px {
+    margin-top: 0;
+    background-color: #11607c;
+    padding-bottom: 10%;
+    height: auto;
+  }
+
+  /* .logo_sti {
+    center;
+  } */
+
+  /* --- FOOTER SECTION - SIZE: MAX: 720PX -- */
+
+  footer {
+    background-color: #11607c;
+    padding: 5% 0 5% 0;
+  }
+
+  .information_block_01_footer {
+    display: grid;
+    grid-template-columns: 5vw 38vw 10vw 10vw 10vw 1fr;
+    grid-template-rows: 10vh;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .marcos_contact_footer {
+    padding: 0 3vw 0vh 0vh;
+    font-size: 3vw;
+  }
+
+  .footer_icons {
+    width: 5vw;
+    margin-right: 6vw;
+  }
+
+  .information_block_02_footer {
+    display: grid;
+    grid-template-columns: 5vw 38vw 8vw 6vw 35vw;
+    grid-template-rows: 10vh;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .footer_icons_02 {
+    width: 5vw;
+  }
+
+  .marcos_contact_footer_02 {
+    padding: 0 3vw 0vh 02vw;
+    font-size: 3vw;
+    text-align: left;
+    align-items: flex-start;
+    grid-template-rows: 10vh;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .information_block_03_footer {
+    display: grid;
+    grid-template-columns: 43vw 5vw 40vw;
+    grid-template-rows: 5vh;
+    align-items: center;
+    width: 100%;
+  }
+
+  .footer_icons_03 {
+    width: 5vw;
+    align-items: center;
+  }
+
+  .marcos_contact_footer_03 {
+    font-size: 3vw;
+    align-items: center;
+    margin: 0 0 0 3%;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .information_block_04_footer {
+    display: grid;
+    grid-template-columns: 5vw 38vw 6.5vw 1fr;
+    grid-template-rows: 12vh;
+    min-height: 9vh;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .footer_icons_04 {
+    width: 5vw;
+  }
+
+  .marcos_contact_footer_04 {
+    padding: 0 3vw 0vh 0vh;
+    font-size: 2.6vw;
+    color: #fff;
+    font-weight: 500;
+  }
+}

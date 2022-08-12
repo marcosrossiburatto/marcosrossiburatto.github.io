@@ -1,0 +1,796 @@
+body {
+  background-color: #fff;
+}
+
+.main {
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  display: grid;
+  grid-template-columns: 1fr 75vw;
+}
+
+.left_side {
+  background-color: #11607c;
+}
+
+.photo_marcos {
+  margin: 20% 0 20% 25.1%;
+  border-radius: 50%;
+}
+
+.display__720px {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ----  RIGHT STYLES ---- */
+.header__div,
+.goals__div,
+.qualifications__div,
+.academic__div,
+.therapeutic__div,
+.internationalExperience__div,
+.professionalHistory__div {
+  background-color: #fff;
+  padding-bottom: 1.4vw;
+  height: auto;
+  display: grid;
+  width: 75vw;
+}
+
+
+
+
+.header__div {
+  background-color: #11607c;
+  padding-top: 2vw;
+  font-size: 1.5vw;
+}
+
+
+
+
+
+
+.header__name {
+  color: #fff;
+  text-align: center;
+}
+
+.header__line {
+  color: #fff;
+  border: 0.1vw solid #fff;
+  width: 24vw;
+  background-color: #fff;
+}
+
+.header__role {
+  color: #fff;
+  text-align: center;
+  font-size: 1.5vw;
+}
+
+
+
+
+
+
+.goals__div {
+  background-color: #d6eaf8;
+}
+
+.goals__title,
+.qualifications__title,
+.academic__title,
+.therapeutic__title,
+.internationalExperience__title,
+.professionalHistory__title {
+  padding: 0 2.5vw;
+  font-size: 1.7vw;
+  font-weight: 500;
+  text-align: justify;
+  margin-bottom: 1.5vw;
+  color: #11607c;
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.goals__title {
+  font-weight: 600;
+  padding-top: 2vw;
+}
+
+.qualifications__title {
+  padding-top: 2.5vw;
+}
+
+.information__block__goals,
+.information__block__qualifications,
+.information__block__academic,
+.information__block__therapeutic,
+.information__block__internationalExperience {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 2.5vw;
+  margin-bottom: 1.2vw;
+  width: 67.5vw;
+}
+
+.information__block__goals {
+  align-items: center;
+}
+
+.material-icons.icon__color__goals,
+.material-icons.icon__color__qualifications,
+.material-icons.icon__color__academic,
+.material-icons.icon__color__therapeutic,
+.material-icons.icon__color__internationalExperience {
+  color: #11607c;
+  font-size: 1.2vw;
+  font-weight: 700;
+  line-height: 1.8vw;
+}
+
+.text__goals,
+.text__qualifications,
+.text__academic,
+.text__therapeutic,
+.text__internationalExperience {
+  font-size: 1.25vw;
+  color: #000;
+  font-weight: 400;
+  line-height: 1.8vw;
+  margin-left: 0.6vw;
+  text-align: justify;
+}
+
+.text__goals {
+  font-size: 1.4vw;
+  font-weight: 500;
+  margin-left: 1vw;
+}
+
+
+
+
+
+
+
+/* ----  LEFT STYLES ---- */
+.personalPicture__div,
+.contacts__div,
+.skills__div,
+.awards__div,
+.languages__div {
+  background-color: #11607c;
+  height: auto;
+  display: block;
+  width: 22vw;
+}
+
+.information__block__personalPicture__title__img {
+  margin: 3.5vw 5.5vw 0 7.5vw;
+  width: 9vw;
+  border-radius: 50%;
+}
+
+.contacts__title,
+.skills__title,
+.awards__title,
+.languages__title {
+  font-size: 1.2vw;
+  font-weight: 400;
+  margin: 4vw 0 2vw 1.4vw;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: underline;
+  letter-spacing: 0.05vw;
+}
+
+.information__block__contacts,
+.information__block__skills,
+.information__block__awards,
+.information__block__languages {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-left: 2vw;
+  margin-bottom: 0.9vw;
+}
+
+.material-icons.icon__color__contacts {
+  color: #fff;
+  font-size: 1.5vw;
+  font-weight: 400;
+  line-height: 1.5vw;
+}
+
+.material-icons.icon__color__awards {
+  color: #fff;
+  font-size: 1vw;
+  font-weight: 700;
+  line-height: 1.5vw;
+}
+
+.material-icons.icon__color__positive__skills,
+.material-icons.icon__color__positive__languages {
+  color: #fff;
+  font-size: 0.9vw;
+  font-weight: 700;
+  line-height: 1.5vw;
+}
+
+.material-icons.icon__color__negative__skills,
+.material-icons.icon__color__negative__languages {
+  color: #000;
+  font-size: 1vw;
+  font-weight: 700;
+  line-height: 1.5vw;
+}
+
+.text__contacts,
+.text__awards {
+  font-size: 1.1vw;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.5vw;
+  margin: 0 0.6vw;
+  text-align: justify;
+}
+
+.text__skills,
+.text__languages {
+  font-size: 1.2vw;
+  color: #fff;
+  font-weight: 500;
+  line-height: 1.7vw;
+  margin-left: 0.6vw;
+  text-align: justify;
+}
+
+
+
+
+
+
+
+/* COMPANIES */
+.mentorship__div,
+.sementeviva__div,
+.kiddeBrasil__div,
+.geBrasil__div,
+.resolucaoEngenharia__div,
+.montagEngenharia__div,
+.stiInformatica__div,
+.tecman__div,
+.jurubatuba__div {
+  background-color: #fff;
+  padding-bottom: 1.4vw;
+  height: auto;
+  display: grid;
+  width: 75vw;
+}
+
+.professionalHistory__div {
+  padding-bottom: 0vw;
+}
+
+.information__block__mentorship__title,
+.information__block__sementeviva__title,
+.information__block__kiddeBrasil__title,
+.information__block__geBrasil__title,
+.information__block__resolucaoEngenharia__title,
+.information__block__montagEngenharia__title,
+.information__block__stiInformatica__title,
+.information__block__tecman__title,
+.information__block__jurubatuba__title {
+  margin: 1.2vw 0 1.8vw 1vw;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: 14vw 54vw;
+  align-items: center;
+}
+
+.information__block__sementeviva__title__img,
+.information__block__stiInformatica__title__img {
+  margin: 0 3.5vw 0 3.5vw;
+  width: 7vw;
+  align-items: center;
+}
+
+.information__block__mentorship__title__img,
+.information__block__geBrasil__title__img {
+  margin: 0 3vw 0 3vw;
+  width: 8vw;
+  align-items: center;
+}
+
+.information__block__resolucaoEngenharia__title__img,
+.information__block__montagEngenharia__title__img,
+.information__block__tecman__title__img {
+  margin: 0 2.5vw 0 2.5vw;
+  width: 9vw;
+  align-items: center;
+}
+
+.information__block__kiddeBrasil__title__img {
+  margin: 0 2.1vw 0 2.1vw;
+  width: 9.8vw;
+  align-items: center;
+}
+
+.information__block__jurubatuba__title__img {
+  margin: 0 2vw 0 2vw;
+  width: 10vw;
+  align-items: center;
+}
+
+.information__block__mentorship__title__datas,
+.information__block__sementeviva__title__datas,
+.information__block__kiddeBrasil__title__datas,
+.information__block__geBrasil__title__datas,
+.information__block__resolucaoEngenharia__title__datas,
+.information__block__montagEngenharia__title__datas,
+.information__block__stiInformatica__title__datas,
+.information__block__tecman__title__datas,
+.information__block__jurubatuba__title__datas {
+  display: grid;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2vw;
+  text-align: justify;
+  color: #000;
+  font-weight: 400;
+}
+
+.information__block__mentorship__title__date,
+.information__block__sementeviva__title__date,
+.information__block__kiddeBrasil__title__date,
+.information__block__geBrasil__title__date,
+.information__block__resolucaoEngenharia__title__date,
+.information__block__montagEngenharia__title__date,
+.information__block__stiInformatica__title__date,
+.information__block__tecman__title__date,
+.information__block__jurubatuba__title__date {
+  color: #000;
+}
+
+.mentorship__title__01,
+.sementeviva__title,
+.resolucaoEngenharia__title__01,
+.montagEngenharia__title__01,
+.stiInformatica__title__01,
+.tecman__title__01,
+.jurubatuba__title__01 {
+  margin: 0.7vw 0;
+  font-weight: 600;
+  font-size: 1.5vw;
+  color: #11607c;
+}
+
+.sementeviva__title__01,
+.kiddeBrasil__title__01,
+.geBrasil__title__01 {
+  margin: 0.7vw 0 0 0;
+  font-weight: 600;
+  font-size: 1.5vw;
+  color: #11607c;
+}
+
+.sementeviva__title__02,
+.kiddeBrasil__title__02,
+.geBrasil__title__02 {
+  margin: 0.3vw 0 0.7vw 0;
+  font-weight: 600;
+  font-size: 1.3vw;
+  color: #11607c;
+}
+
+.kiddeBrasil__text__role,
+.geBrasil__text__role,
+.montagEngenharia__text__role,
+.jurubatuba__text__role {
+  margin-top: 0.7vw;
+}
+
+.mentorship__information__block__text,
+.sementeviva__information__block__text,
+.kiddeBrasil__information__block__text,
+.geBrasil__information__block__text,
+.resolucaoEngenharia__information__block__text,
+.montagEngenharia__information__block__text,
+.stiInformatica__information__block__text,
+.tecman__information__block__text,
+.jurubatuba__information__block__text {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2vw;
+  margin: 0 0 0.5vw 2.5vw;
+  width: 67.5vw;
+  line-height: 1.7vw;
+}
+
+.icon__color__mentorship__text,
+.icon__color__sementeviva__text,
+.icon__color__kiddeBrasil__text,
+.icon__color__geBrasil__text,
+.icon__color__resolucaoEngenharia__text,
+.icon__color__montagEngenharia__text,
+.icon__color__stiInformatica__text,
+.icon__color__tecman__text,
+.icon__color__jurubatuba__text {
+  color: #11607c;
+  font-weight: 700;
+  text-align: left;
+}
+
+.mentorship__text__information,
+.sementeviva__text__information,
+.kiddeBrasil__text__information,
+.geBrasil__text__information,
+.resolucaoEngenharia__text__information,
+.montagEngenharia__text__information,
+.stiInformatica__text__information,
+.tecman__text__information,
+.jurubatuba__text__information {
+  color: #000;
+  font-weight: 400;
+  margin-left: 1vw;
+  text-align: justify;
+}
+
+.end__division {
+  border-width: 0;
+  background-color: #11607c;
+  margin: 0 0 1.3vw 2.5vw;
+  height: 0.3vw;
+  width: 90%;
+}
+
+.end__page__color {
+  background-color: #11607c;
+  padding-bottom: 4vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MEDIA 720px */
+@media (max-width: 720px) {
+  body {
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .display__720px {
+    display: contents;
+  }
+
+  .display__min__721px {
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+  .personalPicture__div,
+  .header__div,
+  .goals__div,
+  .qualifications__div,
+  .academic__div,
+  .therapeutic__div,
+  .internationalExperience__div,
+  .professionalHistory__div,
+  .languages__div {
+    background-color: #fff;
+    padding-bottom: 4vw;
+    height: auto;
+    display: block;
+    width: 100vw;
+  }
+
+
+
+
+
+  .personalPicture__div,
+  .header__div {
+    background-color: #11607c;
+    padding-top: 2vw;
+  }
+
+  .information__block__personalPicture__title__img {
+    margin: 3.5vw 40vw 0 40vw;
+    width: 20vw;
+    border-radius: 50%;
+  }
+
+  .header__name,
+  .header__role {
+    margin: 0 auto 0 auto;
+    color: #fff;
+    text-align: center;
+    font-size: 4vw;
+  }
+
+  .header__line {
+    border: 0.1vw solid #fff;
+    background-color: #fff;
+    width: 64vw;
+  }
+
+
+
+
+
+
+
+
+
+
+  .goals__div {
+    background-color: #d6eaf8;
+  }
+
+  .goals__title,
+  .qualifications__title,
+  .academic__title,
+  .therapeutic__title,
+  .internationalExperience__title,
+  .professionalHistory__title {
+    font-size: 5vw;
+    text-align: center;
+    line-height: 6vw;
+    padding-top: 4vw;
+    margin-right: 4vw;
+  }
+
+  .languages__title {
+    font-size: 4vh;
+    font-weight: 600;
+    font-style: italic;
+    margin: 1vh 0vw 3.4vh -2vw;
+    color: #11607c;
+    text-transform: none;
+    text-decoration: underline;
+  }
+
+  .information__block__goals,
+  .information__block__qualifications,
+  .information__block__academic,
+  .information__block__therapeutic,
+  .information__block__internationalExperience {
+    width: 90vw;
+  }
+
+  .information__block__languages {
+    margin-left: 5vw;
+    margin-bottom: 3vh;
+    width: 100vw;
+  }
+
+  .material-icons.icon__color__goals,
+  .material-icons.icon__color__qualifications,
+  .material-icons.icon__color__academic,
+  .material-icons.icon__color__therapeutic,
+  .material-icons.icon__color__internationalExperience {
+    font-size: 3vh;
+    line-height: 3vh;
+    margin-left: 3vw;
+  }
+
+  .material-icons.icon__color__positive__languages {
+    color: #11607c;
+    font-size: 2.4vh;
+  }
+
+  .material-icons.icon__color__negative__languages {
+    color: rgba(150, 150, 150, 1);
+    font-size: 2.5vh;
+  }
+
+  .text__goals,
+  .text__qualifications,
+  .text__academic,
+  .text__therapeutic,
+  .text__internationalExperience {
+    font-size: 3vh;
+    line-height: 3vh;
+    margin-left: 1.5vw;
+  }
+
+  .text__goals {
+    font-size: 3.2vh;
+  }
+
+  .text__languages {
+    font-size: 2.5vh;
+    color: #000;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 3vw;
+  }
+
+
+
+  /* SEMENTE VIVA 720PX*/
+  .mentorship__div,
+  .sementeviva__div,
+  .kiddeBrasil__div,
+  .geBrasil__div,
+  .resolucaoEngenharia__div,
+  .montagEngenharia__div,
+  .stiInformatica__div,
+  .tecman__div,
+  .jurubatuba__div {
+    display: contents;
+  }
+
+  .information__block__mentorship__title,
+  .information__block__sementeviva__title,
+  .information__block__kiddeBrasil__title,
+  .information__block__geBrasil__title,
+  .information__block__resolucaoEngenharia__title,
+  .information__block__montagEngenharia__title,
+  .information__block__stiInformatica__title,
+  .information__block__tecman__title,
+  .information__block__jurubatuba__title {
+    display: block;
+    margin: 0;
+  }
+
+  .information__block__mentorship__title__img {
+    margin: 0vh 38.3vw 3vh 38.3vw;
+    width: 20vw;
+  }
+
+  .information__block__sementeviva__title__img {
+    margin: 3vh 40.5vw 3vh 40.5vw;
+    width: 15vw;
+  }
+
+  .information__block__kiddeBrasil__title__img {
+    margin: 3vh 36.5vw 3vh 36.5vw;
+    width: 23vw;
+  }
+
+  .information__block__geBrasil__title__img {
+    margin: 3vh 40.5vw 3vh 40.5vw;
+    width: 15vw;
+  }
+
+  .information__block__resolucaoEngenharia__title__img {
+    margin: 3vh 35.5vw 3vh 35.5vw;
+    width: 25vw;
+  }
+
+  .information__block__montagEngenharia__title__img {
+    margin: 3vh 35.5vw 3vh 35.5vw;
+    width: 25vw;
+  }
+
+  .information__block__stiInformatica__title__img {
+    margin: 3vh 39.5vw 3vh 39.5vw;
+    width: 17vw;
+  }
+
+  .information__block__tecman__title__img {
+    margin: 3vh 37.5vw 3vh 37.5vw;
+    width: 21vw;
+  }
+
+  .information__block__jurubatuba__title__img {
+    margin: 3vh 35.5vw 3vh 35.5vw;
+    width: 25vw;
+  }
+
+  .information__block__mentorship__title__datas,
+  .information__block__sementeviva__title__datas,
+  .information__block__kiddeBrasil__title__datas,
+  .information__block__geBrasil__title__datas,
+  .information__block__resolucaoEngenharia__title__datas,
+  .information__block__montagEngenharia__title__datas,
+  .information__block__stiInformatica__title__datas,
+  .information__block__tecman__title__datas,
+  .information__block__jurubatuba__title__datas {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #000;
+    font-weight: 400;
+  }
+
+  .information__block__mentorship__title__date,
+  .information__block__sementeviva__title__date,
+  .information__block__kiddeBrasil__title__date,
+  .information__block__geBrasil__title__date,
+  .information__block__resolucaoEngenharia__title__date,
+  .information__block__montagEngenharia__title__date,
+  .information__block__stiInformatica__title__date,
+  .information__block__tecman__title__date,
+  .information__block__jurubatuba__title__date {
+    font-size: 2.4vh;
+  }
+
+  .mentorship__title {
+    margin: 2vh 0;
+    font-size: 3vh;
+  }
+
+  .information__block__mentorship__title__activities,
+  .information__block__sementeviva__title__activities,
+  .kiddeBrasil__text__activities,
+  .geBrasil__text__activities,
+  .resolucaoEngenharia__text__activities,
+  .montagEngenharia__text__activities,
+  .stiInformatica__text__activities,
+  .tecman__text__activities,
+  .jurubatuba__text__activities {
+    font-size: 2.6vh;
+    line-height: 3.1vh;
+    margin: 0 8vw 3vh 8vw;
+  }
+
+  .kiddeBrasil__text__role,
+  .geBrasil__text__role,
+  .montagEngenharia__text__role,
+  .jurubatuba__text__role {
+    font-size: 2.6vh;
+    line-height: 3.1vh;
+    margin: -2vh 8vw 3vh 8vw;
+  }
+
+  .mentorship__information__block__text,
+  .sementeviva__information__block__text,
+  .kiddeBrasil__information__block__text,
+  .geBrasil__information__block__text,
+  .resolucaoEngenharia__information__block__text,
+  .montagEngenharia__information__block__text,
+  .stiInformatica__information__block__text,
+  .tecman__information__block__text,
+  .jurubatuba__information__block__text {
+    margin: 0vh 0 2vh 5vw;
+    font-size: 2.5vh;
+    width: 90%;
+    line-height: 3.1vh;
+  }
+
+  .mentorship__text__information,
+  .sementeviva__text__information,
+  .icon__color__kiddeBrasil__text,
+  .geBrasil__text__information,
+  .resolucaoEngenharia__text__information,
+  .montagEngenharia__text__information,
+  .stiInformatica__text__information,
+  .tecman__text__information,
+  .jurubatuba__text__information {
+    margin-left: 2vw;
+  }
+
+
+
+
+
+}
