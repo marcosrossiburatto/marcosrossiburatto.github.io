@@ -476,10 +476,11 @@ a {
   body {
     background-color: #fff;
     font-family: Arial, Helvetica, sans-serif;
+    /* overflow-x: hidden; */
   }
 
   .display__720px {
-    display: contents;
+    display: block;
   }
 
   .display__min__721px {
@@ -504,7 +505,8 @@ a {
   .professionalHistory__div,
   .languages__div,
   .skills__div,
-  .awards__div {
+  .awards__div,
+  .contacts__div {
     background-color: #fff;
     padding-bottom: 4vw;
     height: auto;
@@ -520,6 +522,7 @@ a {
   .header__div {
     background-color: #11607c;
     padding-top: 2vw;
+    width: 100vw;
   }
 
   .information__block__personalPicture__title__img {
@@ -574,7 +577,7 @@ a {
     font-size: 4vh;
     font-weight: 600;
     font-style: italic;
-    margin: 1vh 0vw 3.4vh -2vw;
+    margin: 1vw 0vw 3.4vw -2vw;
     color: #11607c;
     text-transform: none;
     text-decoration: underline;
@@ -592,8 +595,8 @@ a {
   .information__block__languages,
   .information__block__skills {
     margin-left: 5vw;
-    margin-bottom: 3vh;
-    width: 100vw;
+    margin-bottom: 3vw;
+    width: 95vw;
   }
 
   .material-icons.icon__color__goals,
@@ -602,8 +605,8 @@ a {
   .material-icons.icon__color__therapeutic,
   .material-icons.icon__color__internationalExperience,
   .material-icons.icon__color__awards {
-    font-size: 3vh;
-    line-height: 3vh;
+    font-size: 3vw;
+    line-height: 3vw;
     margin-left: 3vw;
     color: #11607c;
   }
@@ -611,13 +614,13 @@ a {
   .material-icons.icon__color__positive__languages,
   .material-icons.icon__color__positive__skills {
     color: #11607c;
-    font-size: 2.4vh;
+    font-size: 2.4vw;
   }
 
   .material-icons.icon__color__negative__languages,
   .material-icons.icon__color__negative__skills {
     color: rgba(150, 150, 150, 1);
-    font-size: 2.5vh;
+    font-size: 2.5vw;
   }
 
   .text__goals,
@@ -626,19 +629,19 @@ a {
   .text__therapeutic,
   .text__internationalExperience,
   .text__awards {
-    font-size: 3vh;
-    line-height: 3vh;
+    font-size: 3vw;
+    line-height: 3vw;
     margin-left: 1.5vw;
     color: #000;
   }
 
   .text__goals {
-    font-size: 3.2vh;
+    font-size: 3.2vw;
   }
 
   .text__languages,
   .text__skills {
-    font-size: 2.5vh;
+    font-size: 2.5vw;
     color: #000;
     font-weight: 400;
     font-family: Arial, Helvetica, sans-serif;
@@ -673,50 +676,39 @@ a {
     margin: 0;
   }
 
-  .information__block__mentorship__title__img {
-    margin: 0vh 38.3vw 3vh 38.3vw;
-    width: 20vw;
-  }
-
-  .information__block__sementeviva__title__img {
-    margin: 3vh 40.5vw 3vh 40.5vw;
-    width: 15vw;
-  }
-
-  .information__block__kiddeBrasil__title__img {
-    margin: 3vh 36.5vw 3vh 36.5vw;
-    width: 23vw;
-  }
-
+  .information__block__sementeviva__title__img,
   .information__block__geBrasil__title__img {
-    margin: 3vh 40.5vw 3vh 40.5vw;
+    margin: 3vw 42.5vw 3vw 42.5vw;
     width: 15vw;
-  }
-
-  .information__block__resolucaoEngenharia__title__img {
-    margin: 3vh 35.5vw 3vh 35.5vw;
-    width: 25vw;
-  }
-
-  .information__block__montagEngenharia__title__img {
-    margin: 3vh 35.5vw 3vh 35.5vw;
-    width: 25vw;
   }
 
   .information__block__stiInformatica__title__img {
-    margin: 3vh 39.5vw 3vh 39.5vw;
+    margin: 3vw 41.5vw 3vw 41.5vw;
     width: 17vw;
   }
 
+  .information__block__mentorship__title__img {
+    margin: 0 40vw 3vw 40vw;
+    width: 20vw;
+  }
+
   .information__block__tecman__title__img {
-    margin: 3vh 37.5vw 3vh 37.5vw;
+    margin: 3vw 39.5vw 3vw 39.5vw;
     width: 21vw;
   }
 
+  .information__block__kiddeBrasil__title__img {
+    margin: 3vw 36.5vw 3vw 36.5vw;
+    width: 23vw;
+  }
+
+  .information__block__resolucaoEngenharia__title__img,
+  .information__block__montagEngenharia__title__img,
   .information__block__jurubatuba__title__img {
-    margin: 3vh 35.5vw 3vh 35.5vw;
+    margin: 3vw 37.5vw 3vw 37.5vw;
     width: 25vw;
   }
+
 
   .information__block__mentorship__title__datas,
   .information__block__sementeviva__title__datas,
@@ -743,12 +735,12 @@ a {
   .information__block__stiInformatica__title__date,
   .information__block__tecman__title__date,
   .information__block__jurubatuba__title__date {
-    font-size: 2.4vh;
+    font-size: 2.4vw;
   }
 
   .mentorship__title {
-    margin: 2vh 0;
-    font-size: 3vh;
+    margin: 2vw 0;
+    font-size: 3vw;
   }
 
   .information__block__mentorship__title__activities,
@@ -760,18 +752,18 @@ a {
   .stiInformatica__text__activities,
   .tecman__text__activities,
   .jurubatuba__text__activities {
-    font-size: 2.6vh;
-    line-height: 3.1vh;
-    margin: 0 8vw 3vh 8vw;
+    font-size: 2.6vw;
+    line-height: 3.1vw;
+    margin: 0 8vw 3vw 8vw;
   }
 
   .kiddeBrasil__text__role,
   .geBrasil__text__role,
   .montagEngenharia__text__role,
   .jurubatuba__text__role {
-    font-size: 2.6vh;
-    line-height: 3.1vh;
-    margin: -2vh 8vw 3vh 8vw;
+    font-size: 2.6vw;
+    line-height: 3.1vw;
+    margin: -2vw 8vw 3vw 8vw;
   }
 
   .mentorship__information__block__text,
@@ -783,10 +775,10 @@ a {
   .stiInformatica__information__block__text,
   .tecman__information__block__text,
   .jurubatuba__information__block__text {
-    margin: 0vh 0 2vh 5vw;
-    font-size: 2.5vh;
+    margin: 0vh 0 2vw 5vw;
+    font-size: 2.5vw;
     width: 90%;
-    line-height: 3.1vh;
+    line-height: 3.1vw;
   }
 
   .mentorship__text__information,
