@@ -33,11 +33,11 @@ function mentorshipFunction() {
 
   let mentorshipTitleParagraph01 = document.createElement('p');
   mentorshipTitleParagraph01.className = 'mentorship__title__01';
-  informationBlockMentorshipAhref.appendChild(mentorshipTitleParagraph01).textContent = 'Mentoria em Gerenciamento de Projetos';
+  informationBlockMentorshipAhref.appendChild(mentorshipTitleParagraph01).textContent = 'Mentoria';
 
   let mentorshipTitleParagraph02 = document.createElement('p');
   mentorshipTitleParagraph02.className = 'mentorship__title__02';
-  informationBlockMentorshipAhref.appendChild(mentorshipTitleParagraph02).textContent = '';
+  informationBlockMentorshipAhref.appendChild(mentorshipTitleParagraph02).textContent = 'Gerenciamento de Projetos';
 
   let textActivities = document.createElement('p');
   textActivities.className = 'mentorship__text__activities';
