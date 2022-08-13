@@ -19,3 +19,4 @@ function personalPictureFunction721() {
   screen = document.querySelector('#personalPicture721');
   personalPictureFunction();
 }
+
