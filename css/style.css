@@ -807,13 +807,11 @@ a {
 
 
 
-
-
-
-
-
   .mentorship__text__activities,
   .sementeviva__text__activities,
+  .tecman__text__activities,
+  .stiInformatica__text__activities,
+  .resolucaoEngenharia__text__activities .mentorship__text__activities,
   .kiddeBrasil__text__activities,
   .geBrasil__text__activities,
   .montagEngenharia__text__activities,
@@ -827,19 +825,16 @@ a {
     width: 80vw;
   }
 
+  .sementeviva__text__activities,
   .tecman__text__activities,
   .stiInformatica__text__activities,
   .resolucaoEngenharia__text__activities {
-    font-size: 4vw;
-    line-height: 5vw;
-    margin-left: 10vw;
-    margin-right: 10vw;
     margin-bottom: 4vw;
-    text-align: center;
-    width: 80vw;
   }
 
-
+  .mentorship__text__activities {
+    margin-bottom: 8vw;
+  }
 
 
 
