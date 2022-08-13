@@ -677,16 +677,138 @@ a {
     line-height: 5vw;
   }
 
-  .mentorship__title__01,
-  .mentorship__title__02 {
+  .mentorship__title__01 {
+    font-size: 5vw;
+    margin: 2vw 10vw 2vw 10vw;
+    text-align: center;
+    width: 80vw;
+  }
 
+  .mentorship__title__02 {
+    font-size: 5vw;
+    margin: 2vw 10vw 2vw 10vw;
+    text-align: center;
+    width: 80vw;
+  }
+
+  .sementeviva__title__01 {
+    font-size: 5vw;
+    margin: 2vw 10vw 2vw 10vw;
+    text-align: center;
+    width: 80vw;
+  }
+
+  .sementeviva__title__02 {
     font-size: 4vw;
     margin: 2vw 10vw 2vw 10vw;
     text-align: center;
     width: 80vw;
-
-
   }
+
+  .kiddeBrasil__title__01 {
+    font-size: 5vw;
+    margin: 2vw 10vw 2vw 10vw;
+    text-align: center;
+    width: 80vw;
+  }
+
+  .kiddeBrasil__title__02 {
+    font-size: 4vw;
+    margin: 2vw 10vw 2vw 10vw;
+    text-align: center;
+    width: 80vw;
+  }
+
+  .geBrasil__title__01 {
+    font-size: 5vw;
+    margin: 2vw 10vw 2vw 10vw;
+    text-align: center;
+    width: 80vw;
+  }
+
+  .geBrasil__title__02 {
+    font-size: 4vw;
+    margin: 2vw 10vw 2vw 10vw;
+    text-align: center;
+    width: 80vw;
+  }
+
+  .resolucaoEngenharia__title__01 {
+    font-size: 5vw;
+    margin: 2vw 10vw 2vw 10vw;
+    text-align: center;
+    width: 80vw;
+  }
+
+  .resolucaoEngenharia__title__02 {
+    font-size: 4vw;
+    margin: 2vw 10vw 2vw 10vw;
+    text-align: center;
+    width: 80vw;
+  }
+
+  .montagEngenharia__title__01 {
+    font-size: 5vw;
+    margin: 2vw 10vw 2vw 10vw;
+    text-align: center;
+    width: 80vw;
+  }
+
+  .montagEngenharia__title__02 {
+    font-size: 4vw;
+    margin: 2vw 10vw 2vw 10vw;
+    text-align: center;
+    width: 80vw;
+  }
+
+  .stiInformatica__title__01 {
+    font-size: 5vw;
+    margin: 2vw 10vw 2vw 10vw;
+    text-align: center;
+    width: 80vw;
+  }
+
+  .stiInformatica__title__02 {
+    font-size: 4vw;
+    margin: 2vw 10vw 2vw 10vw;
+    text-align: center;
+    width: 80vw;
+  }
+
+  .tecman__title__01 {
+    font-size: 5vw;
+    margin: 2vw 10vw 2vw 10vw;
+    text-align: center;
+    width: 80vw;
+  }
+
+  .tecman__title__02 {
+    font-size: 4vw;
+    margin: 2vw 10vw 2vw 10vw;
+    text-align: center;
+    width: 80vw;
+  }
+
+  .jurubatuba__title__01 {
+    font-size: 5vw;
+    margin: 2vw 10vw 2vw 10vw;
+    text-align: center;
+    width: 80vw;
+  }
+
+  .jurubatuba__title__02 {
+    font-size: 4vw;
+    margin: 2vw 10vw 2vw 10vw;
+    text-align: center;
+    width: 80vw;
+  }
+
+
+
+
+
+
+
 
 
   .mentorship__text__activities,
@@ -714,7 +836,7 @@ a {
   .jurubatuba__text__role {
     font-size: 4vw;
     line-height: 3.1vw;
-    margin: -2vw 8vw 3vw 8vw;
+    margin: -4vw 8vw 5vw 8vw;
   }
 
   .mentorship__information__block__text,

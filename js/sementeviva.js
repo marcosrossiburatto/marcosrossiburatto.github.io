@@ -39,9 +39,6 @@ function sementevivaFunction() {
   sementevivaTitleParagraph.className = 'sementeviva__title__02';
   informationBlockSementeVivaAhref.appendChild(sementevivaTitleParagraph).textContent = 'Desenvolvimento Humano';
 
-  let informationBlockTitleActivities = document.createElement('p');
-  informationBlockDatas.appendChild(informationBlockTitleActivities).className = 'information__block__sementeviva__title__activities';
-
   let textActivities = document.createElement('p');
   textActivities.className = 'sementeviva__text__activities';
   informationBlockDatas.appendChild(textActivities).textContent = 'Empresa própria de desenvolvimento emocional e gerenciamento de equipes de alta performance.';
