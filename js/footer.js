@@ -15,7 +15,7 @@ function footerFunction() {
 
   let iconsBlockAhref = document.createElement('a');
   footerTitleParagraph.appendChild(iconsBlockAhref).className = 'footer__icons__block__ahref';
-  iconsBlockAhref.href = 'https://web.facebook.com/SementeVivaDesenvolvimentoHumano';
+  iconsBlockAhref.href = 'https://www.facebook.com/SementeVivaDesenvolvimentoHumano';
   iconsBlockAhref.target = '_blank';
   iconsBlockAhref.rel = 'noreferrer noopener';
   iconsBlockAhref.title = 'facebook_semente_viva';
@@ -146,8 +146,8 @@ function footerFunction() {
 
   iconsBlockAhref = document.createElement('a');
   footerTitleParagraph.appendChild(iconsBlockAhref).className = 'footer__icons__block__ahref';
-  iconsBlockAhref.href = './pdfs/CV_Marcos_Buratto.pdf';
-  iconsBlockAhref.download = 'CV_Marcos_Buratto.pdf';
+  iconsBlockAhref.href = './pdfs/CVTI_Marcos_Buratto.pdf';
+  iconsBlockAhref.download = 'CVTI_Marcos_Buratto.pdf';
   iconsBlockAhref.target = '_blank';
   iconsBlockAhref.rel = 'noreferrer noopener';
   iconsBlockAhref.title = 'pdf';
