@@ -407,17 +407,6 @@ a {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* MEDIA 720px */
 @media (max-width: 720px) {
   body {
@@ -536,7 +525,6 @@ a {
     width: 91vw;
   }
 
-
   .information__block__languages,
   .information__block__skills {
     margin-bottom: 3vw;
@@ -596,9 +584,7 @@ a {
     margin-left: 3vw;
   }
 
-
-
-  /* SEMENTE VIVA 720PX*/
+  /* EMPRESAS 720PX*/
   .mentorship__div,
   .sementeviva__div,
   .kiddeBrasil__div,
@@ -679,118 +665,14 @@ a {
     line-height: 5vw;
   }
 
-  .mentorship__title__01 {
-    font-size: 5vw;
-    margin: 2vw 10vw 2vw 10vw;
-    text-align: center;
-    width: 80vw;
-  }
-
-  .mentorship__title__02 {
-    font-size: 4vw;
-    margin: 2vw 10vw 2vw 10vw;
-    text-align: center;
-    width: 80vw;
-  }
-
-  .sementeviva__title__01 {
-    font-size: 5vw;
-    margin: 2vw 10vw 2vw 10vw;
-    text-align: center;
-    width: 80vw;
-  }
-
-  .sementeviva__title__02 {
-    font-size: 4vw;
-    margin: 2vw 10vw 2vw 10vw;
-    text-align: center;
-    width: 80vw;
-  }
-
-  .kiddeBrasil__title__01 {
-    font-size: 5vw;
-    margin: 2vw 10vw 2vw 10vw;
-    text-align: center;
-    width: 80vw;
-  }
-
-  .kiddeBrasil__title__02 {
-    font-size: 4vw;
-    margin: 2vw 10vw 2vw 10vw;
-    text-align: center;
-    width: 80vw;
-  }
-
-  .geBrasil__title__01 {
-    font-size: 5vw;
-    margin: 2vw 10vw 2vw 10vw;
-    text-align: center;
-    width: 80vw;
-  }
-
-  .geBrasil__title__02 {
-    font-size: 4vw;
-    margin: 2vw 10vw 2vw 10vw;
-    text-align: center;
-    width: 80vw;
-  }
-
-  .resolucaoEngenharia__title__01 {
-    font-size: 5vw;
-    margin: 2vw 10vw 2vw 10vw;
-    text-align: center;
-    width: 80vw;
-  }
-
-  .resolucaoEngenharia__title__02 {
-    font-size: 4vw;
-    margin: 2vw 10vw 2vw 10vw;
-    text-align: center;
-    width: 80vw;
-  }
-
-  .montagEngenharia__title__01 {
-    font-size: 5vw;
-    margin: 2vw 10vw 2vw 10vw;
-    text-align: center;
-    width: 80vw;
-  }
-
-  .montagEngenharia__title__02 {
-    font-size: 4vw;
-    margin: 2vw 10vw 2vw 10vw;
-    text-align: center;
-    width: 80vw;
-  }
-
-  .stiInformatica__title__01 {
-    font-size: 5vw;
-    margin: 2vw 10vw 2vw 10vw;
-    text-align: center;
-    width: 80vw;
-  }
-
-  .stiInformatica__title__02 {
-    font-size: 4vw;
-    margin: 2vw 10vw 2vw 10vw;
-    text-align: center;
-    width: 80vw;
-  }
-
-  .tecman__title__01 {
-    font-size: 5vw;
-    margin: 2vw 10vw 2vw 10vw;
-    text-align: center;
-    width: 80vw;
-  }
-
-  .tecman__title__02 {
-    font-size: 4vw;
-    margin: 2vw 10vw 2vw 10vw;
-    text-align: center;
-    width: 80vw;
-  }
-
+  .mentorship__title__01,
+  .sementeviva__title__01,
+  .kiddeBrasil__title__01,
+  .geBrasil__title__01,
+  .resolucaoEngenharia__title__01,
+  .montagEngenharia__title__01,
+  .stiInformatica__title__01,
+  .tecman__title__01,
   .jurubatuba__title__01 {
     font-size: 5vw;
     margin: 2vw 10vw 2vw 10vw;
@@ -798,15 +680,20 @@ a {
     width: 80vw;
   }
 
+  .mentorship__title__02,
+  .sementeviva__title__02,
+  .kiddeBrasil__title__02,
+  .geBrasil__title__02,
+  .resolucaoEngenharia__title__02,
+  .montagEngenharia__title__02,
+  .stiInformatica__title__02,
+  .tecman__title__02,
   .jurubatuba__title__02 {
     font-size: 4vw;
     margin: 2vw 10vw 2vw 10vw;
     text-align: center;
     width: 80vw;
   }
-
-
-
 
   .mentorship__text__activities,
   .sementeviva__text__activities,
@@ -837,13 +724,6 @@ a {
   .mentorship__text__activities {
     margin-bottom: 8vw;
   }
-
-
-
-
-
-
-
 
   .mentorship__text__role,
   .kiddeBrasil__text__role,
@@ -882,15 +762,48 @@ a {
     margin-left: 4vw;
   }
 
-
   .end__division {
     border: 0.3vw solid #11607c;
     margin: 0 0 3vw 5vw;
   }
 
-  .footer__720 {
-    display: none;
+  /* --- FOOTER SECTION - SIZE: MAX: 720PX -- */
+
+  footer {
+    background-color: #11607c;
+    padding: 5vw 0 5vw 0;
   }
 
+  .footer__block {
+    display: grid;
+    grid-template-columns: 5vw 38vw 10vw 10vw 10vw 1fr;
+    grid-template-rows: 10vh;
+    align-items: center;
+    color: #fff;
+    font-weight: 500;
+  }
+
+  .footer__title__text {
+    padding-right: 3vw;
+    font-size: 3vw;
+  }
+
+  .footer__block__icons {
+    width: 5vw;
+    margin-right: 6vw;
+  }
+
+  .footer__information__text {
+    font-size: 3vw;
+    width: 31vw;
+    margin-left: -2vw;
+    margin-top: -1vw;
+    color: #fff;
+  }
+
+  .footer__icons__block__ahref {
+    width: 27vw;
+    color: #fff;
+  }
 
 }
