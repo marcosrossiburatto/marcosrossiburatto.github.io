@@ -51,7 +51,7 @@ function footerFunction() {
 
   iconsBlockAhref = document.createElement('a');
   footerTitleParagraph.appendChild(iconsBlockAhref).className = 'footer__icons__block__ahref';
-  iconsBlockAhref.href = 'https://www.marcosanand.com.br';
+  iconsBlockAhref.href = 'https://marcosrossiburatto.github.io/cv_ti.html';
   iconsBlockAhref.target = '_blank';
   iconsBlockAhref.rel = 'noreferrer noopener';
   iconsBlockAhref.title = 'site_semente_viva';
@@ -116,9 +116,16 @@ function footerFunction() {
   iconBlockImg.src = "./imgs/redes/email.png";
   iconBlockImg.alt = "logo_email";
 
+  iconsBlockAhref = document.createElement('a');
+  footerTitleParagraph.appendChild(iconsBlockAhref).className = 'footer__icons__block__ahref';
+  iconsBlockAhref.href = 'mailto:marcosrburatto@gmail.com';
+  iconsBlockAhref.target = '_blank';
+  iconsBlockAhref.rel = 'noreferrer noopener';
+  iconsBlockAhref.title = 'mail_to';
+
   footerInformationTextSpan = document.createElement('span');
   footerInformationTextSpan.className = 'footer__information__text';
-  footerTitleParagraph.appendChild(footerInformationTextSpan).textContent = 'marcosrburatto@gmail.com';
+  iconsBlockAhref.appendChild(footerInformationTextSpan).textContent = 'marcosrburatto@gmail.com';
 
   footerTitleParagraph = document.createElement('p');
   footerDiv.appendChild(footerTitleParagraph).className = 'footer__block';
@@ -155,6 +162,14 @@ function footerFunction() {
   footerInformationTextSpan = document.createElement('span');
   footerInformationTextSpan.className = 'footer__information__text';
   iconsBlockAhref.appendChild(footerInformationTextSpan).textContent = 'Download CV';
+
+
+
+
+
+
+
+
 
   screen.appendChild(footerDiv);
 }
