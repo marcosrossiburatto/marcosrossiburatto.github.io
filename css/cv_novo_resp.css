@@ -1008,7 +1008,7 @@ footer a:active {
 @media (max-width: 720px) {
 
     body {
-        /* overflow-y: hidden; */
+        overflow-y: hidden;
     }
 
 
@@ -1022,14 +1022,14 @@ footer a:active {
     header {
         display: block;
         padding: 3vw 0vw 3vw 0vw;
-        font-size: 2.3vw;
+        font-size: 3vw;
         font-weight: 700;
         width: 100vw;
     }
 
     .photo_text_header {
         display: grid;
-        grid-template-columns: 37vw 36vw 1fr;
+        grid-template-columns: 34vw 47vw 1fr;
     }
 
     .photoHeader720px {
@@ -1041,9 +1041,33 @@ footer a:active {
     }
 
     .photo_marcos_header {
-        margin-left: 24vw;
-        width: 10vw;
+        margin-left: 19vw;
+        width: 12vw;
     }
+
+    .text_header_01 {
+        display: grid;
+        text-align: center;
+    }
+
+    .division_header_01 {
+        border-width: 0;
+        background-color: #fff;
+        margin: 0.6vw 0 0.6vw 0;
+        height: 0.2vw;
+    }
+
+    .text_header_02 {
+        letter-spacing: 0.2vw;
+    }
+
+
+
+
+
+
+
+
 
     /* --- NAV SECTION SIZE: MAX: 720PX -- */
     nav {
