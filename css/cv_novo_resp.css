@@ -1226,7 +1226,7 @@ footer a:active {
 
     /* --- MAIN SECTION - ACADEMIC FORMATION- SIZE: MAX: 720PX -- */
     .academic_p {
-        padding: 5vw 0 4.2vw 3.5vw;
+        padding: 0 0 4.2vw 3.5vw;
         font-size: 5vw;
     }
 
@@ -1249,7 +1249,7 @@ footer a:active {
 
     /* --- MAIN SECTION - THERAPEUTIC FORMATION - SIZE: MAX: 720PX -- */
     .therapeutic_p {
-        padding: 5vw 0 2.2vw 3.5vw;
+        padding: 0 0 2.2vw 3.5vw;
         font-size: 5vw;
     }
 
