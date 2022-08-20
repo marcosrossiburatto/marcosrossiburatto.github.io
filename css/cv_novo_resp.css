@@ -1141,7 +1141,7 @@ footer a:active {
 
     /* --- MAIN SECTION - QUALIFICATIONS - SIZE: MAX: 720PX -- */
     .qualifications_p {
-        padding: 5vw 0 4.2vw 3.5vw;
+        padding: 6vw 0 4.2vw 3.5vw;
         font-size: 5vw;
     }
 
@@ -1149,7 +1149,7 @@ footer a:active {
         display: flex;
         flex-direction: row;
         justify-content: left;
-        margin-bottom: 2vw;
+        margin-bottom: 3vw;
         margin-left: 3.5vw;
         width: 93vw;
     }
@@ -1180,7 +1180,7 @@ footer a:active {
 
     .material-icons.icon_white_size_02 {
         font-size: 3.7vw;
-        margin-bottom: 1vw;
+        margin-bottom: 2vw;
         line-height: 5vw;
     }
 
@@ -1192,6 +1192,7 @@ footer a:active {
     .skills_02 {
         font-size: 4vw;
         line-height: 5vw;
+        margin-left: 2vw;
     }
 
     /* --- MAIN SECTION - AWARDS - SIZE: MAX: 720PX -- */
@@ -1202,15 +1203,13 @@ footer a:active {
     }
 
     .information_block_03 {
-        margin-bottom: 2vw;
+        margin-bottom: 3vw;
         margin-left: 3.5vw;
         width: 93%;
-
     }
 
     .material-icons.icon_white_size_03 {
         font-size: 3.7vw;
-        margin-bottom: 1vw;
         line-height: 5vw;
     }
 
@@ -1222,16 +1221,17 @@ footer a:active {
     .award_03 {
         font-size: 4vw;
         line-height: 5vw;
+        margin-left: 2vw;
     }
 
     /* --- MAIN SECTION - ACADEMIC FORMATION- SIZE: MAX: 720PX -- */
     .academic_p {
         padding: 5vw 0 4.2vw 3.5vw;
-        font-size: 5vw;
+        font-size: 4vw;
     }
 
     .information_block_academic {
-        margin-bottom: 2vw;
+        margin-bottom: 3vw;
         margin-left: 3.5vw;
         width: 93%;
     }
@@ -1244,17 +1244,18 @@ footer a:active {
     .text_academic {
         font-size: 4vw;
         line-height: 5vw;
+        margin-left: 2vw;
     }
 
     /* --- MAIN SECTION - THERAPEUTIC FORMATION - SIZE: MAX: 720PX -- */
     .therapeutic_p {
         padding: 5vw 0 2.2vw 3.5vw;
-        font-size: 5vw;
+        font-size: 3.8vw;
     }
 
     .information_block_therapeutic {
         margin-left: 3.5vw;
-        margin-bottom: 2vw;
+        margin-bottom: 3vw;
         width: 93vw;
     }
 
@@ -1271,6 +1272,7 @@ footer a:active {
     .text_therapeutic {
         font-size: 4vw;
         line-height: 5vw;
+        margin-left: 2vw;
     }
 
     /* --- MAIN SECTION - TRAVEL SERVICES - SIZE: MAX: 720PX -- */
@@ -1293,6 +1295,7 @@ footer a:active {
     .text_travel {
         font-size: 4vw;
         line-height: 5vw;
+        margin-left: 2vw;
     }
 
     /* --- MAIN SECTION - VOLUNTEER - SIZE: MAX: 720PX -- */
