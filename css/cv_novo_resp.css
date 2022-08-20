@@ -1369,7 +1369,7 @@ footer a:active {
 
     .companies_mp {
         display: block;
-        margin-top: 0vw;
+        margin-top: -4vw;
     }
 
     .text_companies_mp {
@@ -1434,13 +1434,13 @@ footer a:active {
     }
 
     .img_svt {
-        margin: 0;
         padding: 2vw 41vw 2vw 41vw;
         width: 100vw;
     }
 
     .companies_svt {
         display: block;
+        margin-top: -4vw;
     }
 
     .text_companies_svt {
@@ -1456,12 +1456,17 @@ footer a:active {
         display: block;
     }
 
-    .text_companies_svt.text_companies_svt_02 {
+    .text_companies_svt.text_companies_svt_02_1,
+    .text_companies_svt.text_companies_svt_02_2 {
         display: block;
         font-size: 4.5vw;
-        padding: 2vw 0 2vw 0;
+        padding: 2vw 0 0 0;
         font-weight: 600;
         color: #11607c;
+    }
+
+    .text_companies_svt.text_companies_svt_02_2 {
+        padding: 0 0 2vw 0;
     }
 
     .text_companies_svt.text_companies_svt_03 {
@@ -1475,13 +1480,14 @@ footer a:active {
 
     }
 
-    .information_block_companies_svt_01 {
+    .information_block_companies_svt_01,
+    .information_block_companies_svt_02 {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: flex-start;
         text-align: justify;
-        padding-top: 3vw;
+        padding-top: 4vw;
         margin-left: 3.5vw;
         width: 91vw;
         font-size: 4vw;
@@ -1489,16 +1495,7 @@ footer a:active {
     }
 
     .information_block_companies_svt_02 {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        text-align: justify;
-        margin-top: 2vw;
-        margin-left: 3.5vw;
-        width: 91vw;
-        font-size: 4vw;
-        line-height: 5vw;
+        padding-top: 2vw;
     }
 
     .text_companies_svt_06 {
@@ -1514,13 +1511,13 @@ footer a:active {
     }
 
     .img_kb {
-        margin: 0;
         padding: 2vw 40vw 2vw 40vw;
         width: 100vw;
     }
 
     .companies_kb {
         display: block;
+        margin-top: -4vw;
     }
 
     .text_companies_kb {
@@ -1536,12 +1533,17 @@ footer a:active {
         display: block;
     }
 
-    .text_companies_kb.text_companies_kb_02 {
+    .text_companies_kb.text_companies_kb_02_1,
+    .text_companies_kb.text_companies_kb_02_2 {
         display: block;
         font-size: 4.5vw;
-        padding: 2vw 0 2vw 0;
+        padding: 2vw 0 0 0;
         font-weight: 600;
         color: #11607c;
+    }
+
+    .text_companies_kb.text_companies_kb_02_2 {
+        padding: 0 0 2vw 0;
     }
 
     .text_companies_kb.text_companies_kb_03 {
@@ -1551,44 +1553,29 @@ footer a:active {
 
     .text_companies_kb.text_companies_kb_04 {
         display: block;
-        font-size: 3.1vw;
-        padding: 1vw 0 0 10vw;
-        line-height: 4vw;
-        width: 90vw;
+        padding: 2vw 6vw 0 6vw;
     }
 
-    .information_block_companies_kb_01 {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        text-align: justify;
-        padding-top: 3vw;
-        margin-left: 3.5vw;
-        width: 93vw;
-    }
-
+    .information_block_companies_kb_01,
     .information_block_companies_kb_02 {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: flex-start;
         text-align: justify;
-        margin-top: 2vw;
+        padding-top: 4vw;
         margin-left: 3.5vw;
-        margin-bottom: 0vw;
-        width: 93vw;
+        width: 91vw;
+        font-size: 4vw;
+        line-height: 5vw;
     }
 
-    .text_companies_kb_05 {
-        font-size: 3.4vw;
-        line-height: 4vw;
+    .information_block_companies_kb_02 {
+        padding-top: 2vw;
     }
 
     .text_companies_kb_06 {
-        font-size: 3.4vw;
-        line-height: 4vw;
-        margin-left: 1vw;
+        margin-left: 2vw;
     }
 
     /* --- GE - SIZE: MAX: 720PX -- */
@@ -1601,86 +1588,71 @@ footer a:active {
 
     .img_ge {
         margin: 0;
-        padding: 2vw 42vw 2vw 42vw;
+        padding: 2vw 41vw 2vw 41vw;
         width: 100vw;
     }
 
     .companies_ge {
         display: block;
+        margin-top: -4vw;
     }
 
     .text_companies_ge {
-        font-size: 1.4vw;
+        font-size: 4vw;
         color: #000;
         font-weight: 400;
-        margin: 0;
-        padding: 0;
         text-align: center;
-        width: 96vw;
+        line-height: 5vw;
+        width: 100vw;
     }
 
     .text_companies_ge.text_companies_ge_01 {
         display: block;
-        font-size: 3.1vw;
-        padding-left: 4vw;
     }
 
-    .text_companies_ge.text_companies_ge_02 {
+    .text_companies_ge.text_companies_ge_02_1,
+    .text_companies_ge.text_companies_ge_02_2 {
         display: block;
-        font-size: 3.3vw;
-        padding: 1vw 0 1vw 4vw;
+        font-size: 4.5vw;
+        padding: 2vw 0 0 0;
         font-weight: 600;
         color: #11607c;
     }
 
+    .text_companies_ge.text_companies_ge_02_2 {
+        padding: 0 0 2vw 0;
+    }
+
     .text_companies_ge.text_companies_ge_03 {
         display: block;
-        font-size: 3.1vw;
-        padding-left: 10vw;
-        line-height: 4vw;
-        width: 90vw;
+        padding: 0 6vw 0 6vw;
     }
 
     .text_companies_ge.text_companies_ge_04 {
         display: block;
-        font-size: 3.1vw;
-        padding: 1vw 0 0 10vw;
-        line-height: 4vw;
-        width: 90vw;
+        padding: 2vw 6vw 0 6vw;
     }
 
-    .information_block_companies_ge_01 {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        text-align: justify;
-        padding-top: 3vw;
-        margin-left: 3.5vw;
-        width: 93vw;
-    }
-
+    .information_block_companies_ge_01,
     .information_block_companies_ge_02 {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: flex-start;
         text-align: justify;
-        margin-top: 2vw;
+        padding-top: 4vw;
         margin-left: 3.5vw;
-        margin-bottom: 0vw;
-        width: 93vw;
+        width: 91vw;
+        font-size: 4vw;
+        line-height: 5vw;
     }
 
-    .text_companies_ge_05 {
-        font-size: 3.4vw;
-        line-height: 4vw;
+    .information_block_companies_ge_02 {
+        padding-top: 2vw;
     }
 
     .text_companies_ge_06 {
-        font-size: 3.4vw;
-        line-height: 4vw;
-        margin-left: 1vw;
+        margin-left: 2vw;
     }
 
     /* --- RESOLUÇÃO - SIZE: MAX: 720PX -- */
@@ -1692,87 +1664,66 @@ footer a:active {
     }
 
     .img_re {
-        margin: 0;
-        padding: 2vw 42vw 2vw 42vw;
+        padding: 2vw 41vw 2vw 41vw;
         width: 100vw;
     }
 
     .companies_re {
         display: block;
+        margin-top: 0vw;
     }
 
     .text_companies_re {
-        font-size: 1.4vw;
+        font-size: 4vw;
         color: #000;
         font-weight: 400;
-        margin: 0;
-        padding: 0;
         text-align: center;
-        width: 96vw;
+        line-height: 5vw;
+        width: 100vw;
     }
 
     .text_companies_re.text_companies_re_01 {
         display: block;
-        font-size: 3.1vw;
-        padding-left: 4vw;
     }
 
     .text_companies_re.text_companies_re_02 {
         display: block;
-        font-size: 3.3vw;
-        padding: 1vw 0 1vw 4vw;
+        font-size: 4.5vw;
+        padding: 2vw 0 2vw 0;
         font-weight: 600;
         color: #11607c;
     }
 
     .text_companies_re.text_companies_re_03 {
         display: block;
-        font-size: 3.1vw;
-        padding-left: 10vw;
-        line-height: 4vw;
-        width: 90vw;
+        padding: 0 6vw 0 6vw;
     }
 
     .text_companies_re.text_companies_re_04 {
         display: block;
-        font-size: 3.1vw;
-        padding: 1vw 0 0 10vw;
-        line-height: 4vw;
-        width: 90vw;
+        padding: 2vw 6vw 0 6vw;
     }
 
-    .information_block_companies_re_01 {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-        text-align: justify;
-        padding-top: 3vw;
-        margin-left: 3.5vw;
-        width: 93vw;
-    }
-
+    .information_block_companies_re_01,
     .information_block_companies_re_02 {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-items: flex-start;
         text-align: justify;
-        margin-top: 2vw;
+        padding-top: 4vw;
         margin-left: 3.5vw;
-        margin-bottom: 0vw;
-        width: 93vw;
+        width: 91vw;
+        font-size: 4vw;
+        line-height: 5vw;
     }
 
-    .text_companies_re_05 {
-        font-size: 3.4vw;
-        line-height: 4vw;
+    .information_block_companies_re_02 {
+        padding-top: 2vw;
     }
 
     .text_companies_re_06 {
-        font-size: 3.4vw;
-        line-height: 4vw;
-        margin-left: 1vw;
+        margin-left: 2vw;
     }
 
     /* --- MONTAG - SIZE: MAX: 720PX -- */
@@ -1784,53 +1735,44 @@ footer a:active {
     }
 
     .img_me {
-        margin: 0;
-        padding: 2vw 42vw 2vw 42vw;
+        padding: 2vw 41vw 2vw 41vw;
         width: 100vw;
     }
 
     .companies_me {
         display: block;
+        margin-top: 0vw;
     }
 
     .text_companies_me {
-        font-size: 1.4vw;
+        font-size: 4vw;
         color: #000;
         font-weight: 400;
-        margin: 0;
-        padding: 0;
         text-align: center;
-        width: 96vw;
+        line-height: 5vw;
+        width: 100vw;
     }
 
     .text_companies_me.text_companies_me_01 {
         display: block;
-        font-size: 3.1vw;
-        padding-left: 4vw;
     }
 
     .text_companies_me.text_companies_me_02 {
         display: block;
-        font-size: 3.3vw;
-        padding: 1vw 0 1vw 4vw;
+        font-size: 4.5vw;
+        padding: 2vw 0 2vw 0;
         font-weight: 600;
         color: #11607c;
     }
 
     .text_companies_me.text_companies_me_03 {
         display: block;
-        font-size: 3.1vw;
-        padding-left: 10vw;
-        line-height: 4vw;
-        width: 90vw;
+        padding: 0 6vw 0 6vw;
     }
 
     .text_companies_me.text_companies_me_04 {
         display: block;
-        font-size: 3.1vw;
-        padding: 1vw 0 0 10vw;
-        line-height: 4vw;
-        width: 90vw;
+        padding: 2vw 6vw 0 6vw;
     }
 
     /* --- ANTERIORES - SIZE: MAX: 720PX -- */
@@ -1843,28 +1785,35 @@ footer a:active {
 
     .img_ea {
         margin: 0;
-        padding: 2vw 42vw 2vw 42vw;
+        padding: 2vw 41vw 2vw 41vw;
         width: 100vw;
     }
 
     .companies_ea {
         display: block;
+        margin-top: -4vw;
     }
 
     .text_companies_ea {
-        display: block;
-        font-size: 3.1vw;
-        padding-left: 1.5vw;
-        margin-top: 2vw;
+        font-size: 4vw;
+        color: #000;
+        font-weight: 400;
         text-align: center;
-        width: 96vw;
-        color: #11607c;
+        line-height: 5vw;
+        width: 100vw;
     }
 
+    .text_companies_ea.text_companies_ea_01 {
+        display: block;
+    }
 
-
-
-
+    .text_companies_ea.text_companies_ea_02 {
+        display: block;
+        font-size: 4.5vw;
+        padding: 2vw 0 2vw 0;
+        font-weight: 600;
+        color: #11607c;
+    }
 
 
     /* --- MAIN SECTION - CONTACTS - SIZE: MAX: 720PX -- */
