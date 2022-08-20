@@ -1063,12 +1063,6 @@ footer a:active {
     }
 
     /* --- NAV SECTION SIZE: MAX: 720PX -- */
-    nav {
-        width: 100vw;
-        height: auto;
-        padding-bottom: 6vw;
-    }
-
     .display_none_720px {
         display: inline-block;
         padding-top: 5vw;
@@ -1078,23 +1072,37 @@ footer a:active {
         display: none;
     }
 
+    nav {
+        background-color: #f90;
+        padding: 2vw 1.2vw 6vw 1.2vw;
+        width: 100vw;
+        height: auto;
+    }
+
     .nav_p {
         padding: 0 0 7vw 3.5vw;
         font-size: 5vw;
         font-weight: 700;
         text-align: left;
+        color: #11607c;
+        font-style: italic;
+        text-decoration: underline;
     }
 
     .information_block_nav {
         display: grid;
         margin-left: 0vw;
         margin-right: 5vw;
+        margin-bottom: 1.3vw;
+        line-height: 1.5vw;
         grid-template-columns: 4vw 27vw 1vw 4vw 26.4vw 3vw 4vw 24.5vw;
         grid-template-rows: 15vw 15vw 15vw;
     }
 
     .material-icons.icon_color_nav {
         font-size: 3.7vw;
+        font-weight: 500;
+        margin-top: 0.1vw;
         padding-left: 0vw;
         line-height: 5vw;
         color: #11607c;
@@ -1102,6 +1110,7 @@ footer a:active {
 
     .text_nav {
         font-size: 4vw;
+        font-weight: 600;
         margin-left: 0;
         padding-left: 0;
         text-align: left;
@@ -1111,6 +1120,13 @@ footer a:active {
     }
 
     /* --- MAIN SECTION - GOALS - SIZE: MAX: 720PX -- */
+    main {
+        background-color: white;
+        margin: 0;
+        height: auto;
+    }
+
+    /* --- GOALS SECTION 720px-- */
     .right_class_body_color_goals {
         display: inline-block;
         background-color: #D6EAF8;
@@ -1122,48 +1138,75 @@ footer a:active {
     .goals_p {
         padding: 5vw 0 2.2vw 3.5vw;
         font-size: 5vw;
+        font-weight: 700;
         margin-bottom: 2vw;
+        text-align: justify;
+        color: #11607c;
+        font-style: italic;
+        text-decoration: underline;
     }
 
     .information_block_goals {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 3.5vw;
         margin-bottom: 3vw;
         width: 91vw;
     }
 
     .material-icons.icon_color_goals {
+        color: #11607c;
         font-size: 3.7vw;
+        font-weight: 700;
+        align-items: 1vw;
         line-height: 5vw;
     }
 
     .text_goals {
         font-size: 4vw;
-        line-height: 5vw;
+        color: #000;
+        font-weight: 500;
         margin-left: 2vw;
+        text-align: justify;
+        line-height: 5vw;
     }
 
     /* --- MAIN SECTION - QUALIFICATIONS - SIZE: MAX: 720PX -- */
     .qualifications_p {
         padding: 6vw 0 4.2vw 3.5vw;
         font-size: 5vw;
+        font-weight: 600;
+        text-align: justify;
+        color: #11607c;
+        font-style: italic;
+        text-decoration: underline;
     }
 
     .information_block_qualifications {
         display: flex;
         flex-direction: row;
         justify-content: left;
-        margin-bottom: 3vw;
+        align-items: flex-start;
         margin-left: 3.5vw;
+        margin-bottom: 3vw;
         width: 91vw;
     }
 
     .material-icons.icon_color_qualifications {
+        color: #11607c;
         font-size: 3.7vw;
+        font-weight: 700;
         line-height: 5vw;
     }
 
     .text_qualifications {
         font-size: 4vw;
+        color: #000;
+        font-weight: 400;
         margin-left: 2vw;
+        text-align: justify;
         line-height: 5vw;
     }
 
@@ -1171,29 +1214,44 @@ footer a:active {
     .marcos_skills {
         padding: 5vw 0 4.2vw 3.5vw;
         font-size: 5vw;
+        font-weight: 600;
+        text-align: justify;
+        color: #11607c;
+        font-style: italic;
+        text-decoration: underline;
     }
 
     .information_block_02 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
         margin-left: 3.5vw;
         margin-bottom: 1vw;
         width: 91vw;
     }
 
     .material-icons.icon_white_size_02 {
+        color: #11607c;
         font-size: 3.7vw;
+        font-weight: 500;
         margin-bottom: 2vw;
         line-height: 5vw;
     }
 
     .material-icons.icon_size_02 {
+        color: #C8C2C0;
         font-size: 3.7vw;
         line-height: 5vw;
     }
 
     .skills_02 {
         font-size: 4vw;
-        line-height: 5vw;
+        color: #000;
+        font-weight: 400;
         margin-left: 2vw;
+        text-align: justify;
+        line-height: 5vw;
     }
 
     /* --- MAIN SECTION - AWARDS - SIZE: MAX: 720PX -- */
@@ -1201,62 +1259,92 @@ footer a:active {
     .marcos_award {
         padding: 5vw 0 4.2vw 3.5vw;
         font-size: 5vw;
+        font-weight: 600;
+        text-align: justify;
+        color: #11607c;
+        font-style: italic;
+        text-decoration: underline;
     }
 
     .information_block_03 {
-        margin-bottom: 3vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
         margin-left: 3.5vw;
+        margin-bottom: 3vw;
         width: 91vw;
     }
 
     .material-icons.icon_white_size_03 {
+        color: #11607c;
         font-size: 3.7vw;
-        line-height: 5vw;
-    }
-
-    .material-icons.icon_white_size_03_1 {
-        font-size: 3.7vw;
+        font-weight: 700;
         line-height: 5vw;
     }
 
     .award_03 {
         font-size: 4vw;
-        line-height: 5vw;
+        color: #000;
+        font-weight: 400;
         margin-left: 2vw;
+        text-align: justify;
+        line-height: 5vw;
     }
 
     /* --- MAIN SECTION - ACADEMIC FORMATION- SIZE: MAX: 720PX -- */
     .academic_p {
         padding: 0 0 4.2vw 3.5vw;
         font-size: 5vw;
-
+        font-weight: 600;
+        text-align: justify;
+        color: #11607c;
+        font-style: italic;
+        text-decoration: underline;
     }
 
     .information_block_academic {
-        margin-bottom: 3vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
         margin-left: 3.5vw;
+        margin-bottom: 3vw;
         width: 91vw;
-
     }
 
     .material-icons.icon_color_academic {
+        color: #11607c;
         font-size: 3.7vw;
+        font-weight: 700;
         line-height: 5vw;
     }
 
     .text_academic {
         font-size: 4vw;
-        line-height: 5vw;
+        color: #000;
+        font-weight: 400;
         margin-left: 2vw;
+        text-align: justify;
+        line-height: 5vw;
     }
 
     /* --- MAIN SECTION - THERAPEUTIC FORMATION - SIZE: MAX: 720PX -- */
     .therapeutic_p {
         padding: 0 0 2.2vw 3.5vw;
         font-size: 5vw;
+        font-weight: 600;
+        text-align: justify;
+        color: #11607c;
+        font-style: italic;
+        text-decoration: underline;
     }
 
     .information_block_therapeutic {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
         margin-left: 3.5vw;
         margin-bottom: 3vw;
         width: 91vw;
@@ -1265,61 +1353,100 @@ footer a:active {
     .therapeutic_p_01 {
         padding: 3vw 0 4.2vw 3.5vw;
         font-size: 4.5vw;
+        font-weight: 600;
+        text-align: justify;
+        color: #11607c;
+        font-style: normal;
+        text-decoration: underline;
     }
 
     .material-icons.icon_color_therapeutic {
+        color: #11607c;
         font-size: 3.7vw;
+        font-weight: 700;
         line-height: 5vw;
     }
 
     .text_therapeutic {
         font-size: 4vw;
-        line-height: 5vw;
+        color: #000;
+        font-weight: 400;
         margin-left: 2vw;
+        text-align: justify;
+        line-height: 5vw;
     }
 
     /* --- MAIN SECTION - TRAVEL SERVICES - SIZE: MAX: 720PX -- */
     .travel_p {
         padding: 5vw 0 4.2vw 3.5vw;
         font-size: 5vw;
+        font-weight: 600;
+        text-align: justify;
+        color: #11607c;
+        font-style: italic;
+        text-decoration: underline;
     }
 
     .information_block_travel {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
         margin-left: 3.5vw;
         margin-bottom: 2vw;
         width: 91vw;
     }
 
     .material-icons.icon_color_travel {
+        color: #11607c;
         font-size: 3.7vw;
+        font-weight: 700;
         line-height: 5vw;
     }
 
     .text_travel {
         font-size: 4vw;
-        line-height: 5vw;
+        color: #000;
+        font-weight: 400;
         margin-left: 2vw;
+        text-align: justify;
+        line-height: 5vw;
     }
 
     /* --- MAIN SECTION - VOLUNTEER - SIZE: MAX: 720PX -- */
     .volunteer_p {
         padding: 5vw 0 4.2vw 3.5vw;
         font-size: 5vw;
+        font-weight: 600;
+        text-align: justify;
+        color: #11607c;
+        font-style: italic;
+        text-decoration: underline;
     }
 
     .information_block_volunteer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
         margin-left: 3.5vw;
         margin-bottom: 2vw;
         width: 91vw;
     }
 
     .material-icons.icon_color_volunteer {
+        color: #11607c;
         font-size: 3.7vw;
+        font-weight: 700;
         line-height: 5vw;
     }
 
     .text_volunteer {
         font-size: 4vw;
+        color: #000;
+        font-weight: 400;
+        margin-left: 1vw;
+        text-align: justify;
         line-height: 5vw;
     }
 
@@ -1327,26 +1454,42 @@ footer a:active {
     .marcos_languages {
         padding: 5vw 0 4.2vw 3.5vw;
         font-size: 5vw;
+        font-weight: 600;
+        text-align: justify;
+        color: #11607c;
+        font-style: italic;
+        text-decoration: underline;
     }
 
     .information_block_04 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
         margin-left: 3.5vw;
         margin-bottom: 2vw;
         width: 91vw;
     }
 
     .material-icons.icon_white_size_04 {
+        color: #11607c;
         font-size: 3.7vw;
+        font-weight: 500;
         line-height: 5vw;
     }
 
     .material-icons.icon_size_04 {
+        color: #C8C2C0;
         font-size: 3.7vw;
         line-height: 5vw;
     }
 
     .languages_04 {
         font-size: 4vw;
+        color: #000;
+        font-weight: 400;
+        margin-left: 2vw;
+        text-align: justify;
         line-height: 5vw;
     }
 
@@ -1354,6 +1497,11 @@ footer a:active {
     .companies_p {
         padding: 5vw 0 0 3.5vw;
         font-size: 5vw;
+        font-weight: 600;
+        text-align: justify;
+        color: #11607c;
+        font-style: italic;
+        text-decoration: underline;
     }
 
     /* --- mentorias - SIZE: MAX: 720PX -- */
@@ -1362,12 +1510,12 @@ footer a:active {
         padding: 0;
         display: block;
         align-items: center;
-
     }
 
     .img_mp {
         padding: 2vw 38vw 0vw 38vw;
-        width: 99vw;
+        margin-left: 0;
+        width: 100vw;
     }
 
     .companies_mp {
@@ -1874,72 +2022,104 @@ footer a:active {
 
     /* --- ASIDE SECTION - SIZE: MAX: 720PX -- */
     aside {
-        padding: 5% 8% 5% 5%;
+        background-color: #94095a;
+        padding: 2vw 1.2vw 6vw 1.2vw;
+        width: 100vw;
+        height: auto;
     }
 
     .aside_p {
-        padding: 0 0 6% 0;
-        font-size: 3.2vw;
+        padding: 0 0 7vw 3.5vw;
+        font-size: 5vw;
+        font-weight: 700;
+        text-align: left;
+        color: #fff;
+        font-style: italic;
+        text-decoration: underline;
     }
 
     .aside_p01 {
-        padding: 0% 0 5vw 0;
-        font-size: 3vw;
-    }
-
-    .aside_p02 {
-        padding: 0% 0 4vw 0;
-        font-size: 3vw;
+        padding: 0% 0 6vw 0;
+        font-size: 4vw;
+        font-weight: 600;
+        text-align: left;
+        color: #fff;
+        font-style: italic;
+        text-decoration: underline;
     }
 
     .information_block_aside_01 {
-        padding: 0 0 15% 0;
         display: grid;
-        grid-template-columns: 4% 29% 4% 1fr 4% 29%;
-        grid-template-rows: 80% 20%;
+        grid-template-columns: 4vw 26vw 8vw 4vw 25vw 8vw 4vw 18.5vw;
+        grid-template-rows: 10vw 15vw;
+        margin-left: 0vw;
+        margin-right: 0vw;
+        margin-bottom: 1.3vw;
     }
 
     .information_block_aside_02 {
-        padding: 0 0 10% 0;
         display: grid;
-        grid-template-columns: 1% 1fr;
-        grid-template-rows: 7%;
+        grid-template-columns: 4vw 94vw;
+        grid-template-rows: 10vw;
+        margin-left: 0vw;
+        margin-right: 0vw;
+        margin-bottom: 1.3vw;
     }
 
     .information_block_aside_03 {
-        padding: 0 0 20% 0;
         display: grid;
-        grid-template-columns: 4% 29% 4% 1fr 4% 29%;
-        grid-template-rows: 40% 35% 35% 30%;
+        grid-template-columns: 4vw 27vw 5vw 4vw 26.4vw 5vw 4vw 22vw;
+        grid-template-rows: 15vw 15vw 15vw 15vw;
+        margin-left: 0vw;
+        margin-right: 0vw;
+        margin-bottom: 1.3vw;
     }
 
     .information_block_aside_04 {
-        padding: 0 0 18% 0;
         display: grid;
-        grid-template-columns: 4% 29% 4% 1fr 4% 29%;
-        grid-template-rows: 90% 30%;
+        grid-template-columns: 4vw 27vw 3vw 4vw 26.4vw 4vw 4vw 24vw;
+        grid-template-rows: 15vw 15vw;
+        margin-left: 0vw;
+        margin-right: 0vw;
+        margin-bottom: 1.3vw;
     }
 
     .information_block_aside_05 {
-        padding: 0 0 105% 0;
         display: grid;
-        grid-template-columns: 4% 29% 4% 1fr 4% 29%;
-        grid-template-rows: 7% 7% 7% 7% 7% 7% 7% 7% 7% 9% 9% 9% 9% 9% 9% 9% 11% 11%;
+        grid-template-columns: 4vw 27vw 3vw 4vw 26.4vw 4vw 4vw 24vw;
+        grid-template-rows: 15vw 15vw 15vw 15vw 15vw 15vw 15vw 15vw 15vw 15vw 20vw 20vw 20vw 20vw 20vw 20vw 20vw 20vw;
+        margin-left: 0vw;
+        margin-right: 0vw;
+        margin-bottom: 1.3vw;
     }
 
     .material-icons.icon_color_aside {
-        font-size: 2.2vw;
+        font-size: 3.7vw;
+        font-weight: 500;
+        margin-top: 0.1vw;
+        padding-left: 0vw;
+        line-height: 5vw;
+        color: #fff;
     }
 
     .text_aside {
-        font-size: 3vw;
-        padding: 0 11% 0 5%;
+        font-size: 4vw;
+        font-weight: 600;
+        margin-left: 0;
+        padding-left: 0;
+        text-align: left;
+        line-height: 5vw;
+        color: #fff;
     }
 
     .text_aside_01 {
-        font-size: 3vw;
-        margin-left: -7vw;
+        font-size: 3.5vw;
+        font-weight: 600;
+        margin-left: 0;
+        padding-left: 0;
         text-align: left;
+        line-height: 5vw;
+        color: #fff;
     }
 
     /* --- FOOTER SECTION - SIZE: MAX: 720PX -- */
