@@ -1053,12 +1053,12 @@ footer a:active {
     .division_header_01 {
         border-width: 0;
         background-color: #fff;
-        margin: 0.6vw 0 0.6vw 0;
+        margin: 0.7vw 1vw 0.7vw 1vw;
         height: 0.2vw;
     }
 
     .text_header_02 {
-        letter-spacing: 0.2vw;
+        letter-spacing: 0.3vw;
     }
 
 
