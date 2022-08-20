@@ -1087,15 +1087,15 @@ footer a:active {
 
     .information_block_nav {
         display: grid;
-        margin-left: 5vw;
+        margin-left: 0vw;
         margin-right: 5vw;
-        grid-template-columns: 6vw 37vw 1fr 6vw 36vw;
-        grid-template-rows: 8vw 12.5vw 12.5vw 12.5vw 12.5vw;
+        grid-template-columns: 4vw 27vw 1vw 4vw 26.4vw 3vw 4vw 24.5vw;
+        grid-template-rows: 15vw 15vw 15vw;
     }
 
     .material-icons.icon_color_nav {
         font-size: 3.7vw;
-        padding-left: 1vw;
+        padding-left: 0vw;
         line-height: 5vw;
         color: #11607c;
     }
@@ -1106,7 +1106,8 @@ footer a:active {
         padding-left: 0;
         text-align: left;
         line-height: 5vw;
-        color: #11607c
+        color: #11607c;
+        /* background-color: #C8C2C0; */
     }
 
     /* --- MAIN SECTION - GOALS - SIZE: MAX: 720PX -- */
@@ -1164,7 +1165,6 @@ footer a:active {
         font-size: 4vw;
         margin-left: 2vw;
         line-height: 5vw;
-
     }
 
     /* --- MAIN SECTION - SKILLS - SIZE: MAX: 720PX -- */
@@ -1229,12 +1229,14 @@ footer a:active {
     .academic_p {
         padding: 0 0 4.2vw 3.5vw;
         font-size: 5vw;
+
     }
 
     .information_block_academic {
         margin-bottom: 3vw;
         margin-left: 3.5vw;
         width: 91vw;
+
     }
 
     .material-icons.icon_color_academic {
@@ -1360,11 +1362,12 @@ footer a:active {
         padding: 0;
         display: block;
         align-items: center;
+
     }
 
     .img_mp {
         padding: 2vw 38vw 0vw 38vw;
-        width: 100vw;
+        width: 99vw;
     }
 
     .companies_mp {
@@ -1477,7 +1480,6 @@ footer a:active {
     .text_companies_svt.text_companies_svt_04 {
         display: block;
         padding: 2vw 6vw 0 6vw;
-
     }
 
     .information_block_companies_svt_01,
@@ -1800,7 +1802,7 @@ footer a:active {
         font-weight: 400;
         text-align: center;
         line-height: 5vw;
-        width: 100vw;
+        width: 98.3vw;
     }
 
     .text_companies_ea.text_companies_ea_01 {
