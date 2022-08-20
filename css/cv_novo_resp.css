@@ -1815,36 +1815,59 @@ footer a:active {
         color: #11607c;
     }
 
-
-    /* --- MAIN SECTION - CONTACTS - SIZE: MAX: 720PX -- */
-    .marcos_contact {
-        margin: 8vw 1vw 2vw 3.5vw;
-        font-size: 3.5vw;
+    /* --- SEND MESSAGE FORM - SIZE: MAX: 720PX -- */
+    .marcos_message {
+        padding: 6vw 0 2.2vw 3.5vw;
+        font-size: 5vw;
+        font-weight: 600;
+        text-align: justify;
+        color: #11607c;
+        font-style: italic;
+        text-decoration: underline;
     }
 
-    .material-icons.icon_white_size_01 {
-        font-size: 4vw;
-    }
-
-    .address_01 {
+    form {
+        text-align: justify;
         font-size: 3vw;
     }
 
-    /* --- SEND MESSAGE FORM - SIZE: MAX: 720PX -- */
     input,
     textarea {
-        width: 90%;
-        max-width: 90%;
+        width: 90vw;
+        padding: 2vw;
+        color: #11607c;
+        margin-top: 2vw;
+        border-radius: 1vw;
+        border: 1px solid;
+        font-size: 3vw;
     }
 
-    .textarea {
-        width: 90%;
-        max-width: 90%;
+    textarea {
+        width: 90vw;
+        height: 10vw;
+        line-height: 1vw;
+        max-width: 90vw;
+    }
+
+    form label {
+        color: #11607c;
+        font-weight: bold;
     }
 
     .text_place {
-        margin: 2% 0 4% 5%;
-        font-size: 2.7vw;
+        margin: 4vw 0 0 3.5vw;
+    }
+
+    .enviar {
+        background-color: #11607c;
+        margin: 4vw 0 5vw 3.5vw;
+        height: 10vw;
+        width: 20vw;
+        font-weight: bold;
+        border-radius: 1vw;
+        border: 1px solid;
+        color: #fff;
+        font-size: 3vw;
     }
 
     /* --- ASIDE SECTION - SIZE: MAX: 720PX -- */
