@@ -1008,7 +1008,7 @@ footer a:active {
 @media (max-width: 720px) {
 
     body {
-        /* overflow-y: hidden; */
+        overflow-y: hidden;
         margin: 0;
     }
 
@@ -1102,7 +1102,7 @@ footer a:active {
 
     .text_nav {
         font-size: 4vw;
-        margin-left: 0vw;
+        margin-left: 0;
         padding-left: 0;
         text-align: left;
         line-height: 5vw;
@@ -1126,7 +1126,7 @@ footer a:active {
 
     .information_block_goals {
         margin-bottom: 3vw;
-        width: 93vw;
+        width: 91vw;
     }
 
     .material-icons.icon_color_goals {
@@ -1152,7 +1152,7 @@ footer a:active {
         justify-content: left;
         margin-bottom: 3vw;
         margin-left: 3.5vw;
-        width: 93vw;
+        width: 91vw;
     }
 
     .material-icons.icon_color_qualifications {
@@ -1176,7 +1176,7 @@ footer a:active {
     .information_block_02 {
         margin-left: 3.5vw;
         margin-bottom: 1vw;
-        width: 93vw;
+        width: 91vw;
     }
 
     .material-icons.icon_white_size_02 {
@@ -1206,7 +1206,7 @@ footer a:active {
     .information_block_03 {
         margin-bottom: 3vw;
         margin-left: 3.5vw;
-        width: 93%;
+        width: 91vw;
     }
 
     .material-icons.icon_white_size_03 {
@@ -1234,7 +1234,7 @@ footer a:active {
     .information_block_academic {
         margin-bottom: 3vw;
         margin-left: 3.5vw;
-        width: 93%;
+        width: 91vw;
     }
 
     .material-icons.icon_color_academic {
@@ -1257,7 +1257,7 @@ footer a:active {
     .information_block_therapeutic {
         margin-left: 3.5vw;
         margin-bottom: 3vw;
-        width: 93vw;
+        width: 91vw;
     }
 
     .therapeutic_p_01 {
@@ -1285,7 +1285,7 @@ footer a:active {
     .information_block_travel {
         margin-left: 3.5vw;
         margin-bottom: 2vw;
-        width: 93vw;
+        width: 91vw;
     }
 
     .material-icons.icon_color_travel {
@@ -1308,7 +1308,7 @@ footer a:active {
     .information_block_volunteer {
         margin-left: 3.5vw;
         margin-bottom: 2vw;
-        width: 93vw;
+        width: 91vw;
     }
 
     .material-icons.icon_color_volunteer {
@@ -1330,7 +1330,7 @@ footer a:active {
     .information_block_04 {
         margin-left: 3.5vw;
         margin-bottom: 2vw;
-        width: 93vw;
+        width: 91vw;
     }
 
     .material-icons.icon_white_size_04 {
@@ -1351,9 +1351,10 @@ footer a:active {
     /* --- MAIN SECTION - COMPANIES - SIZE: MAX: 720PX -- */
     .companies_p {
         padding: 5vw 0 4.2vw 3.5vw;
-        font-size: 3.5vw;
+        font-size: 5vw;
     }
 
+    /* --- mentorias - SIZE: MAX: 720PX -- */
     .information_block_companies_mp {
         margin: 0;
         padding: 0;
@@ -1363,7 +1364,7 @@ footer a:active {
 
     .img_mp {
         margin: 0;
-        padding: 2vw 39.5vw 2vw 39.5vw;
+        padding: 2vw 38.5vw 2vw 38.5vw;
         width: 100vw;
     }
 
@@ -1372,35 +1373,32 @@ footer a:active {
     }
 
     .text_companies_mp {
-        font-size: 1.4vw;
         color: #000;
         font-weight: 400;
-        margin: 0;
-        padding: 0;
         text-align: center;
-        width: 96vw;
+        width: 100vw;
     }
 
     .text_companies_mp.text_companies_mp_01 {
         display: block;
-        font-size: 3.1vw;
-        padding-left: 4vw;
+        font-size: 4vw;
+        padding-left: 0vw;
     }
 
     .text_companies_mp.text_companies_mp_02 {
         display: block;
-        font-size: 3.3vw;
-        padding: 1vw 0 1vw 4vw;
+        font-size: 4vw;
+        padding: 2vw 0 2vw 0vw;
         font-weight: 600;
         color: #11607c;
     }
 
     .text_companies_mp.text_companies_mp_03 {
         display: block;
-        font-size: 3.1vw;
-        padding-left: 10vw;
+        font-size: 4vw;
         line-height: 4vw;
-        width: 90vw;
+        padding: 0 7vw 0 7vw;
+        width: 100vw;
     }
 
     .information_block_companies_mp_01 {
@@ -1411,7 +1409,7 @@ footer a:active {
         text-align: justify;
         padding-top: 3vw;
         margin-left: 3.5vw;
-        width: 93vw;
+        width: 91vw;
     }
 
     .information_block_companies_mp_02 {
@@ -1423,20 +1421,21 @@ footer a:active {
         margin-top: 2vw;
         margin-left: 3.5vw;
         margin-bottom: 0vw;
-        width: 93vw;
+        width: 91vw;
     }
 
     .text_companies_mp_05 {
-        font-size: 3.4vw;
-        line-height: 4vw;
+        font-size: 4vw;
+        line-height: 5vw;
     }
 
     .text_companies_mp_06 {
-        font-size: 3.4vw;
-        line-height: 4vw;
-        margin-left: 1vw;
+        font-size: 4vw;
+        line-height: 5vw;
+        margin-left: 2vw;
     }
 
+    /* --- semente viva - SIZE: MAX: 720PX -- */
     .information_block_companies_svt {
         margin: 5vw 0 0 0;
         padding: 0;
@@ -1528,6 +1527,7 @@ footer a:active {
         margin-left: 1vw;
     }
 
+    /* --- KIDDE BRASIL - SIZE: MAX: 720PX -- */
     .information_block_companies_kb {
         margin: 5vw 0 0 0;
         padding: 0;
@@ -1619,6 +1619,7 @@ footer a:active {
         margin-left: 1vw;
     }
 
+    /* --- GE - SIZE: MAX: 720PX -- */
     .information_block_companies_ge {
         margin: 5vw 0 0 0;
         padding: 0;
@@ -1710,6 +1711,7 @@ footer a:active {
         margin-left: 1vw;
     }
 
+    /* --- RESOLUÇÃO - SIZE: MAX: 720PX -- */
     .information_block_companies_re {
         margin: 5vw 0 0 0;
         padding: 0;
@@ -1801,6 +1803,7 @@ footer a:active {
         margin-left: 1vw;
     }
 
+    /* --- MONTAG - SIZE: MAX: 720PX -- */
     .information_block_companies_me {
         margin: 5vw 0 0 0;
         padding: 0;
@@ -1858,6 +1861,7 @@ footer a:active {
         width: 90vw;
     }
 
+    /* --- ANTERIORES - SIZE: MAX: 720PX -- */
     .information_block_companies_ea {
         margin: 5vw 0 0 0;
         padding: 0;
