@@ -1009,6 +1009,7 @@ footer a:active {
 
     body {
         /* overflow-y: hidden; */
+        margin: 0;
     }
 
 
@@ -1088,13 +1089,13 @@ footer a:active {
         display: grid;
         margin-left: 5vw;
         margin-right: 5vw;
-        grid-template-columns: 6vw 36vw 6vw 6vw 1fr;
-        grid-template-rows: 8vw 12.5vw 12.5vw 12.5vw 23vw 10vw;
+        grid-template-columns: 6vw 37vw 1fr 6vw 36vw;
+        grid-template-rows: 8vw 12.5vw 12.5vw 12.5vw 12.5vw 10vw;
     }
 
     .material-icons.icon_color_nav {
         font-size: 3.7vw;
-        padding-left: 0;
+        padding-left: 1vw;
         line-height: 5vw;
         color: #11607c;
     }
