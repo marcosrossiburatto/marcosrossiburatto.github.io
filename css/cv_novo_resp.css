@@ -1095,7 +1095,7 @@ footer a:active {
         margin-right: 5vw;
         margin-bottom: 1.3vw;
         line-height: 1.5vw;
-        grid-template-columns: 4vw 27vw 1vw 4vw 26.4vw 3vw 4vw 24.5vw;
+        grid-template-columns: 4vw 27vw 1vw 4vw 26.4vw 3vw 4vw 24vw;
         grid-template-rows: 15vw 15vw 15vw;
     }
 
@@ -2040,7 +2040,7 @@ footer a:active {
 
     .aside_p01 {
         padding: 0% 0 6vw 0;
-        font-size: 4vw;
+        font-size: 5vw;
         font-weight: 600;
         text-align: left;
         color: #fff;
