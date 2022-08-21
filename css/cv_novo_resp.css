@@ -909,6 +909,9 @@ footer a:active {
     margin-right: 2vw;
 }
 
+
+
+
 .information_block_02_footer {
     display: grid;
     grid-template-columns: 15vw 19vw 2vw 3vw 20vw 3vw 1fr;
@@ -2123,11 +2126,11 @@ footer a:active {
     }
 
     /* --- FOOTER SECTION - SIZE: MAX: 720PX -- */
-
-    .information_block_01_footer {
-        display: grid;
-        grid-template-columns: 5vw 42vw 8vw 8vw 8vw 1fr;
-        grid-template-rows: 4vh;
+    footer {
+        grid-column: span 3;
+        padding: 7vw 0 4vw 0;
+        text-align: left;
+        background-color: #690;
     }
 
     .photoFooterIcons720px {
@@ -2138,64 +2141,90 @@ footer a:active {
         display: none;
     }
 
+    .information_block_01_footer {
+        display: grid;
+        grid-template-columns: 2vw 44vw 8vw 8vw 8vw 1fr;
+        grid-template-rows: 4vw 5vw;
+        text-align: left;
+        align-items: center;
+        width: 100vw;
+        height: auto;
+        min-height: 0;
+    }
+
     .marcos_contact_footer {
-        padding: 0 3vw 0vh 0vh;
-        font-size: 3vw;
+        padding: 0 0 0 0;
+        font-size: 3.4vw;
+        font-weight: 400;
+        text-align: left;
+        color: #fff;
+        font-style: normal;
+        text-decoration: none;
     }
 
     .footer_icons {
+        transform-origin: center center;
+        object-fit: cover;
         width: 5vw;
-        margin-right: 4vw;
+        margin-right: 0vw;
     }
 
     .information_block_02_footer {
         display: grid;
-        grid-template-columns: 5vw 42vw 6vw 6vw 35vw;
-        grid-template-rows: 4vh;
+        grid-template-columns: 2vw 44vw 6vw 6vw 35vw;
+        grid-template-rows: 5vw 1vw;
+        text-align: left;
+        align-items: center;
+        width: 100vw;
+        min-height: 3.5vw;
     }
 
     .footer_icons_02 {
+        transform-origin: center center;
+        object-fit: cover;
         width: 5vw;
     }
 
     .marcos_contact_footer_02 {
-        padding: 0 3vw 0vh 0vw;
-        font-size: 3vw;
+        padding: 0 3vw 0 0;
+        font-size: 3.4vw;
+        margin-left: 1vw;
         text-align: left;
         align-items: center;
-    }
-
-    .marcos_contact_footer_02:hover {
-        font-size: 3vw;
     }
 
     .information_block_03_footer {
         display: grid;
-        grid-template-columns: 47vw 7vw 40vw;
-        grid-template-rows: 10vh;
+        grid-template-columns: 46vw 7vw 40vw;
+        grid-template-rows: 10vw;
         text-align: left;
         align-items: center;
-        width: 100%;
+        width: 100vw;
+        min-height: 0;
     }
 
     .footer_icons_03 {
+        transform-origin: center center;
+        object-fit: cover;
         width: 5vw;
+        margin-top: 1vw;
     }
 
     .marcos_contact_footer_03 {
-        font-size: 3vw;
+        font-size: 3.4vw;
+        font-weight: 400;
         text-align: left;
-    }
-
-    .marcos_contact_footer_03:hover {
-        font-size: 3vw;
+        margin-left: 1vw;
     }
 
     .information_block_04_footer {
         display: grid;
-        grid-template-columns: 5vw 42vw 6.5vw 1fr;
-        grid-template-rows: 8vh;
-        min-height: 9vh;
+        grid-template-columns: 2vw 44.5vw 6.5vw 1fr;
+        grid-template-rows: 8vw;
+        text-align: left;
+        align-items: center;
+        width: 100vw;
+        min-height: 0;
     }
 
     .footer_icons_04 {
@@ -2203,12 +2232,11 @@ footer a:active {
     }
 
     .marcos_contact_footer_04 {
-        padding: 0 3vw 0vh 0vh;
-        font-size: 2.6vw;
-    }
-
-    .marcos_contact_footer_04:hover {
-        font-size: 2.6vw;
+        padding: 0 0 0 0;
+        font-size: 3.4vw;
+        font-weight: 400;
+        text-align: left;
+        margin-left: 1vw;
     }
 
 }
