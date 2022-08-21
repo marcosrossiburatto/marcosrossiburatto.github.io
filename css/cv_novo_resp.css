@@ -2032,7 +2032,7 @@ footer a:active {
     }
 
     .aside_p {
-        padding: 0 0 7vw 3.5vw;
+        padding: 0 0 8vw 0;
         font-size: 5vw;
         font-weight: 700;
         text-align: left;
@@ -2042,7 +2042,7 @@ footer a:active {
     }
 
     .aside_p01 {
-        padding: 0% 0 6vw 0;
+        padding: 0 0 6vw 0;
         font-size: 5vw;
         font-weight: 600;
         text-align: left;
@@ -2057,7 +2057,7 @@ footer a:active {
         grid-template-rows: 10vw 15vw;
         margin-left: 0vw;
         margin-right: 0vw;
-        margin-bottom: 1.3vw;
+        margin-bottom: 3vw;
     }
 
     .information_block_aside_02 {
@@ -2066,7 +2066,7 @@ footer a:active {
         grid-template-rows: 10vw;
         margin-left: 0vw;
         margin-right: 0vw;
-        margin-bottom: 1.3vw;
+        margin-bottom: 3vw;
     }
 
     .information_block_aside_03 {
@@ -2084,7 +2084,7 @@ footer a:active {
         grid-template-rows: 15vw 15vw;
         margin-left: 0vw;
         margin-right: 0vw;
-        margin-bottom: 1.3vw;
+        margin-bottom: 3vw;
     }
 
     .information_block_aside_05 {
@@ -2172,23 +2172,32 @@ footer a:active {
     .information_block_02_footer {
         display: grid;
         grid-template-columns: 2vw 44vw 6vw 6vw 35vw;
-        grid-template-rows: 5vw 1vw;
+        grid-template-rows: 7vw 0vw;
         text-align: left;
         align-items: center;
         width: 100vw;
         min-height: 3.5vw;
     }
 
-    .footer_icons_02 {
+    .footer_icons_02_1 {
         transform-origin: center center;
         object-fit: cover;
         width: 5vw;
+        margin-top: 0vw;
+    }
+
+    .footer_icons_02_2 {
+        transform-origin: center center;
+        object-fit: cover;
+        width: 5vw;
+        margin-top: 1vw;
     }
 
     .marcos_contact_footer_02 {
-        padding: 0 3vw 0 0;
+        padding: 0vw 3vw 0vw 0;
         font-size: 3.4vw;
         margin-left: 1vw;
+        margin-top: -10vw;
         text-align: left;
         align-items: center;
     }
@@ -2220,7 +2229,7 @@ footer a:active {
     .information_block_04_footer {
         display: grid;
         grid-template-columns: 2vw 44.5vw 6.5vw 1fr;
-        grid-template-rows: 8vw;
+        grid-template-rows: 10vw;
         text-align: left;
         align-items: center;
         width: 100vw;
