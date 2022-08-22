@@ -1319,7 +1319,7 @@ footer a:active {
 .information_block_04_footer {
     display: grid;
     grid-template-columns: 15vw 19vw 3vw 60vw;
-    grid-template-rows: 5vw;
+    grid-template-rows: 6vw;
     text-align: left;
     align-items: center;
     min-height: 3.5vw;
@@ -1720,6 +1720,7 @@ footer a:active {
         color: #11607c;
         font-style: normal;
         text-decoration: underline;
+        width: 91vw;
     }
 
     .material-icons.icon_color_therapeutic {
@@ -1784,6 +1785,7 @@ footer a:active {
         color: #11607c;
         font-style: italic;
         text-decoration: underline;
+        width: 91vw;
     }
 
     .information_block_volunteer {
