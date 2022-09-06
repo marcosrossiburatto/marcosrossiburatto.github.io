@@ -1094,15 +1094,6 @@ main a:active {
 }
 
 
-
-
-
-
-
-
-
-
-
 /* --- SEND MESSAGE FORM -- */
 
 .marcos_message {
@@ -2417,41 +2408,60 @@ footer a:active {
         text-align: center;
     }
 
-    /* --- ANTERIORES - SIZE: MAX: 720PX -- */
-    .information_block_companies_ea {
+
+    .information_block_companies_me_01 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: justify;
+        padding-top: 4vw;
+        margin-left: 3.5vw;
+        width: 91vw;
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+
+    .text_companies_me_06 {
+        margin-left: 2vw;
+    }
+
+    /* --- STI - SIZE: MAX: 720PX -- */
+
+    .information_block_companies_sti {
         margin: 5vw 0 0 0;
         padding: 0;
         display: block;
         align-items: center;
+        width: 100vw;
     }
 
-    .img_ea {
-        margin: 0;
+    .img_sti {
         padding: 2vw 41vw 2vw 41vw;
         width: 100vw;
     }
 
-    .companies_ea {
+    .companies_sti {
         display: block;
-        margin-top: -4vw;
+        margin-top: 0vw;
     }
 
-    .text_companies_ea {
+    .text_companies_sti {
         font-size: 4vw;
         color: #000;
         font-weight: 400;
         text-align: center;
         line-height: 5vw;
-        width: 98.3vw;
+        width: 100vw;
     }
 
-    .text_companies_ea.text_companies_ea_01 {
+    .text_companies_me.text_companies_sti_01 {
         display: block;
         max-width: 100vw;
         text-align: center;
     }
 
-    .text_companies_ea.text_companies_ea_02 {
+    .text_companies_me.text_companies_sti_02 {
         display: block;
         font-size: 4.5vw;
         padding: 2vw 0 2vw 0;
@@ -2459,6 +2469,38 @@ footer a:active {
         color: #11607c;
         max-width: 100vw;
         text-align: center;
+    }
+
+    .text_companies_me.text_companies_sti_03 {
+        display: block;
+        padding: 0 6vw;
+        max-width: 100vw;
+        text-align: center;
+    }
+
+    .text_companies_me.text_companies_sti_04 {
+        display: block;
+        padding: 2vw 6vw 0 6vw;
+        max-width: 100vw;
+        text-align: center;
+    }
+
+
+    .information_block_companies_sti_01 {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        text-align: justify;
+        padding-top: 4vw;
+        margin-left: 3.5vw;
+        width: 91vw;
+        font-size: 4vw;
+        line-height: 5vw;
+    }
+
+    .text_companies_sti_06 {
+        margin-left: 2vw;
     }
 
     /* --- SEND MESSAGE FORM - SIZE: MAX: 720PX -- */
