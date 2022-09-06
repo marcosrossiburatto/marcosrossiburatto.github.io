@@ -993,9 +993,33 @@ main a:active {
     text-align: justify;
 }
 
+.information_block_companies_me_01 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: justify;
+    padding-top: 1.5vw;
+    margin-left: 3.5vw;
+    width: 63vw;
+    font-size: 1.2vw;
+    line-height: 1.5vw;
+}
+
+.text_companies_me_05 {
+    margin-left: 0vw;
+    font-weight: 600;
+    color: #11607c;
+}
+
+.text_companies_me_06 {
+    margin-left: 1vw;
+}
+
+
 /* --- ANTERIORES - SIZE: DESKTOP-- */
 
-.information_block_companies_ea {
+.information_block_companies_sti {
     margin: 3vw 0vw 0vw 3.5vw;
     display: grid;
     grid-template-columns: 10vw 1fr;
@@ -1003,18 +1027,18 @@ main a:active {
     width: 63vw;
 }
 
-.img_ea {
+.img_sti {
     padding: 0 0.9vw;
     margin-left: 0vw;
     width: 9vw;
 }
 
-.companies_ea {
+.companies_sti {
     display: block;
     margin-top: 0vw;
 }
 
-.text_companies_ea {
+.text_companies_sti {
     font-size: 1.2vw;
     color: #000;
     font-weight: 400;
@@ -1023,13 +1047,13 @@ main a:active {
     width: 63vw;
 }
 
-.text_companies_ea.text_companies_ea_01 {
+.text_companies_sti.text_companies_sti_01 {
     display: block;
     max-width: 53vw;
     text-align: justify;
 }
 
-.text_companies_ea.text_companies_ea_02 {
+.text_companies_sti.text_companies_sti_02 {
     display: block;
     font-size: 1.4vw;
     padding: 0;
@@ -1038,6 +1062,46 @@ main a:active {
     max-width: 53vw;
     text-align: justify;
 }
+
+.text_companies_sti.text_companies_sti_03 {
+    display: block;
+    padding: 0;
+    max-width: 53vw;
+    text-align: justify;
+}
+
+.information_block_companies_sti_01 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: justify;
+    padding-top: 1.5vw;
+    margin-left: 3.5vw;
+    width: 63vw;
+    font-size: 1.2vw;
+    line-height: 1.5vw;
+}
+
+.text_companies_sti_05 {
+    margin-left: 0vw;
+    font-weight: 600;
+    color: #11607c;
+}
+
+.text_companies_sti_06 {
+    margin-left: 1vw;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* --- SEND MESSAGE FORM -- */
 
