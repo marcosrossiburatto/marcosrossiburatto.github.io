@@ -9,10 +9,10 @@ function academicFunction() {
   academicTitleParagraph.appendChild(academicTitleParagraphPart01).textContent = 'Formação Acadêmica e';
 
   if (academic) {
-    let partBR = document.createElement('br'); 
+    let partBR = document.createElement('br');
     academicTitleParagraph.appendChild(partBR).textContent = '';
   } else {
-    let partBR = document.createElement('span'); 
+    let partBR = document.createElement('span');
     academicTitleParagraph.appendChild(partBR).textContent = ' ';
   }
 
@@ -69,7 +69,7 @@ function academicFunction() {
   textAcademic = document.createElement('span');
   textAcademic.className = 'text__academic';
   informationBlock.appendChild(textAcademic).textContent =
-    'Elaboração de Softwares para computadores – (em execução), pela XP Educação.';
+    'Desenvolvedor de Softwares - Web Full Stack – (em execução), pela Santander Universidades.';
 
   informationBlock = document.createElement('div');
   academicDiv.appendChild(informationBlock).className =
@@ -267,3 +267,4 @@ function academicFunction721() {
   academic = false;
   academicFunction();
 }
+
